@@ -69,9 +69,12 @@ class AuthenticatedController extends Controller
         $image->save(public_path('uploads/images/'.$image_name));
         // $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
         $image->resize(1200, 628)->save(public_path('uploads/images/facebook/'. $image_name));
-        $image->resize(370, 309)->save(public_path('uploads/images/medium/'. $image_name));
-        $image->resize(80, 77)->save(public_path('uploads/images/thumbnail/'. $image_name));
-        $image->resize(50, 50)->save(public_path('uploads/images/thumbs/'. $image_name));
+        $image->resize(370, 230)->save(public_path('uploads/images/medium/'. $image_name));
+        $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/'. $image_name));
+        $image->resize(50, 40)->save(public_path('uploads/images/thumbs/'. $image_name));
+        // $image->resize(370, 309)->save(public_path('uploads/images/medium/'. $image_name));
+        // $image->resize(80, 77)->save(public_path('uploads/images/thumbnail/'. $image_name));
+        // $image->resize(50, 50)->save(public_path('uploads/images/thumbs/'. $image_name));
         // $image_txt->move(public_path('uploads/images'), $image_name);
         // $image_txt->move(public_path('uploads/images/thumbnail'), $image_name);
         // $image_txt->move(public_path('uploads/images/thumbs'), $image_name);
