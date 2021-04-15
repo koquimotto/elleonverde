@@ -14,8 +14,13 @@
     <meta property="og:title" content="{{ $post->title }} - El León Verde" />
 @endsection
 
+    @php
+        $content = $post->content;
+        $content_alter = substr($content,3,100);    
+    @endphp
+
 @section('description')
-        <meta property="og:description" content="{!! $post->content !!}">
+        <meta property="og:description" content="{{ $content_alter }}">
 @endsection
 
 @section('image')
@@ -64,9 +69,7 @@
                                     fjs.parentNode.insertBefore(js, fjs);
                                     }(document, 'script', 'facebook-jssdk'));
                                 </script>
-
-                                    {!! $post->content !!}
-                                
+                                        {!! $post->content !!}                           
                             </div>
                             <div class="news_detail__bottom">
                                 <p class="news_detail__tags">

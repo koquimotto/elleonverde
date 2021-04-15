@@ -63,9 +63,9 @@
 @section('scripts')
     <script src="{{ asset('assets/plugins/ckeditor/ckeditor.js') }}"></script>
 <script>
-    CKEDITOR.replace( 'summary-ckeditor',{
-        filebrowserUploadUrl: 'uploadfile',
-        filebrowserUploadMethod: 'form'
+    CKEDITOR.replace( 'summary-ckeditor', {
+        filebrowserUploadUrl: "{{ route('ckeditor.upload',['_token' => csrf_token()]) }}",
+        filebrowserUploadMethod: "form"
     } );
 </script>
 @endsection

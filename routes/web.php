@@ -48,6 +48,9 @@ Route::post('/colaborador/guardar', [AuthenticatedController::class, 'do_publish
 Route::get('/colaborador/editar/{slug}', [AuthenticatedController::class, 'edit_publish'])->name('auth.edit_publish')->middleware('auth');
 Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_publish'])->name('auth.update_publish')->middleware('auth');
 
+//upload image in ckeditor
+Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');
+
 //Clear Cache facade value:
 Route::get('/clear-cache', function () {
     $exitCode = Artisan::call('cache:clear');

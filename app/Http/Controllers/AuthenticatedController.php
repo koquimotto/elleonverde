@@ -29,6 +29,8 @@ class AuthenticatedController extends Controller
         $post->content = $request->content_txt;
         $post->save();
         $this->upload_image($request->image, $post->slug, $post->id);
+
+        return redirect('/colaborador/listar');
     }
 
     public function do_slug($title_txt)
@@ -82,5 +84,28 @@ class AuthenticatedController extends Controller
         $file->save();
 
         return $image_name;
+    }
+
+    public function ckeditor_upload(Request $request)
+    {
+        $fileName = time().'-el-leon-verde.'.$request->upload->extension();
+        $request->upload->move(public_path('uploads/images/content/'), $fileName);
+        // $file = Image::make($request->upload->getRealPath());
+        // $file->save(public_path('uploads/images/' . $fileName));
+        // $original_name = $request->file('upload')->getClientOriginalName();
+        // $filename_org = pathinfo($original_name, options: PATHINFO_FILENAME);
+        // $filename_org = pathinfo($original_name, PATHINFO_FILENAME);
+        // $ext = $request->file('upload')->getClientOriginalExtension();
+        // $filename = $filename_org.'_'.time().'.'.$ext();
+
+        // $request->file('upload')->move(public_path('uploads/images/content/'), $filename);
+        $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+
+        $url = asset('uploads/images/content/'.$fileName);
+        $message = "Imagen subida correctamente";
+
+        $res = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum,'$url','$message')</script>";
+        @header('Content-type: text/html; charset=utf-8');    
+        echo $res;
     }
 }
