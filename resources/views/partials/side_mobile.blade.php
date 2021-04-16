@@ -16,8 +16,15 @@
             <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
 
             <div class="side-menu__content">
-                    <a href="#" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-user"></i> Registrate</a><br><br>
-                        <a href="#" class="btn btn-primary search-popup__toggler" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Inicia sesión</a>
+                    @if (!Auth::check())
+                    {{-- <a href="#" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-user"></i> Registrate</a> --}}
+                    <a href="{{ route('login') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Inicia sesión</a>
+
+                    @else
+                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-power-off"></i> Salir</a>
+                    
+                    <a href="{{ route('auth.list_publish') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Mis Anuncios</a>
+                    @endif
                 <div class="side-menu__social">
                     <a href="https://www.facebook.com/hogarlcarturo"><img src="/assets/images/social-icon/facebook-el-leon-verde.png" alt="" srcset=""></a>
                     <a href="https://www.instagram.com/el.leonverde/"><img src="/assets/images/social-icon/instagram-el-leon-verde.png" alt="" srcset=""></i></a>

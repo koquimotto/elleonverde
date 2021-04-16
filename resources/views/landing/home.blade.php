@@ -38,7 +38,7 @@
                                                     <p>{{ $post->created_at->format('M d, Y') }}</p>
                                                 </div>
                                             </div>
-                                            <div class="blog-one__content" style="padding:30px 10px 34px;">
+                                            <div class="blog-one__content" style="padding:0px 10px 5px;">
                                                 <ul class="list-unstyled blog-one__meta">
                                                     <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
                                                     <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-comments"></i> 0 Comentarios</a>
@@ -86,6 +86,18 @@
                     </div>
                 </div>
                 <div class="gallery_one_carousel owl-carousel">
+                    <!--Gallery One Single-->
+                    <div class="gallery_one_single">
+                        <div class="gallery_one_image">
+                            <img src="http://img.youtube.com/vi/fPslyTU7wnU/mqdefault.jpg">
+                            <div class="gallery_one_hover_box">
+                                <div class="gallery_one_icon">
+                                    <a href="https://www.youtube.com/watch?v=fPslyTU7wnU" class="popup-video"><span
+                                            class="fa fa-play"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--Gallery One Single-->
                     <div class="gallery_one_single">
                         <div class="gallery_one_image">

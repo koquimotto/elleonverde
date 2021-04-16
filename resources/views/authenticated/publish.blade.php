@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <section class="service_detail">
+    <section class="service_detail" style="padding:20px 0 30px">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8">
@@ -20,7 +20,10 @@
                                     <div class="row">
                                         @csrf
                                         <div class="col-lg-12">
-                                            <input type="text" name="title_txt" class="form-control" placeholder="Título del artículo" required>
+                                            <input type="text" name="title_txt" class="form-control" placeholder="Título del artículo" value="{{ old('title_txt') }}" required>
+                                            @error('title_txt')
+                                                <strong style="color: red">* {{ $message }}</strong>
+                                            @enderror
                                             <br>
                                         </div>
                                         <div class="col-lg-6">
@@ -32,11 +35,14 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-6">
-                                            <input type="file" name="image" required>
+                                            <input type="file" name="image" required accept="image/*" >
+                                            @error('image')
+                                                <strong style="color: red">* {{ $message }}</strong>
+                                            @enderror
                                         </div>
                                         <div class="col-lg-12">
                                             <br>
-                                            <textarea class="form-control" name="content_txt" id="summary-ckeditor" cols="30" rows="10" required></textarea>
+                                            <textarea class="form-control" name="content_txt" id="summary-ckeditor" cols="30" rows="10" required>{{ old('content_txt') }}</textarea>
                                         </div>
                                         <div class="col-lg-12" style="text-align: right">
                                             <br>

@@ -3621,7 +3621,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 42px;
+    height: 30px;
     width: 113px;
     background: var(--thm-base);
     text-align: center;
@@ -3635,7 +3635,7 @@ h6 {
     color: var(--thm-black);
     font-size: 14px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 32px;
 }
 .blog-one__content {
     position: relative;

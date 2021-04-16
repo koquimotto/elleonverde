@@ -12,25 +12,41 @@ use Auth;
 
 class AuthenticatedController extends Controller
 {
+    // Vista de crear un artículo
     public function publish()
     {
         $categories = Category::all();
         return view('authenticated.publish')->with('categories', $categories);
     }
 
-    public function do_publish(Request $request)
+    // Guardar artículo
+    public function do_publish(Request $request) 
     {
+        // Validaciones
+        $request->validate([
+            'title_txt' => 'required|unique:posts,title',
+            'image' => 'required'
+        ]);
         // $random = Str::random(40);
-
+        
+        // if($request->hasFile('image'))
+        // {
         $post = new Post();
         $post->user_id = Auth::user()->id;
         $post->title = $request->title_txt;
         $post->slug = $this->do_slug($request->title_txt);
         $post->content = $request->content_txt;
+        $post->state = 1;
         $post->save();
+        
         $this->upload_image($request->image, $post->slug, $post->id);
 
         return redirect('/colaborador/listar');
+        // }
+            
+        // return redirect('/colaborador/publicar');
+
+        
     }
 
     public function do_slug($title_txt)
@@ -58,7 +74,9 @@ class AuthenticatedController extends Controller
 
     public function list_publish()
     {
-        $posts = Post::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->get();
+        $posts = Post::where('user_id', Auth::user()->id)
+                    ->where('state',1)
+                    ->orderBy('id', 'desc')->get();
         return view('authenticated.publish_list')->with('posts', $posts);
     }
 
