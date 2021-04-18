@@ -16,7 +16,7 @@
                                 <h2><b>Editar artículo</b></h2>
                             </div>
                             <div class="col-lg-12">
-                                <form action="{{ route('auth.update_publish') }}" method="POST" >
+                                <form action="{{ route('auth.update_publish') }}" method="POST" enctype="multipart/form-data" >
                                     <div class="row">
                                         @csrf
                                         <div class="col-lg-12">
@@ -34,12 +34,17 @@
                                                     <option value="{{ $category->id }}">{{ $category->category }}</option>
                                                 @endforeach
                                             </select>
+                                            <br>
+                                            
+                                            <input type="file" name="image" accept="image/*" >
+
                                         </div>
                                         <div class="col-lg-6">
-                                            <input type="file" value="" required>
-                                            @error('title_txt')
-                                                <strong style="color: red">* {{ $message }}</strong>
-                                            @enderror
+                                            @php
+                                                $images=$post->files()->where('type','image')->get();
+                                            @endphp
+                                            <img src="{{ asset('uploads/images/medium/'.$images->first()->file_name) }}" alt="">
+                                            <input type="hidden" name="fileId" value="{{ $images->first()->id }}">
                                         </div>
                                         <div class="col-lg-12">
                                             <br>
@@ -70,7 +75,9 @@
 @section('scripts')
     <script src="{{ asset('assets/plugins/ckeditor/ckeditor.js') }}"></script>
 <script>
-    CKEDITOR.replace( 'summary-ckeditor' );
-    CKEDITOR.config.language = 'es';
+    CKEDITOR.replace( 'summary-ckeditor', {
+        filebrowserUploadUrl: "{{ route('ckeditor.upload',['_token' => csrf_token()]) }}",
+        filebrowserUploadMethod: "form"
+    } );
 </script>
 @endsection

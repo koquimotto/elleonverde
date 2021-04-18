@@ -16,10 +16,10 @@
                                 <h2><b>Todos mis artículos</b></h2>
                             </div>
                             
-                                                            @foreach ($posts as $post)
-                                <?php
-                                    $images=$post->files()->where('type','image')->get();
-                                ?>
+                                @foreach ($posts as $post)
+                                    <?php
+                                        $images=$post->files()->where('type','image')->get();
+                                    ?>
                                 <div class="col-lg-6">
                                     <div class="blog_one_single mb-30">
                                         <div class="blog_one_image">

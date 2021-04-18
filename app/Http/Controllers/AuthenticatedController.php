@@ -56,20 +56,28 @@ class AuthenticatedController extends Controller
     }
 
     public function edit_publish($slug)
-    {
-        $post = Post::where('slug', $slug)->first();
+    {   
+        $post = Post::where('slug', $slug)
+                        ->where('user_id', Auth::user()->id)
+                        ->first();
         $categories = Category::all();
         return view('authenticated.publish_edit')->with('post', $post)->with('categories', $categories);
     }
 
     public function update_publish(Request $request)
     {
+        // Validaciones
         $post = Post::find($request->id_txt);
-        // $post->user_id = Auth::user()->id;
+        $post->user_id = Auth::user()->id;
         $post->title = $request->title_txt;
         $post->slug = $this->do_slug($request->title_txt);
         $post->content = $request->content_txt;
+        $post->state = 1;
+        if ($request->hasFile('image')) {
+            $this->update_image($request->image, $post->slug, $request->fileId);
+        }
         $post->save();
+        return redirect('/colaborador/listar');
     }
 
     public function list_publish()
@@ -102,6 +110,23 @@ class AuthenticatedController extends Controller
         $file->file_name = $image_name;
         $file->type = 'image';
         $file->post_id = $post_id;
+        $file->save();
+
+        return $image_name;
+    }
+
+    public function update_image($image_txt, $slug_txt, $file_id)
+    {
+        $image_name = time().'-'.$slug_txt . '-el-leon-verde.' . $image_txt->extension();
+        $image = Image::make($image_txt->getRealPath());
+        $image->save(public_path('uploads/images/' . $image_name));
+        $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
+        $image->resize(370, 230)->save(public_path('uploads/images/medium/' . $image_name));
+        $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/' . $image_name));
+        $image->resize(50, 40)->save(public_path('uploads/images/thumbs/' . $image_name));
+
+        $file = Attached_file::find($file_id);
+        $file->file_name = $image_name;
         $file->save();
 
         return $image_name;
