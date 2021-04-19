@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Subscription;
 
 class LandingController extends Controller
 {
@@ -50,5 +52,14 @@ class LandingController extends Controller
     public function pets()
     {
         return view('landing.pets');
+    }
+
+    //Suscríbete 
+    public function subscribe(Request $request)
+    {
+        $subscription = new Subscription;
+        $subscription->email = $request->email_subs;
+        $subscription->state = 1;
+        $subscription->save();
     }
 }

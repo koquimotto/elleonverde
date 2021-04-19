@@ -21,11 +21,11 @@ use Intervention\Image\Facades\Image;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/test', function () {
-    $img = Image::make('https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia-770x413.jpg')->resize(10, 10);
+// Route::get('/test', function () {
+//     $img = Image::make('https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia-770x413.jpg')->resize(10, 10);
 
-    return $img->response('jpg');
-});
+//     return $img->response('jpg');
+// });
 
 // Main menus
 Route::get('/', [LandingController::class, 'home'])->name('home');
@@ -36,17 +36,17 @@ Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('v
 Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('herbal');
 Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name('insectary');
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
-
+Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('auth.home');
 //Authenticated
-Route::get('/colaborador/listar', [AuthenticatedController::class, 'list_publish'])->name('auth.list_publish')->middleware('auth');
-Route::get('/colaborador/publicar', [AuthenticatedController::class, 'publish'])->name('auth.publish')->middleware('auth');
-Route::post('/colaborador/guardar', [AuthenticatedController::class, 'do_publish'])->name('auth.do_publish')->middleware('auth');
-Route::get('/colaborador/editar/{slug}', [AuthenticatedController::class, 'edit_publish'])->name('auth.edit_publish')->middleware('auth');
-Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_publish'])->name('auth.update_publish')->middleware('auth');
+Route::get('/colaborador/listar', [AuthenticatedController::class, 'list_publish'])->name('auth.list_publish');
+Route::get('/colaborador/publicar', [AuthenticatedController::class, 'publish'])->name('auth.publish');
+Route::post('/colaborador/guardar', [AuthenticatedController::class, 'do_publish'])->name('auth.do_publish');
+Route::get('/colaborador/editar/{slug}', [AuthenticatedController::class, 'edit_publish'])->name('auth.edit_publish');
+Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_publish'])->name('auth.update_publish');
 
 //upload image in ckeditor
 Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');

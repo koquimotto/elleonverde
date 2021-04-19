@@ -12,6 +12,13 @@ use Auth;
 
 class AuthenticatedController extends Controller
 {
+    public function __construct()
+    {   
+        // Indicar que estas funciones solo se ejecuten con usuarios autenticados
+        $this->middleware('auth');
+        // $this->middleware('auth')->only(['publish','do_publish']);
+    }
+
     // Vista de crear un artículo
     public function publish()
     {

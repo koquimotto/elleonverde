@@ -14,13 +14,13 @@
     <meta property="og:title" content="{{ $post->title }} - El León Verde" />
 @endsection
 
-    @php
+    {{-- @php
         $content = $post->content;
         $content_alter = substr($content,3,100);    
-    @endphp
+    @endphp --}}
 
 @section('description')
-        <meta property="og:description" content="{{ $content_alter }}">
+        <meta property="og:description" content="El León verde busca crear una comunidad que intercambie conocimientos y experiencias diversas relacionadas al huerto rural, huerto urbano, agricultura, herbario virtual, insectario virtual, mascotas, crianza de animales, difusión de experiencias que ayuden a mejorar las buenas prácticas de convivencia con el medio ambiente.">
 @endsection
 
 @section('image')
