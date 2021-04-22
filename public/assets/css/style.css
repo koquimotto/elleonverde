@@ -68,19 +68,20 @@ a:visited {
     text-decoration: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     text-transform: uppercase;
-    /* font-family: var(--heading-font); */
-}
+    font-family: var(--heading-font);
+} */
 
 .title-style
 {
     font-family: var(--heading-font);
+    text-transform: uppercase;
 }
 
 .page-wrapper {
