@@ -13,7 +13,7 @@
                     <div class="col-xl-8 col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2><b>Todos mis artículos</b></h2>
+                                <h2 class="title-style"><b>Todos mis artículos</b></h2>
                             </div>
                             
                                 @foreach ($posts as $post)

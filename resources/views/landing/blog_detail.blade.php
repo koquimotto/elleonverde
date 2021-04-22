@@ -55,6 +55,9 @@
                             <ul class="list-unstyled news_detail__meta">
                                 <li><a href="news_detail.html"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
                                 <li><a href="news_detail.html"><i class="far fa-comments"></i> 0 Comentarios</a></li>
+                                @if(Auth::check())
+                                <li><a href="{{ route('auth.edit_publish',$post->slug) }}"><i class="far fa-edit"></i> Editar</a></li>
+                                @endif
                             </ul>
                             <div class="news_detail_content">
                                 <h2>{{$post->title}}</h2>
@@ -166,14 +169,22 @@
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="sidebar">
-                            <div class="sidebar__single sidebar__search">
-                                <form action="#" class="sidebar__search-form">
-                                    <input type="search" placeholder="Buscar">
-                                    <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                                </form>
-                            </div>
+                            @if (!Auth::check())
+                                <div class="sidebar__single sidebar__search">
+                                    <form action="#" class="sidebar__search-form">
+                                        <input type="search" placeholder="Buscar">
+                                        <button type="submit"><i class="icon-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            @else
+                                <div class="service_details_left">
+                                    <ul class="list-unstyled service_all_list">
+                                        <li><a href="{{ route('auth.edit_publish',$post->slug) }}">Editar artículo</a></li>
+                                    </ul>
+                                </div>
+                            @endif
                             <div class="sidebar__single sidebar__post">
-                                <h3 class="sidebar__title">Lo más reciente</h3>
+                                <h3 class="sidebar__title title-style">Lo más reciente</h3>
                                 <ul class="sidebar__post-list list-unstyled">
                                     @foreach ($last_posts as $last_post)
                                     <?php

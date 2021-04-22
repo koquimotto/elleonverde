@@ -6,7 +6,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="footer-widget__column footer-widget__about wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__title">
-                                <h3>El León Verde</h3>
+                                <h3 class="title-style">El León Verde</h3>
                             </div>
                             <div class="footer-widget_about_text">
                                 <p>Suscríbete en nuestra página web, ingresa tu correo electrónico y haz clic en el botón para que puedas enterarte de nuestras últimas publicaciones. </p>
@@ -23,7 +23,7 @@
                     <div class="col-xl-2 col-lg-2 col-md-6">
                         <div class="footer-widget__column footer-widget__link wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__title">
-                                <h3>Links de Interes</h3>
+                                <h3 class="title-style">Links de Interes</h3>
                             </div>
                             <ul class="footer-widget__links-list list-unstyled">
                                 <li><a href="#">Tienda</a></li>
@@ -38,7 +38,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="footer-widget__column footer-widget__news wow fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget__title">
-                                <h3>Blog Verde</h3>
+                                <h3 class="title-style">Blog Verde</h3>
                             </div>
                             <ul class="footer-widget__news list-unstyled">
                                 @php
@@ -81,7 +81,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="footer-widget__column footer-widget__contact wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__title">
-                                <h3>Suscríbete</h3>
+                                <h3 class="title-style">Suscríbete</h3>
                             </div>
                             <div class="footer-widget_contact">
                                 {{-- <p>66 Broklyn Street, New Town<br>DC 5752, New Yrok</p>

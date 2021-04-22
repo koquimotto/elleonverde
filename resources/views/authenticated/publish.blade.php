@@ -13,7 +13,7 @@
                     <div class="col-xl-8 col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2><b>Nuevo artículo</b></h2>
+                                <h2 class="title-style"><b>Nuevo artículo</b></h2>
                             </div>
                             <div class="col-lg-12">
                                 <form action="{{ route('auth.do_publish') }}" method="POST" enctype="multipart/form-data">
