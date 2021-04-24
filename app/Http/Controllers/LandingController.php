@@ -30,7 +30,7 @@ class LandingController extends Controller
     public function show_blog($post)
     {
         $post = Post::where('slug', $post)->first();
-        $last_posts = Post::orderBy('id', 'desc')->get();
+        $last_posts = Post::orderBy('id', 'desc')->take(3)->get();
         return view('landing.blog_detail')->with('last_posts', $last_posts)->with('post', $post);
     }
 

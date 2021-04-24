@@ -7202,8 +7202,11 @@ h6 {
     display: -webkit-box;
     display: flex;
     border-bottom: 1px solid #f5f0e9;
-    padding-bottom: 50px;
-    margin-bottom: 60px;
+    /* padding-bottom: 50px;
+    margin-bottom: 60px; */
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 24px;
 }
 
 .comment-one__content {
@@ -7259,6 +7262,9 @@ h6 {
     border-radius: 10px;
     outline: none;
     margin-bottom: 10px;
+}
+.comment-two{
+    padding-left: 100px;
 }
 /*--------------------------------------------------------------
 # Sidebar

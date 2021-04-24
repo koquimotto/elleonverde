@@ -110,35 +110,45 @@
                                         remaining unchanged. It was popularised in the sheets containing.</p>
                                 </div>
                             </div> --}}
-                            {{-- <div class="comment-one">
-                                <h3 class="comment-one__title">2 Comments</h3>
+
+                             <div class="comment-one">
+                                <h3 class="comment-one__title title-style">
+                                    @php
+                                        $count = 0;
+                                        if ($count==0){
+                                            echo 'Sin Comentarios';
+                                        } elseif ($count==1) {
+                                            echo '1 Comentario';
+                                        }else {
+                                            echo $count.' Comentarios';
+                                        }
+                                    @endphp
+                                </h3>
                                 <div class="comment-one__single">
                                     <div class="comment-one__image">
-                                        <img src="assets/images/blog/comment-1-1.png" alt="">
+                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
                                     </div>
                                     <div class="comment-one__content">
-                                        <h3>Sarah albert</h3>
+                                        <h3 class="title-style">Sarah albert</h3>
                                         <p>It has survived not only five centuries, but also the leap into electronic
                                             typesetting unchanged. It was popularised in the sheets containing lorem
                                             ipsum is simply free text available in the martket to use now.</p>
                                         <a href="#" class="thm-btn comment-one__btn">Reply</a>
                                     </div>
                                 </div>
-                                <div class="comment-one__single">
+                                <div class="comment-one__single comment-two">
                                     <div class="comment-one__image">
-                                        <img src="assets/images/blog/comment-1-2.png" alt="">
+                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
                                     </div>
                                     <div class="comment-one__content">
-                                        <h3>Kevin Martin</h3>
+                                        <h3 class="title-style">Sarah albert</h3>
                                         <p>It has survived not only five centuries, but also the leap into electronic
-                                            typesetting
-                                            unchanged. It was popularised in the sheets containing lorem ipsum is simply
-                                            free text
-                                            available in the martket to use now.</p>
+                                            typesetting unchanged. It was popularised in the sheets containing lorem
+                                            ipsum is simply free text available in the martket to use now.</p>
                                         <a href="#" class="thm-btn comment-one__btn">Reply</a>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div> 
                             {{-- <div class="comment-form">
                                 <h3 class="comment-form__title">Leave a Comment</h3>
                                 <form action="inc/sendemail.php" class="comment-one__form">
