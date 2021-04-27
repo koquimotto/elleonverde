@@ -53,6 +53,12 @@ Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_pub
 //upload image in ckeditor
 Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');
 
+
+
+Route::get('/test', [LandingController::class, 'test'])->name('test');
+
+
+
 //Clear Cache facade value:
 Route::get('/clear-cache', function () {
     $exitCode = Artisan::call('cache:clear');

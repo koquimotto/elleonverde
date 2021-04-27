@@ -65,4 +65,9 @@ class LandingController extends Controller
         $subscription->state = 1;
         $subscription->save();
     }
+
+
+    public function test(){
+        return view('comments.editModal');
+    }
 }
