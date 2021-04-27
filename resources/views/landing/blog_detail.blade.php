@@ -53,8 +53,22 @@
                                 </div>
                             </div>
                             <ul class="list-unstyled news_detail__meta">
-                                <li><a href="news_detail.html"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
-                                <li><a href="news_detail.html"><i class="far fa-comments"></i> 0 Comentarios</a></li>
+                                <li><a href="#"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
+                                <li><a href="#"><i class="far fa-comments"></i>
+                                     <?php
+                                     $count = App\Models\Comment::where('post_id', $post->id)->count();
+                                        if ($count==0){
+                                            echo 'Sin Comentarios';
+                                        } elseif ($count==1) {
+                                            echo '01 Comentario';
+                                        }elseif($count > 9){
+                                                echo $count.' Comentarios';
+                                        }else{
+                                            echo '0'.$count.' Comentarios';
+                                        }
+                                    ?>
+                                    </a>
+                                </li>
                                 @if(Auth::check())
                                 <li><a href="{{ route('auth.edit_publish',$post->slug) }}"><i class="far fa-edit"></i> Editar</a></li>
                                 @endif
@@ -110,71 +124,83 @@
                                         remaining unchanged. It was popularised in the sheets containing.</p>
                                 </div>
                             </div> --}}
-
-                             <div class="comment-one">
+                            <br>
+                            <div class="comment-form">
                                 <h3 class="comment-one__title title-style">
                                     @php
-                                        $count = 0;
+                                        $count = $comment_number;
                                         if ($count==0){
                                             echo 'Sin Comentarios';
                                         } elseif ($count==1) {
-                                            echo '1 Comentario';
-                                        }else {
-                                            echo $count.' Comentarios';
+                                            echo '01 Comentario';
+                                        }elseif($count > 9){
+                                                echo $count.' Comentarios';
+                                        }else{
+                                            echo '0'.$count.' Comentarios';
                                         }
                                     @endphp
                                 </h3>
-                                <div class="comment-one__single">
-                                    <div class="comment-one__image">
-                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
-                                    </div>
-                                    <div class="comment-one__content">
-                                        <h3 class="title-style">Sarah albert</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic
-                                            typesetting unchanged. It was popularised in the sheets containing lorem
-                                            ipsum is simply free text available in the martket to use now.</p>
-                                        <a href="#" class="thm-btn comment-one__btn">Reply</a>
-                                    </div>
-                                </div>
-                                <div class="comment-one__single comment-two">
-                                    <div class="comment-one__image">
-                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
-                                    </div>
-                                    <div class="comment-one__content">
-                                        <h3 class="title-style">Sarah albert</h3>
-                                        <p>It has survived not only five centuries, but also the leap into electronic
-                                            typesetting unchanged. It was popularised in the sheets containing lorem
-                                            ipsum is simply free text available in the martket to use now.</p>
-                                        <a href="#" class="thm-btn comment-one__btn">Reply</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            {{-- <div class="comment-form">
-                                <h3 class="comment-form__title">Leave a Comment</h3>
-                                <form action="inc/sendemail.php" class="comment-one__form">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment_input_box">
-                                                <input type="text" placeholder="Full name" name="name">
+                                <form action="{{ route('comment') }}" method="POST" >
+                                    @csrf
+                                    <input type="hidden" name="postIdTxt" value="{{ $post->id }}">
+                                    <input type="hidden" name="postSlugTxt" value="{{ $post->slug }}">
+                                    <input type="hidden" name="userIdTxt" value="
+                                    @php
+                                        if (Auth::check()) {
+                                            echo Auth::user()->id;
+                                        } else {
+                                            echo '';
+                                        }
+                                        
+                                    @endphp
+                                    ">
+                                    
+                                    @if(!Auth::check())
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <input type="text" required class="form-control" placeholder="Nombre" name="name">
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <input type="email" required class="form-control" placeholder="Email" name="email">
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment_input_box">
-                                                <input type="text" placeholder="Email address" name="email">
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <br>
+                                    @endif
+                                    
                                     <div class="row">
                                         <div class="col-xl-12">
-                                            <div class="comment_input_box">
-                                                <textarea name="message" placeholder="Write message"></textarea>
-                                            </div>
-                                            <button type="submit" class="thm-btn comment-form__btn">Submit
-                                                Comment</button>
+                                                <textarea class="form-control" name="message" required placeholder="Añade un comentario público"></textarea>
+                                        </div>
+                                        
+                                        <div class="col-xl-12" style="text-align: right">
+                                            <br>
+                                            <button style="padding: 8px 30px" type="submit" class="thm-btn comment-form__btn">Comentar</button>
                                         </div>
                                     </div>
                                 </form>
-                            </div> --}}
+                            </div> 
+                                <hr><br>
+                             <div class="comment-one">
+                                
+                                @foreach ($comments as $comment)
+                                <div class="comment-one__single {{ $comment->level }}">
+                                    <div class="comment-one__image">
+                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
+                                    </div>
+                                    <div class="comment-one__content">
+                                        <h3 class="title-style">
+                                            @if($comment->user_id)
+                                            {{ $comment->user->name }}
+                                            @else
+                                            {{ $comment->name }}
+                                            @endif
+                                        </h3>
+                                        <p>{{ $comment->comment }}</p>
+                                        {{-- <a href="#" class="thm-btn comment-one__btn">Responder</a> --}}
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div> 
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">

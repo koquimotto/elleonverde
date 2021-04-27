@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AuthenticatedController;
+use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Artisan;
 use Intervention\Image\Facades\Image;
 
@@ -37,6 +38,7 @@ Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('her
 Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name('insectary');
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
+Route::post('/comentario/guardar', [CommentController::class, 'store'])->name('comment');
 
 Auth::routes();
 

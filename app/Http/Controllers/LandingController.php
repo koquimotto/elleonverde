@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Comment;
 use App\Models\Subscription;
 
 class LandingController extends Controller
@@ -31,7 +32,9 @@ class LandingController extends Controller
     {
         $post = Post::where('slug', $post)->first();
         $last_posts = Post::orderBy('id', 'desc')->take(3)->get();
-        return view('landing.blog_detail')->with('last_posts', $last_posts)->with('post', $post);
+        $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
+        $comment_number = Comment::where('post_id', $post->id)->count();
+        return view('landing.blog_detail')->with('last_posts', $last_posts)->with('post', $post)->with('comments', $comments)->with('comment_number', $comment_number);
     }
 
     public function vegetable_patch()

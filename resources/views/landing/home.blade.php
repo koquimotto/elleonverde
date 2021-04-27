@@ -26,6 +26,7 @@
                             @foreach ($posts as $post)
                                 <?php
                                     $images=$post->files()->where('type','image')->get();
+                                    $count = App\Models\Comment::where('post_id', $post->id)->count();
                                 ?>
                             <div class="col-lg-6">
                                 <div class="blog_one_single mb-30">
@@ -38,10 +39,23 @@
                                                     <p>{{ $post->created_at->format('M d, Y') }}</p>
                                                 </div>
                                             </div>
-                                            <div class="blog-one__content" style="padding:0px 10px 5px;">
+                                            <div class="blog-one__content" style="padding:0px 2px 5px;">
                                                 <ul class="list-unstyled blog-one__meta">
                                                     <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
-                                                    <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-comments"></i> 0 Comentarios</a>
+                                                    <li><a href="{{ route('blog.show',$post->slug) }}">
+                                                        <i class="far fa-comments"></i>
+                                                            <?php
+                                                                if ($count==0){
+                                                                    echo 'Sin Comentarios';
+                                                                } elseif ($count==1) {
+                                                                    echo '01 Comentario';
+                                                                }elseif($count > 9){
+                                                                        echo $count.' Comentarios';
+                                                                }else{
+                                                                    echo '0'.$count.' Comentarios';
+                                                                }
+                                                            ?>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                                 <h3 style="text-align:left"><a href="{{ route('blog.show',$post->slug) }}">{{ $post->title }}</a></h3>
