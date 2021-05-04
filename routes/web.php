@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthenticatedController;
 use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Artisan;
 use Intervention\Image\Facades\Image;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\TestController;
 
 
 /*
@@ -54,8 +56,16 @@ Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_pub
 Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');
 
 
-
+// Tests
+Route::get('/test/uno', [TestController::class, 'uno'])->name('test.uno');
 Route::get('/test', [LandingController::class, 'test'])->name('test');
+Route::get('/testTwo', [PostController::class, 'index'])->name('post.index');
+Route::get('/comments',[CommentController::class, 'index']);
+
+
+
+// Mantenice
+Route::get('/comments/count/{post}', [CommentController::class, 'count']);
 
 
 
@@ -95,3 +105,7 @@ Route::get('/config-cache', function () {
     return '<h1>Clear Config cleared</h1>';
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

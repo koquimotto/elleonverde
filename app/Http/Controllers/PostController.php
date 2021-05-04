@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Comment;
+use App\Models\Post;
 
-class CommentController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::orderBy('id', 'desc')->get();
-        return $comments;
+        $post = Post::all();
+        dd($post);
     }
 
     /**
@@ -36,21 +36,7 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $comment = new Comment;
-        // $comment->user_id = $request->userIdTxt;
-        // $comment->post_id = $request->postIdTxt;
-        $comment->post_id='1';
-        $comment->name = $request->name;
-        $comment->email = $request->email;
-        $comment->state = 1;
-        // $comment->level = 1;
-        // $comment->level = $request->
-        $comment->comment = $request->message;
-        $comment->save();
-        
-        return $comment;
-        // return redirect('/blog/'.$request->postSlugTxt);
-        // return back();
+        //
     }
 
     /**
@@ -96,10 +82,5 @@ class CommentController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function count($post_id){
-        $countComment = Comment::where('post_id', $post_id)->count();
-        return $countComment;
     }
 }

@@ -187,8 +187,6 @@
                 </div>
             </div>
         </section>
-
-
         <!-- End Youtube -->
 
 @endsection

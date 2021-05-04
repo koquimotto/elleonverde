@@ -125,82 +125,10 @@
                                 </div>
                             </div> --}}
                             <br>
-                            <div class="comment-form">
-                                <h3 class="comment-one__title title-style">
-                                    @php
-                                        $count = $comment_number;
-                                        if ($count==0){
-                                            echo 'Sin Comentarios';
-                                        } elseif ($count==1) {
-                                            echo '01 Comentario';
-                                        }elseif($count > 9){
-                                                echo $count.' Comentarios';
-                                        }else{
-                                            echo '0'.$count.' Comentarios';
-                                        }
-                                    @endphp
-                                </h3>
-                                <form action="{{ route('comment') }}" method="POST" >
-                                    @csrf
-                                    <input type="hidden" name="postIdTxt" value="{{ $post->id }}">
-                                    <input type="hidden" name="postSlugTxt" value="{{ $post->slug }}">
-                                    <input type="hidden" name="userIdTxt" value="
-                                    @php
-                                        if (Auth::check()) {
-                                            echo Auth::user()->id;
-                                        } else {
-                                            echo '';
-                                        }
-                                        
-                                    @endphp
-                                    ">
-                                    
-                                    @if(!Auth::check())
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <input type="text" required class="form-control" placeholder="Nombre" name="name">
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <input type="email" required class="form-control" placeholder="Email" name="email">
-                                            </div>
-                                        </div>
-                                        <br>
-                                    @endif
-                                    
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                                <textarea class="form-control" name="message" required placeholder="Añade un comentario público"></textarea>
-                                        </div>
-                                        
-                                        <div class="col-xl-12" style="text-align: right">
-                                            <br>
-                                            <button style="padding: 8px 30px" type="submit" class="thm-btn comment-form__btn">Comentar</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div> 
-                                <hr><br>
-                             <div class="comment-one">
-                                
-                                @foreach ($comments as $comment)
-                                <div class="comment-one__single {{ $comment->level }}">
-                                    <div class="comment-one__image">
-                                        <img src="{{ asset('assets/images/avatar-el-leon-verde.png') }}" alt="">
-                                    </div>
-                                    <div class="comment-one__content">
-                                        <h3 class="title-style">
-                                            @if($comment->user_id)
-                                            {{ $comment->user->name }}
-                                            @else
-                                            {{ $comment->name }}
-                                            @endif
-                                        </h3>
-                                        <p>{{ $comment->comment }}</p>
-                                        {{-- <a href="#" class="thm-btn comment-one__btn">Responder</a> --}}
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div> 
+                            
+                            <div id="app">
+                                <formcomment-component />
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -275,4 +203,5 @@
 
 
 @section('scripts')
+        <script src="{{ asset('js/app.js') }}"></script>
 @endsection
