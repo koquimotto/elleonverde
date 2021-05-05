@@ -11,24 +11,27 @@
                         </div>
                         <div class="main-nav__main-navigation">
                             <ul class=" main-nav__navigation-box">
-                                <li class="{{ Request::is('tienda*') ? 'current' : '' }}">
+                                <li class="{{ Request::is('/*') ? 'current' : '' }}">
+                                    <a href="/">Principal</a>
+                                </li>
+                                {{-- <li class="{{ Request::is('tienda*') ? 'current' : '' }}">
                                     <a href="{{ route('store') }}">Tienda</a>
-                                </li>
-                                <li class="{{ Request::is('el*huer*') ? 'current' : '' }}">
+                                </li> --}}
+                                {{-- <li class="{{ Request::is('el*huer*') ? 'current' : '' }}">
                                     <a href="{{ route('vegetable.patch') }}">El Huerto</a>
-                                </li>
+                                </li> --}}
                                 <li class="{{ Request::is('blog*') ? 'current' : '' }}">
                                     <a href="{{ route('blog') }}">Blog Verde</a>
                                 </li>
-                                <li class="{{ Request::is('herbario*') ? 'current' : '' }}">
+                                {{-- <li class="{{ Request::is('herbario*') ? 'current' : '' }}">
                                     <a href="{{ route('herbal') }}">Herbario Virtual</a>
-                                </li>
-                                <li class="{{ Request::is('insectario*') ? 'current' : '' }}">
+                                </li> --}}
+                                {{-- <li class="{{ Request::is('insectario*') ? 'current' : '' }}">
                                     <a href="{{ route('insectary') }}">Insectario Virtual</a>
-                                </li>
-                                <li class="{{ Request::is('tu*mascota*ideal*') ? 'current' : '' }}">
+                                </li> --}}
+                                {{-- <li class="{{ Request::is('tu*mascota*ideal*') ? 'current' : '' }}">
                                     <a href="{{ route('pets') }}">Tu Compañero Ideal</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
