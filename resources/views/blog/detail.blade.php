@@ -81,8 +81,8 @@
                             @if (!Auth::check())
                                 <div class="sidebar__single sidebar__search">
                                     <form action="#" class="sidebar__search-form">
-                                        <input type="search" placeholder="Buscar">
-                                        <button type="submit"><i class="icon-magnifying-glass"></i></button>
+                                        <input type="search" placeholder="Suscríbete, ingresa tu email">
+                                        <button type="submit"><i class="fa fa-paper-plane"></i></button>
                                     </form>
                                 </div>
                             @else
