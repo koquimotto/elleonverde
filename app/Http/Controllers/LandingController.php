@@ -34,7 +34,7 @@ class LandingController extends Controller
         $last_posts = Post::orderBy('id', 'desc')->take(3)->get();
         $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
         $comment_number = Comment::where('post_id', $post->id)->count();
-        return view('landing.blogDetail')->with('last_posts', $last_posts)->with('post', $post)->with('comments', $comments)->with('comment_number', $comment_number);
+        return view('blog.detail')->with('last_posts', $last_posts)->with('post', $post)->with('comments', $comments)->with('comment_number', $comment_number);
     }
 
     public function vegetable_patch()

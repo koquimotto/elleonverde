@@ -12,9 +12,10 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($post_id)
     {
-        $comments = Comment::orderBy('id', 'desc')->get();
+        $comments = Comment::where('post_id',$post_id)
+                            ->orderBy('id', 'desc')->get();
         return $comments;
     }
 
@@ -34,12 +35,12 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$post_id)
     {
         $comment = new Comment;
         // $comment->user_id = $request->userIdTxt;
         // $comment->post_id = $request->postIdTxt;
-        $comment->post_id='1';
+        $comment->post_id=$post_id;
         $comment->name = $request->name;
         $comment->email = $request->email;
         $comment->state = 1;

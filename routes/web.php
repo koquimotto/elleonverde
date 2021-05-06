@@ -34,13 +34,13 @@ use App\Http\Controllers\TestController;
 Route::get('/', [LandingController::class, 'home'])->name('home');
 Route::get('/tienda-virtual', [LandingController::class, 'store'])->name('store');
 Route::get('/blog-verde', [LandingController::class, 'blog'])->name('blog');
-Route::get('/blog/{post}', [LandingController::class, 'show_blog'])->name('blog.show');
+Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');
 Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('vegetable.patch');
 Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('herbal');
 Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name('insectary');
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
-Route::post('/comentario/guardar', [CommentController::class, 'store'])->name('comment');
+Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
 
 Auth::routes();
 
@@ -60,7 +60,7 @@ Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_uploa
 Route::get('/test/uno', [TestController::class, 'uno'])->name('test.uno');
 Route::get('/test', [LandingController::class, 'test'])->name('test');
 Route::get('/testTwo', [PostController::class, 'index'])->name('post.index');
-Route::get('/comments',[CommentController::class, 'index']);
+Route::get('/comments/{post}',[CommentController::class, 'index']);
 
 
 

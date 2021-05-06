@@ -20,7 +20,7 @@
                     </form>
 
                     <div class="topbar-one__middle">
-                        <a href="{{ route('home') }}" class="main-nav__logo">
+                        <a href="https://elleonverde.com" class="main-nav__logo">
                             <img src="{{ asset('assets/images/resources/logo-el-leon-verde.png') }}" class="main-logo" alt="Awesome Image" />
                         </a>
                     </div>

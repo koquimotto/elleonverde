@@ -45,9 +45,13 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($post)
     {
-        //
+        $post = Post::where('slug', $post)->first();
+        $last_posts = Post::orderBy('id', 'desc')->take(3)->get();
+        // $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
+        // $comment_number = Comment::where('post_id', $post->id)->count();
+        return view('blog.detail')->with('last_posts', $last_posts)->with('post', $post);
     }
 
     /**

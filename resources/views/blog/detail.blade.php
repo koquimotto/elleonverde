@@ -44,75 +44,13 @@
         <section class="news_detail" style="padding:30px 0 120px">
             <div class="container">
                 <div class="row">
+                    
                     <div class="col-xl-8 col-lg-7">
                         <div class="news_detail_left">
-                            <div class="news_detail_image_box">
-                                <img src="{{ asset('uploads/images/'.$images->first()->file_name) }}" alt="">
-                                <div class="news_detail_date_box">
-                                    <p>{{ $post->created_at->format('M d, Y') }}</p>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled news_detail__meta">
-                                <li><a href="#"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
-                                <li><a href="#"><i class="far fa-comments"></i>
-                                     <?php
-                                     $count = App\Models\Comment::where('post_id', $post->id)->count();
-                                        if ($count==0){
-                                            echo 'Sin Comentarios';
-                                        } elseif ($count==1) {
-                                            echo '01 Comentario';
-                                        }elseif($count > 9){
-                                                echo $count.' Comentarios';
-                                        }else{
-                                            echo '0'.$count.' Comentarios';
-                                        }
-                                    ?>
-                                    </a>
-                                </li>
-                                @if(Auth::check())
-                                <li><a href="{{ route('auth.edit_publish',$post->slug) }}"><i class="far fa-edit"></i> Editar</a></li>
-                                @endif
-                            </ul>
-                            <div class="news_detail_content">
-                                <h2>{{$post->title}}</h2>
-                                
-                                <!-- Load Facebook SDK for JavaScript -->
+                            <div id="app"> 
                                 <div id="fb-root"></div>
-                                <script>(function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));
-                                </script>
-                                        {!! $post->content !!}                           
-                            </div>
-                            <div class="news_detail__bottom">
-                                <p class="news_detail__tags">
-                                    <span>Etiquetas:</span>
-                                    {{-- <a href="#">Agriculture,</a>
-                                    <a href="#">Food,</a>
-                                    <a href="#">Economy</a> --}}
-                                </p>
-                                <div class="news_detail__social-list">
-                                    <div>
-                                        <a style="background-color:#fff;" href="https://api.whatsapp.com/send?text={{ $post->title }} https://elleonverde.com/blog/{{ $post->slug }}">
-                                            <img style="width:96px; padding-top:6px;padding-right:28px" src="{{ asset('assets/images/whatsapp-share-button-el-leon-verde.png') }}" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- Your share button code -->
-                                    <div class="fb-share-button" 
-                                    data-href="https://elleonverde.com/blog/{{ $post->slug }}" 
-                                    data-layout="button_count" data-size="large">
-                                    </div>                                   
-                                    
-                                    {{-- <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a> --}}
-                                </div>
-                            </div>
+                            <!-- Load Facebook SDK for JavaScript -->
+                            
                             {{-- <div class="author-one">
                                 <div class="author-one__image">
                                     <img src="assets/images/blog/author-1-1.jpg" alt="">
@@ -124,13 +62,20 @@
                                         remaining unchanged. It was popularised in the sheets containing.</p>
                                 </div>
                             </div> --}}
-                            <br>
                             
-                            <div id="app">
-                                <formcomment-component />
+                            
+                                <input id="postImage" type="hidden" value="{{$images->first()->file_name}}">
+                                <input id="postId" type="hidden" value="{{ $post->id }}">
+                                <input id="postDate" type="hidden" value="{{ $post->created_at->format('M d, Y') }}">
+                                <input id="userName" type="hidden" value="{{ $post->user->name }}">
+                                <input id="postTitle" type="hidden" value="{{ $post->title }}">
+                                <input id="postContent" type="hidden" value="{{ $post->content }}">
+                                <input id="postSlug" type="hidden" value="{{ $post->slug }}">
+                                <post-component />
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-xl-4 col-lg-5">
                         <div class="sidebar">
                             @if (!Auth::check())
@@ -204,4 +149,14 @@
 
 @section('scripts')
         <script src="{{ asset('js/app.js') }}"></script>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+
+        </script>
 @endsection
