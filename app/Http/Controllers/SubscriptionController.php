@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Post;
+use Illuminate\Support\Facades\Mail;
+use App\Models\Subscription;
+use App\Mail\SubscriptionMail;
 
-class PostController extends Controller
+class SubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::all();
-        dd($post);
+        //
     }
 
     /**
@@ -36,7 +37,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $subscription = new Subscription;
+        $subscription->email = $request->email;
+        $subscription->state = 1;
+        $subscription->save();
+
+        $this->sendEmail($subscription->email);
+
+        return $subscription;
     }
 
     /**
@@ -45,13 +54,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($post)
+    public function show($id)
     {
-        $post = Post::where('slug', $post)->first();
-        $last_posts = Post::orderBy('id', 'desc')->take(4)->get();
-        // $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
-        // $comment_number = Comment::where('post_id', $post->id)->count();
-        return view('posts.index')->with('last_posts', $last_posts)->with('post', $post);
+        //
     }
 
     /**
@@ -86,5 +91,17 @@ class PostController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function sendEmail($email){
+        $details=[
+            'title' => 'Cooreo de el león verde a su amigo luis',
+            'body' => 'Este es un correo de bienvenida'
+        ];
+
+        Mail::to($email)->send(new SubscriptionMail($details));
+        return 'Correo enviado';
+
     }
 }

@@ -6,6 +6,8 @@
 
 require('./bootstrap');
 
+window.Swal = require('sweetalert2');
+
 window.Vue = require('vue').default;
 
 /**
@@ -21,6 +23,7 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('post-component', require('./components/PostComponent.vue').default);
+Vue.component('subscribe-component', require('./components/posts/SubscribeComponent.vue').default);
 // Vue.component('countcomment-component', require('./components/comments/CountComponent.vue').default);
 
 /**

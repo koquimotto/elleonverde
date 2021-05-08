@@ -17,7 +17,16 @@
 	<meta name="author" content="GLOOBAL TIC INGENIEROS">
     <title>@yield('title','El León Verde')</title>
     <!-- title -->
-    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCCKEVCDX3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BCCKEVCDX3');
+    </script>
     
     {{-- Adsense --}}
     <script data-ad-client="ca-pub-9584588755093470" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -134,6 +143,8 @@
     <!-- template scripts -->
     <script src="{{ asset('assets/js/theme.js') }}"></script>
     <script src="{{ asset('assets/js/el-leon-verde.js') }}"></script>
+
+    <script src="{{ asset('js/app.js') }}"></script>
     
     @yield('scripts')
 

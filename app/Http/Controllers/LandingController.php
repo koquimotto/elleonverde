@@ -13,7 +13,7 @@ class LandingController extends Controller
 {
     public function home()
     {
-        $posts = Post::orderBy('id', 'desc')->get();
+        $posts = Post::orderBy('id', 'desc')->take(8)->get();
         return view('landing.home')->with('posts', $posts);
     }
 

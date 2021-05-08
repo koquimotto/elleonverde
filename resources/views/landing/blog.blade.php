@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="blog_two" style="padding: 70px 0 120px;">
+<div class="blog_two" style="padding: 40px 0 120px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="col-xl-4" style="text-align: right;">
                             <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
-                                <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 90%;">
+                                <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 95%; margin-bottom: 20px">
                             </a>
                         </div>
                 </div>

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Artisan;
 use Intervention\Image\Facades\Image;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\SubscriptionController;
 
 
 /*
@@ -66,6 +67,14 @@ Route::get('/comments/{post}',[CommentController::class, 'index']);
 
 // Mantenice
 Route::get('/comments/count/{post}', [CommentController::class, 'count']);
+
+
+// Subscritions
+Route::post('/subscribe/store',[SubscriptionController::class, 'store']);
+
+
+// Enviar mensaje
+// Route::get('/send-mail/{email}', [SubscriptionController::class, 'sendEmail']);
 
 
 

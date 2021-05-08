@@ -42,12 +42,10 @@
 
 @section('content')
         <section class="news_detail" style="padding:30px 0 120px">
-            <div class="container">
+            <div id="app" class="container">
                 <div class="row">
-                    
                     <div class="col-xl-8 col-lg-7">
                         <div class="news_detail_left">
-                            <div id="app"> 
                                 <div id="fb-root"></div>
                             <!-- Load Facebook SDK for JavaScript -->
                             
@@ -72,18 +70,15 @@
                                 <input id="postContent" type="hidden" value="{{ $post->content }}">
                                 <input id="postSlug" type="hidden" value="{{ $post->slug }}">
                                 <post-component />
-                            </div>
                         </div>
                     </div>
                     
                     <div class="col-xl-4 col-lg-5">
                         <div class="sidebar">
+                            
                             @if (!Auth::check())
                                 <div class="sidebar__single sidebar__search">
-                                    <form action="#" class="sidebar__search-form">
-                                        <input type="search" placeholder="Suscríbete, ingresa tu email" style="width:75%">
-                                        <button type="submit"><i class="fa fa-paper-plane"></i></button>
-                                    </form>
+                                    <subscribe-component />
                                 </div>
                             @else
                                 <div class="service_details_left">
@@ -148,7 +143,6 @@
 
 
 @section('scripts')
-        <script src="{{ asset('js/app.js') }}"></script>
         <script>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];

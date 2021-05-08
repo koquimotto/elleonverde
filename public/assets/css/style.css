@@ -5274,7 +5274,8 @@ h6 {
 }
 .blog_two .block-title {
     float: left;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
+    margin-bottom: 10px;
 }
 .all_posts_btn {
     float: right;
@@ -7362,7 +7363,7 @@ h6 {
 .sidebar__post {
     position: relative;
     display: block;
-    padding: 44px 50px 50px;
+    padding: 30px 40px 40px;
     background: #f5f0e9;
 }
 .sidebar__post-list {
@@ -7374,8 +7375,8 @@ h6 {
     -webkit-box-align: center;
     align-items: center;
     border-bottom: 1px solid #ffffff;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .sidebar__post-list li:last-child {
     border-bottom: none;
@@ -9961,4 +9962,18 @@ h6 {
     display: block;
     height: 560px;
     z-index: 10;
+}
+
+
+
+.sidebar__search-form input[type="email"] {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--thm-black);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 50px;
+    height: 70px;
 }
