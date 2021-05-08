@@ -30,6 +30,6 @@ class SubscriptionMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Prueba de correo de bienvenida')->view('tests.email');
+        return $this->subject('Gracias por suscribirte al León Verde')->view('tests.email');
     }
 }

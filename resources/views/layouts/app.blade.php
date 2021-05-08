@@ -71,7 +71,7 @@
         <img src="{{ asset('assets/images/loader.png') }}" class="preloader__image" alt="">
     </div><!-- /.preloader -->
 
-    <div class="page-wrapper">
+    <div id="app" class="page-wrapper">
 
 
         <div class="site-header__header-one-wrap" style="background-image: url({{ asset('assets/images/backgrounds/head-el-leon-verde.jpg') }});" >
