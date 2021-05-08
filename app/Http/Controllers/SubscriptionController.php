@@ -96,8 +96,8 @@ class SubscriptionController extends Controller
 
     public function sendEmail($email){
         $details=[
-            'title' => 'Cooreo de el león verde a su amigo luis',
-            'body' => 'Este es un correo de bienvenida'
+            'title' => 'Gracias por suscribirte a nuestro increible blog',
+            'body' => 'El León Verde, te da la más cordial bienvenida, te mantendremos al tanto de nuestras últimas publicaciones.'
         ];
 
         Mail::to($email)->send(new SubscriptionMail($details));
