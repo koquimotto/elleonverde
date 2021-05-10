@@ -11,13 +11,7 @@
                             <div class="footer-widget_about_text">
                                 <p>Suscríbete en nuestra página web, ingresa tu correo electrónico y haz clic en el botón para que puedas enterarte de nuestras últimas publicaciones. </p>
                             </div>
-                            <form action="{{ route('subscribe') }}" method="POST">
-                                @csrf
-                                <div class="footer_input-box">
-                                    <input name="email_subs" type="Email" placeholder="Suscríbete, ingresa tu e-mail">
-                                    <button type="submit" class="button"><i class="fa fa-check"></i></button>
-                                </div>
-                            </form>
+                            <subscribefooter-component />
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-6">

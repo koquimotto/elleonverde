@@ -42,7 +42,7 @@
 
 @section('content')
         <section class="news_detail" style="padding:30px 0 120px">
-            <div id="app" class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-7">
                         <div class="news_detail_left">
