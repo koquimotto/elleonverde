@@ -25,7 +25,7 @@ class LandingController extends Controller
     public function blog()
     {
         $posts = Post::orderBy('id', 'desc')->get();
-        return view('landing.blog')->with('posts', $posts);
+        return view('blog.index')->with('posts', $posts);
     }
 
     public function show_blog($post)

@@ -162,3 +162,77 @@
 <div class="embed-responsive embed-responsive-16by9">
 	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XWsc9tRXXzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+
+
+
+<h1><span style="color:#f1c40f">De los Andes al Mundo Entero.</span></h1>
+
+<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365209-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
+
+<p>La papa (Solanum tuberosum) es una planta originaria de Sudam&eacute;rica y cultivada por todo el mundo por sus tub&eacute;rculos comestibles. Perteneciente a la familia de las solan&aacute;ceas fue domesticada en el altiplano andino peruano por sus habitantes hace unos 7000 a&ntilde;os, y m&aacute;s tarde fue llevada a Europa por los conquistadores. Su consumo fue creciendo y su cultivo se expandi&oacute; a todo el mundo hasta convertirse hoy d&iacute;a en uno de los principales alimentos para el ser humano.</p>
+
+<p>En Per&uacute; se encuentran alrededor de 3000 de las 5000 mil especies. La papa uno de los aportes de este pa&iacute;s al mundo. Ha sido cultivada desde hace 8000 a&ntilde;os en Am&eacute;rica del Sur y era alimento importante de los Incas quienes desarrollaron t&eacute;cnicas avanzadas para almacenarlas. Es hoy en d&iacute;a un producto que por su versatilidad se encuentra en las recetas de las m&aacute;s variadas cocinas a nivel mundial.</p>
+
+<p>El origen de las papas cultivadas se remonta a las variedades nativas desarrolladas por los agricultores precolombinos a partir de especies que crec&iacute;an en estado silvestre. La evidencia arqueol&oacute;gica sit&uacute;a los primeros indicios del cultivo alrededor del lago Titicaca hace unos 7000 a&ntilde;os, centrado en un grupo de aproximadamente 20 especies.</p>
+
+<p>&nbsp;</p>
+
+<h1><span style="color:#f1c40f">La siembra.</span></h1>
+
+<p>Si quieres empezar un huerto en casa, las papas son una excelente opci&oacute;n, es muy f&aacute;cil de aprender como sembrar papa en casa. Solo debes estudiar las necesidades de este tub&eacute;rculo, que por lo general son muy b&aacute;sicas, y proporcionarle todo lo necesario para su crecimiento. En este caso, lo m&aacute;s com&uacute;n es aprender a plantar papa en poco espacio, es la mejor alternativa para los huertos urbanos.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365255-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><strong>Selecciona una variedad de papa</strong>. Lo primero que debes tener en cuenta es que hay muchas variedades de papas, si eres principiante en huertos en casa, lo mejor ser&aacute; iniciar con productos locales. Las necesidades de estos tipos de papa se adaptan muy bien a las condiciones clim&aacute;ticas de tu localidad.</li>
+	<li><strong>Prepara las papas para sembrarlas</strong>. Lo primero es cortar la papa en cuatros partes iguales. Debes asegurarte que en cada uno de ellos se encuentren peque&ntilde;os agujeros donde comienza a germinarse la papa. Cada uno de los trozos debes dejarlos al sol, durante uno o dos d&iacute;as. Es importante no agregar agua, puesto que la papa contiene la humedad necesaria para comenzar a germinar.</li>
+	<li><strong>El momento de La siembra.</strong> La papa comenzar&aacute; a tener sus primeros brotes, lo cual es indicativo de que ya se puede sembrar en el huerto. Lo m&aacute;s indicado es que dichos brotes ya alcancen al menos un cent&iacute;metro. Debes dejar s&oacute;lo dos o tres y retirar el resto. Si vas a sembrar papas en macetas o en una parcela de tierra, en ambos casos debes plantarla a 10 cent&iacute;metros de profundidad.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h1><span style="color:#f1c40f">Tips durante el crecimiento.</span></h1>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li><strong>Debes regar solo para mantener el sustrato h&uacute;medo</strong>. Mucha o poca agua pondr&aacute; en riesgo tus plantas. Comprueba la humedad del suelo regularmente metiendo la mano y escarbando unos cent&iacute;metros.</li>
+	<li><strong>La papa es una planta que necesita bastante luz</strong>. Aseg&uacute;rate que reciba muchas horas de sol al d&iacute;a, eso garantizar&aacute; una buena cosecha.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h1><span style="color:#f1c40f">El aporque</span></h1>
+
+<p><strong>Es una t&eacute;cnica agr&iacute;cola</strong> que consiste en acumular tierra en la base del tronco o tallo de una planta con el objetivo de que queden protegidos; incluso ayuda a facilitar el riego e impide el exceso de agua.</p>
+
+<p>Para llevar a cabo esta pr&aacute;ctica, <strong>el cultivo debe tener cierta altura</strong>. Por ejemplo, en el caso de la papa, el aporcado se realiza antes que la planta supere los 15 cent&iacute;metros de altura. De esta manera se incrementar&aacute; el n&uacute;mero de ra&iacute;ces por planta. En las ra&iacute;ces se encuentra el tub&eacute;rculo, a m&aacute;s ra&iacute;ces mejor cosecha.</p>
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HR_niWBuiTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><span style="color:#f1c40f">La cosecha</span></h1>
+
+<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620366022-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
+
+<p>Una forma de reconocer que la planta est&aacute; lista para la cosecha <strong>es cuando comienza a morir.</strong> Es probable que esto suceda luego entre 7 y 16 semanas luego de la siembra y depender&aacute; del tipo de papa, el lugar de la siembra, el riego y hasta el clima de tu localidad.</p>
+
+<p>Hay una t&eacute;cnica que es utilizada en varias partes del mundo que consiste en cortar el follaje de la papa unos 10 d&iacute;as antes de su cosecha. Se afirma que ayuda a la maduraci&oacute;n del tub&eacute;rculo.</p>
+
+<p>Para cosechar simplemente se debe <strong>despegar los tub&eacute;rculos de las ra&iacute;ces </strong>con las manos o con la ayuda de un rastrillo o un pico y obtendr&aacute;s papas ya maduras.</p>
+
+<p>Aqu&iacute; un video de la cosecha de papas del Le&oacute;n Verde.</p>
+
+<p>&nbsp;</p>
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XWsc9tRXXzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+

@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Models\Subscription;
-use App\Mail\SubscriptionMail;
 
-class SubscriptionController extends Controller
+class YoutubeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +13,7 @@ class SubscriptionController extends Controller
      */
     public function index()
     {
-        //
+        return view('youtube.index');
     }
 
     /**
@@ -37,15 +34,7 @@ class SubscriptionController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $subscription = new Subscription;
-        $subscription->email = $request->email;
-        $subscription->state = 1;
-        $subscription->save();
-
-        $this->sendEmail($subscription->email);
-
-        return $subscription;
+        //
     }
 
     /**
@@ -91,18 +80,5 @@ class SubscriptionController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-
-    public function sendEmail($email){
-        $details=[
-            'title' => 'Bienvenido al Boletín de El León Verde',
-            'body' => 'Por este medio quiero mantenerte al tanto del nuevo contenido que vaya generando. 
-            Nuevos Artículos, Historias y Especialmente los videos que subimos a YouTube para que no te pierdas ninguno.'
-        ];
-
-        Mail::to($email)->send(new SubscriptionMail($details));
-        return 'Correo enviado';
-
     }
 }

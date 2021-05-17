@@ -10,7 +10,7 @@
                         @else
                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-power-off"></i> Salir</a>
                         
-                        <a href="{{ route('auth.list_publish') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Mis artículos</a>
+                        <a href="{{ route('auth.index') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Mis artículos</a>
                         @endif
 
                     </div>

@@ -41,13 +41,10 @@
                                 @endphp
                                     
                                 @foreach ($footer_posts as $footer_post)
-                                @php
-                                    $images_thumbs=$footer_post->files()->where('type','image')->get();
-                                @endphp
                                 <li>
                                     <div class="footer-widget__news_image">
                                         <a href="{{ route('blog.show',$footer_post->slug) }}">
-                                        <img src="{{ asset('uploads/images/thumbs/'.$images_thumbs->first()->file_name) }}" alt="El León Verde">
+                                        <img src="{{ asset('uploads/images/thumbs/'.$footer_post->image) }}" alt="El León Verde">
                                         </a>
                                     </div>
                                     <div class="footer-widget__news_text">

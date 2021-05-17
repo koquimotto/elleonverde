@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 use App\Models\Attached_file;
 use Intervention\Image\Facades\Image;
 use Auth;
@@ -17,6 +18,27 @@ class AuthenticatedController extends Controller
         // Indicar que estas funciones solo se ejecuten con usuarios autenticados
         $this->middleware('auth');
         // $this->middleware('auth')->only(['publish','do_publish']);
+    }
+
+    public function index(){
+        return view('authenticated.index');
+    }
+
+    public function list($id)
+    {
+        // $posts = Post::where('user_id', $id)
+        //             ->where('state',1)
+        //             ->orderBy('id', 'desc')->get();
+        $posts = DB::table('posts')
+                        ->leftJoin('comments','posts.id','comments.post_id')
+                        ->select('posts.id','posts.title','posts.slug','posts.image', 'posts.keywords', 'posts.description', DB::raw('COUNT(comments.id) as total_coments'))
+                        ->where('posts.user_id', $id)
+                        ->where('posts.state',1)
+                        ->groupBy('posts.id','posts.title','posts.slug','posts.image','posts.keywords', 'posts.description')
+                        ->orderBy('posts.id', 'desc')
+                        ->get();
+                        // ->select('title')
+        return $posts;
     }
 
     // Vista de crear un artículo
@@ -44,11 +66,23 @@ class AuthenticatedController extends Controller
         $post->slug = $this->do_slug($request->title_txt);
         $post->content = $request->content_txt;
         $post->state = 1;
+
+        // Upload image
+        $image_name = $post->slug . '-el-leon-verde.' . $request->image->extension();
+        $image = Image::make($request->image->getRealPath());
+        $image->save(public_path('uploads/images/'.$image_name));
+        // $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
+        $image->resize(1200, 628)->save(public_path('uploads/images/facebook/'. $image_name));
+        $image->resize(370, 230)->save(public_path('uploads/images/medium/'. $image_name));
+        $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/'. $image_name));
+        $image->resize(50, 40)->save(public_path('uploads/images/thumbs/'. $image_name));
+        
+        $post->image = $image_name;
         $post->save();
         
-        $this->upload_image($request->image, $post->slug, $post->id);
+        // $this->upload_image($request->image, $post->slug, $post->id);
 
-        return redirect('/colaborador/listar');
+        return redirect('/colaborador/articulos');
         // }
             
         // return redirect('/colaborador/publicar');
@@ -81,10 +115,27 @@ class AuthenticatedController extends Controller
         $post->content = $request->content_txt;
         $post->state = 1;
         if ($request->hasFile('image')) {
-            $this->update_image($request->image, $post->slug, $request->fileId);
+            // Upload image
+            $image_name = time().'-'.$post->slug . '-el-leon-verde.' . $request->image->extension();
+            $image = Image::make($request->image->getRealPath());
+            $image->save(public_path('uploads/images/'.$image_name));
+            // $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
+            $image->resize(1200, 628)->save(public_path('uploads/images/facebook/'. $image_name));
+            $image->resize(370, 230)->save(public_path('uploads/images/medium/'. $image_name));
+            $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/'. $image_name));
+            $image->resize(50, 40)->save(public_path('uploads/images/thumbs/'. $image_name));
+            
+            $post->image = $image_name;
         }
         $post->save();
-        return redirect('/colaborador/listar');
+        return redirect('/colaborador/articulos');
+    }
+
+    public function updateMeta($id, Request $request){
+        $post = Post::find($id);
+        $post->keywords = $request->keywords;
+        $post->description = $request->description;
+        $post->save();
     }
 
     public function list_publish()
@@ -95,16 +146,9 @@ class AuthenticatedController extends Controller
         return view('authenticated.publish_list')->with('posts', $posts);
     }
 
-    public function upload_image($image_txt, $slug_txt, $post_id)
-    {
-        $image_name = $slug_txt . '-el-leon-verde.' . $image_txt->extension();
-        $image = Image::make($image_txt->getRealPath());
-        $image->save(public_path('uploads/images/'.$image_name));
-        // $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
-        $image->resize(1200, 628)->save(public_path('uploads/images/facebook/'. $image_name));
-        $image->resize(370, 230)->save(public_path('uploads/images/medium/'. $image_name));
-        $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/'. $image_name));
-        $image->resize(50, 40)->save(public_path('uploads/images/thumbs/'. $image_name));
+    // public function upload_image($image_txt, $slug_txt, $post_id)
+    // {
+        
         // $image->resize(370, 309)->save(public_path('uploads/images/medium/'. $image_name));
         // $image->resize(80, 77)->save(public_path('uploads/images/thumbnail/'. $image_name));
         // $image->resize(50, 50)->save(public_path('uploads/images/thumbs/'. $image_name));
@@ -113,31 +157,31 @@ class AuthenticatedController extends Controller
         // $image_txt->move(public_path('uploads/images/thumbs'), $image_name);
         // $image_txt->move(public_path('uploads/images/medium'), $image_name);
         // $image_txt->move(public_path('uploads/images/facebook'), $image_name);
-        $file = new Attached_file();
-        $file->file_name = $image_name;
-        $file->type = 'image';
-        $file->post_id = $post_id;
-        $file->save();
+    //     $file = new Attached_file();
+    //     $file->file_name = $image_name;
+    //     $file->type = 'image';
+    //     $file->post_id = $post_id;
+    //     $file->save();
 
-        return $image_name;
-    }
+    //     return $image_name;
+    // }
 
-    public function update_image($image_txt, $slug_txt, $file_id)
-    {
-        $image_name = time().'-'.$slug_txt . '-el-leon-verde.' . $image_txt->extension();
-        $image = Image::make($image_txt->getRealPath());
-        $image->save(public_path('uploads/images/' . $image_name));
-        $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
-        $image->resize(370, 230)->save(public_path('uploads/images/medium/' . $image_name));
-        $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/' . $image_name));
-        $image->resize(50, 40)->save(public_path('uploads/images/thumbs/' . $image_name));
+    // public function update_image($image_txt, $slug_txt, $file_id)
+    // {
+    //     $image_name = time().'-'.$slug_txt . '-el-leon-verde.' . $image_txt->extension();
+    //     $image = Image::make($image_txt->getRealPath());
+    //     $image->save(public_path('uploads/images/' . $image_name));
+    //     $image->resize(1200, 628)->save(public_path('uploads/images/facebook/' . $image_name));
+    //     $image->resize(370, 230)->save(public_path('uploads/images/medium/' . $image_name));
+    //     $image->resize(80, 55)->save(public_path('uploads/images/thumbnail/' . $image_name));
+    //     $image->resize(50, 40)->save(public_path('uploads/images/thumbs/' . $image_name));
 
-        $file = Attached_file::find($file_id);
-        $file->file_name = $image_name;
-        $file->save();
+    //     $file = Attached_file::find($file_id);
+    //     $file->file_name = $image_name;
+    //     $file->save();
 
-        return $image_name;
-    }
+    //     return $image_name;
+    // }
 
     public function ckeditor_upload(Request $request)
     {

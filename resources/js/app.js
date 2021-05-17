@@ -25,6 +25,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('post-component', require('./components/PostComponent.vue').default);
 Vue.component('subscribe-component', require('./components/posts/SubscribeComponent.vue').default);
 Vue.component('subscribefooter-component', require('./components/posts/SubscribefooterComponent.vue').default);
+Vue.component('listpostsauth-component', require('./components/authenticated/ListpostsComponent.vue').default);
 // Vue.component('countcomment-component', require('./components/comments/CountComponent.vue').default);
 
 /**

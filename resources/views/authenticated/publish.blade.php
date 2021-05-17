@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="col-lg-12" style="text-align: right">
                                             <br>
-                                            <a class="thm-btn" style="background: #f5f0e9; color:#404a3d" href="{{ route('auth.list_publish') }}">Cancelar</a>
+                                            <a class="thm-btn" style="background: #f5f0e9; color:#404a3d" href="{{ route('auth.index') }}">Cancelar</a>
                                             <button class="thm-btn" type="submit">Publicar artículo</button>
                                         </div>
                                     </div>

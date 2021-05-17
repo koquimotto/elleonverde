@@ -64,18 +64,36 @@
                 </form>
         </div>
         <hr>
-            
-            <div class="comment-one" >
-                <div class="comment-one__single" v-for="(item, index) in comments" :key="index">
-                    <div class="comment-one__image">
-                        <img src="/assets/images/avatar-el-leon-verde.png" alt="">
+            <div v-for="(comment, index) in comments" :key="index">
+                <div class="comment-one" >
+                    <div class="comment-one__single">
+                        <div class="comment-one__image">
+                            <img src="/assets/images/avatar-el-leon-verde.png" alt="">
+                        </div>
+                        <div class="comment-one__content">
+                            <h3 class="title-style">{{ comment.name }}</h3>
+                            <p> {{ comment.comment }} </p>
+                            <!-- Boton responder -->
+                            
+                            <input id="replyID" type="hidden" v-bind:value="comment.id">          
+                            <button type="button" class="thm-btn comment-one__btn" data-toggle="modal" data-target="#staticBackdrop">Responder</button>
+                            <!-- End boton responder -->  
+                        </div>
                     </div>
-                    <div class="comment-one__content">
-                        <h3 class="title-style">{{ item.name }}</h3>
-                        <p> {{ item.comment }} </p>
-                        <!-- Boton responder -->               
-                        <button type="button" class="thm-btn comment-one__btn" data-toggle="modal" data-target="#staticBackdrop">Responder</button>
-                        <!-- End boton responder -->  
+                </div>
+
+                <div class="comment-two">
+                    <div class="comment-one__single" v-for="(reply, index) in commentsReply" :key="index">
+                        <div class="comment-one__image">
+                            <img src="/assets/images/avatar-el-leon-verde.png" alt="">
+                        </div>
+                        <div class="comment-one__content">
+                            <h3 class="title-style">{{ reply.name }}</h3>
+                            <p> {{ reply.comment }} </p>
+                            <!-- Boton responder -->               
+                            <button type="button" class="thm-btn comment-one__btn" data-toggle="modal" data-target="#staticBackdrop">Responder</button>
+                            <!-- End boton responder -->  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,6 +116,9 @@ export default {
             title: $('#postTitle').val(),
             detail: $('#postContent').val(),
             slug: $('#postSlug').val(),
+            
+            commentsReply: [],
+            idReply: 0,
         }
     },
     // Traer comentarios
@@ -107,6 +128,7 @@ export default {
         //     this.comments = res.data;
         // })
         this.listar();
+        this.listarReply();
         this.totalComments();
     },
 
@@ -114,6 +136,11 @@ export default {
         async listar(){
             const res = await axios.get('/comments/'+this.idPost);
             this.comments = res.data;
+        },
+
+        async listarReply(){
+            const res = await axios.get('/replies/'+this.idReply);
+            this.commentsReply = res.data;
         },
 
         agregar(){

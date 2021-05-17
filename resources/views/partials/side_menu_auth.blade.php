@@ -1,6 +1,6 @@
                         <div class="service_details_left">
                             <ul class="list-unstyled service_all_list">
-                                <li class="{{ Request::is('colaborador/lis*') ? 'active' : '' }}"><a href="{{ route('auth.list_publish') }}">Mis artículos</a></li>
+                                <li class="{{ Request::is('colaborador/arti*') ? 'active' : '' }}"><a href="{{ route('auth.index') }}">Mis artículos</a></li>
                                 <li class="{{ Request::is('colaborador/publ*') ? 'active' : '' }}"><a href="{{ route('auth.publish') }}">Nuevo artículo</a></li>
                                 {{-- <li><a href="#">Comentarios</a></li>
                                 <li><a href="#">Mi perfil</a></li> --}}

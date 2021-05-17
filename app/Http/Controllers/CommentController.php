@@ -12,11 +12,24 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function list(){
+        $comments = Comment::all();
+        return $comments;
+    }
+
     public function index($post_id)
     {
         $comments = Comment::where('post_id',$post_id)
+                            ->where('reply',null)
                             ->orderBy('id', 'desc')->get();
         return $comments;
+    }
+
+    public function reply($comment)
+    {
+        $replies = Comment::where('reply',$comment)
+                            ->orderBy('id', 'desc')->get();
+        return $replies;
     }
 
     /**
@@ -100,7 +113,9 @@ class CommentController extends Controller
     }
 
     public function count($post_id){
-        $countComment = Comment::where('post_id', $post_id)->count();
+        $countComment = Comment::where('post_id', $post_id)
+                                // ->where('reply', null)                           
+                                ->count();
         return $countComment;
     }
 }

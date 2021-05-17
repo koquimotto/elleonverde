@@ -40,11 +40,8 @@
 
                                         </div>
                                         <div class="col-lg-6">
-                                            @php
-                                                $images=$post->files()->where('type','image')->get();
-                                            @endphp
-                                            <img src="{{ asset('uploads/images/medium/'.$images->first()->file_name) }}" alt="">
-                                            <input type="hidden" name="fileId" value="{{ $images->first()->id }}">
+                                            <img src="{{ asset('uploads/images/medium/'.$post->image) }}" alt="">
+                                            <input type="hidden" name="fileId" value="{{ $post->image }}">
                                         </div>
                                         <div class="col-lg-12">
                                             <br>
@@ -52,7 +49,7 @@
                                         </div>
                                         <div class="col-lg-12" style="text-align: right">
                                             <br>
-                                            <a class="thm-btn" style="background: #f5f0e9; color:#404a3d" href="{{ route('auth.list_publish') }}">Cancelar</a>
+                                            <a class="thm-btn" style="background: #f5f0e9; color:#404a3d" href="{{ route('auth.index') }}">Cancelar</a>
                                             <button class="thm-btn" type="submit">Actualizar artículo</button>
                                         </div>
                                     </div>

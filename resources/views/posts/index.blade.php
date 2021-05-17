@@ -1,38 +1,19 @@
 @extends('layouts.app')
-    <?php
-        $images=$post->files()->where('type','image')->get();
-    ?>
-@section('url')
+@section('meta')
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{-- meta dinámico --}}
     <meta property="og:url" content="https://elleonverde.com/blog/{{ $post->slug }}" />
-@endsection
-
-@section('type')
     <meta property="og:type" content="El León Verde" />
-@endsection
-
-@section('title_meta')
     <meta property="og:title" content="{{ $post->title }} - El León Verde" />
-@endsection
-
-    {{-- @php
-        $content = $post->content;
-        $content_alter = substr($content,3,100);    
-    @endphp --}}
-
-@section('description')
-        <meta property="og:description" content="El León verde busca crear una comunidad que intercambie conocimientos y experiencias diversas relacionadas al huerto rural, huerto urbano, agricultura, herbario virtual, insectario virtual, mascotas, crianza de animales, difusión de experiencias que ayuden a mejorar las buenas prácticas de convivencia con el medio ambiente.">
-@endsection
-
-@section('image')
-        <meta property="og:image" content="{{ asset('/uploads/images/facebook/'.$images->first()->file_name) }}">
-@endsection
-
-@section('site_name')
-        <meta property="og:site_name" content="El León Verde">
-@endsection
-
-@section('locale')
-        <meta property="og:locale" content="es_LA">
+    <meta property="og:description" content="{{ $post->description }}">
+    <meta property="og:image" content="https://elleonverde.com/uploads/images/facebook/{{ $post->image }}">
+    <meta property="og:site_name" content="El León Verde">
+    <meta property="og:locale" content="es_LA">
+    <meta name="keywords" content="{{ $post->keywords }}">
+    <meta name="author" content="GLOOBAL TIC INGENIEROS">
 @endsection
 
 @section('title', $post->title.' - El León Verde' )
@@ -62,7 +43,7 @@
                             </div> --}}
                             
                             
-                                <input id="postImage" type="hidden" value="{{$images->first()->file_name}}">
+                                <input id="postImage" type="hidden" value="{{$post->image}}">
                                 <input id="postId" type="hidden" value="{{ $post->id }}">
                                 <input id="postDate" type="hidden" value="{{ $post->created_at->format('M d, Y') }}">
                                 <input id="userName" type="hidden" value="{{ $post->user->name }}">
@@ -97,7 +78,7 @@
                                     <li>
                                         <div class="sidebar__post-image">
                                             <a href="{{ route('blog.show',$last_post->slug) }}">
-                                                <img src="{{ asset('uploads/images/thumbnail/'.$last_image->first()->file_name) }}" alt="">
+                                                <img src="{{ asset('uploads/images/thumbnail/'.$last_post->image) }}" alt="">
                                             </a>
                                         </div>
                                         <div class="sidebar__post-content">

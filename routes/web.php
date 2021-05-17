@@ -9,6 +9,7 @@ use Intervention\Image\Facades\Image;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\YoutubeController;
 
 
 /*
@@ -42,16 +43,21 @@ Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
+Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('youtube.index');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('auth.home');
 //Authenticated
-Route::get('/colaborador/listar', [AuthenticatedController::class, 'list_publish'])->name('auth.list_publish');
+Route::get('/colaborador/articulos', [AuthenticatedController::class, 'index'])->name('auth.index');
+Route::get('/auth/list/{id}',[AuthenticatedController::class, 'list'])->name('auth.list');
+
 Route::get('/colaborador/publicar', [AuthenticatedController::class, 'publish'])->name('auth.publish');
 Route::post('/colaborador/guardar', [AuthenticatedController::class, 'do_publish'])->name('auth.do_publish');
 Route::get('/colaborador/editar/{slug}', [AuthenticatedController::class, 'edit_publish'])->name('auth.edit_publish');
 Route::post('/colaborador/update/', [AuthenticatedController::class, 'update_publish'])->name('auth.update_publish');
+
+Route::post('/colaborador/update-meta/{idPost}', [AuthenticatedController::class, 'updateMeta'])->name('auth.updateMeta');
 
 //upload image in ckeditor
 Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');
@@ -62,11 +68,13 @@ Route::get('/test/uno', [TestController::class, 'uno'])->name('test.uno');
 Route::get('/test', [LandingController::class, 'test'])->name('test');
 Route::get('/testTwo', [PostController::class, 'index'])->name('post.index');
 Route::get('/comments/{post}',[CommentController::class, 'index']);
+Route::get('/replies/{comment}',[CommentController::class, 'reply']);
 
 
 
 // Mantenice
 Route::get('/comments/count/{post}', [CommentController::class, 'count']);
+Route::get('/comments', [CommentController::class, 'list']);
 
 
 // Subscritions
