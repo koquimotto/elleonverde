@@ -37,7 +37,7 @@
                         <div class="row">
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/COu9TbLKjGc/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/COu9TbLKjGc/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=COu9TbLKjGc" class="popup-video"><span
@@ -48,7 +48,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/FuGam-woMxw/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/FuGam-woMxw/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=FuGam-woMxw" class="popup-video"><span
@@ -59,7 +59,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/3qBeh-r3jz8/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/3qBeh-r3jz8/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=3qBeh-r3jz8" class="popup-video"><span
@@ -70,7 +70,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/NarBh18aYss/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/NarBh18aYss/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=NarBh18aYss" class="popup-video"><span
@@ -81,7 +81,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/fPslyTU7wnU/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/fPslyTU7wnU/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=fPslyTU7wnU" class="popup-video"><span
@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/LMKu9-J3U2A/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/LMKu9-J3U2A/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=LMKu9-J3U2A" class="popup-video"><span
@@ -103,7 +103,7 @@
                             </div> 
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/IGbxgn7HAxw/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/IGbxgn7HAxw/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=IGbxgn7HAxw" class="popup-video"><span
@@ -114,7 +114,7 @@
                             </div> 
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/ptEoBYQGDbg/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/ptEoBYQGDbg/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=ptEoBYQGDbg" class="popup-video"><span
@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/vHy4u3cuSSs/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/vHy4u3cuSSs/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=vHy4u3cuSSs" class="popup-video"><span
@@ -136,7 +136,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/n7zMzDZ-JQk/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/n7zMzDZ-JQk/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=n7zMzDZ-JQk" class="popup-video"><span
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/XWsc9tRXXzY/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/XWsc9tRXXzY/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=XWsc9tRXXzY" class="popup-video"><span
@@ -158,7 +158,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/DcVoX_zbWt0/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/DcVoX_zbWt0/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=DcVoX_zbWt0" class="popup-video"><span
@@ -169,7 +169,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/kNkMrSGlRhU/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/kNkMrSGlRhU/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=kNkMrSGlRhU" class="popup-video"><span
@@ -180,7 +180,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/yNFcbSi5eUM/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/yNFcbSi5eUM/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=yNFcbSi5eUM" class="popup-video"><span
@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/HR_niWBuiTo/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/HR_niWBuiTo/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=HR_niWBuiTo" class="popup-video"><span
@@ -202,7 +202,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/FoP4-jlBHxg/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/FoP4-jlBHxg/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=FoP4-jlBHxg" class="popup-video"><span
@@ -213,7 +213,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/DoVrmL_QXBI/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/DoVrmL_QXBI/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=DoVrmL_QXBI" class="popup-video"><span
@@ -224,7 +224,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/5xc0aaBzxrE/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/5xc0aaBzxrE/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=5xc0aaBzxrE" class="popup-video"><span
@@ -235,7 +235,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/E9Q25IMEwMU/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/E9Q25IMEwMU/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=E9Q25IMEwMU" class="popup-video"><span
@@ -246,7 +246,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/IvqsvxGvIAc/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/IvqsvxGvIAc/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=IvqsvxGvIAc" class="popup-video"><span
@@ -257,7 +257,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/vrzeWq39HwU/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/vrzeWq39HwU/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=vrzeWq39HwU" class="popup-video"><span
@@ -268,7 +268,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/l69dyDx05o4/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/l69dyDx05o4/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=l69dyDx05o4" class="popup-video"><span
@@ -279,7 +279,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/JDIkwu65vJY/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/JDIkwu65vJY/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=JDIkwu65vJY" class="popup-video"><span
@@ -290,7 +290,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/0NY7jlJKxMc/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/0NY7jlJKxMc/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=0NY7jlJKxMc" class="popup-video"><span
@@ -301,7 +301,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/0BPs8U-90X8/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/0BPs8U-90X8/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=0BPs8U-90X8" class="popup-video"><span
@@ -312,7 +312,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/IEGLpc6qkfY/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/IEGLpc6qkfY/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=IEGLpc6qkfY" class="popup-video"><span
@@ -323,7 +323,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/cw0unsxOKSo/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/cw0unsxOKSo/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=cw0unsxOKSo" class="popup-video"><span
@@ -334,7 +334,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/D-n1MdPlyOo/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/D-n1MdPlyOo/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=D-n1MdPlyOo" class="popup-video"><span
@@ -345,7 +345,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/bTMwj9kMP2g/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/bTMwj9kMP2g/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=bTMwj9kMP2g" class="popup-video"><span
@@ -356,7 +356,7 @@
                             </div>
                             <div class="col-md-4" style="padding-bottom: 20px">
                                 <div class="gallery_one_image">
-                                    <img src="http://img.youtube.com/vi/o-WTx9yUPdo/mqdefault.jpg">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/o-WTx9yUPdo/mqdefault.jpg">
                                     <div class="gallery_one_hover_box">
                                         <div class="gallery_one_icon">
                                             <a href="https://www.youtube.com/watch?v=o-WTx9yUPdo" class="popup-video"><span
