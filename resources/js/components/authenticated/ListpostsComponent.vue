@@ -14,7 +14,7 @@
                     <tbody>
                             <tr v-for="(post, index) in posts" :key="index">
                                 <td>
-                                <a v-bind:href="'/colaborador/editar/'+post.slug">
+                                <a v-bind:href="'/blog/'+post.slug">
                                     <img v-bind:src="'/uploads/images/thumbs/'+post.image" alt="El León Verde">
                                 </a>
                                 </td>
