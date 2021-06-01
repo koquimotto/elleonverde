@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Attached_file;
 
 class YoutubeController extends Controller
 {
@@ -13,7 +14,10 @@ class YoutubeController extends Controller
      */
     public function index()
     {
-        return view('youtube.index');
+        $videos = Attached_file::orderBy('id', 'desc')
+                                ->where('type','youtube')                            
+                                ->get();
+        return view('youtube.index')->with('videos',$videos);
     }
 
     /**

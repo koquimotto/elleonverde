@@ -16,7 +16,7 @@ class CreateAttachedFilesTable extends Migration
         Schema::create('attached_files', function (Blueprint $table) {
             $table->id();
             $table->string('file_name')->nullable();
-            $table->enum('type', array('image', 'video', 'pdf', 'url'));
+            $table->enum('type', array('image', 'video', 'pdf', 'url','youtube'));
             $table->unsignedBigInteger('post_id')->index()->nullable();
             // $table->bigInteger('advertisemen_id')->unsigned()->index()->nullable();
 

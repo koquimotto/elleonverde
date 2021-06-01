@@ -8,18 +8,28 @@ use App\Models\Post;
 use App\Models\User;
 use App\Models\Comment;
 use App\Models\Subscription;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\Attached_file;
 
 class LandingController extends Controller
 {
     public function home()
     {
         $posts = Post::orderBy('id', 'desc')->take(6)->get();
-        return view('landing.home')->with('posts', $posts);
+        $videos = Attached_file::orderBy('id', 'desc')
+                                ->where('type','youtube')                            
+                                ->take(7)
+                                ->get();
+        return view('landing.home')->with('posts', $posts)->with('videos',$videos);
     }
 
     public function store()
     {
-        return view('landing.store');
+        $products = Product::orderBy('id', 'desc')->get();
+        $categories = Category::where('section','product')
+                                ->orderBy('category')->get();
+        return view('store.index')->with('products',$products)->with('categories',$categories);
     }
 
     public function blog()

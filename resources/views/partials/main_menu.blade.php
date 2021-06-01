@@ -14,14 +14,14 @@
                                 <li class="{{ Request::is('/*') ? 'current' : '' }}">
                                     <a href="/">Principal</a>
                                 </li>
-                                {{-- <li class="{{ Request::is('tienda*') ? 'current' : '' }}">
+                                <li class="{{ Request::is('tienda*') ? 'current' : '' }}">
                                     <a href="{{ route('store') }}">Tienda</a>
-                                </li> --}}
+                                </li>
                                 <li class="{{ Request::is('blog*') ? 'current' : '' }}">
                                     <a href="{{ route('blog') }}">Blog Verde</a>
                                 </li>
                                 <li class="{{ Request::is('video*') ? 'current' : '' }}">
-                                    <a href="{{ route('youtube.index') }}">Videos Sugeridos</a>
+                                    <a href="{{ route('videos') }}">Videos Sugeridos</a>
                                 </li>
                                 {{-- <li class="{{ Request::is('herbario*') ? 'current' : '' }}">
                                     <a href="{{ route('herbal') }}">Herbario Virtual</a>

@@ -237,89 +237,19 @@
                 </div>
                 <div class="gallery_one_carousel owl-carousel">
                     <!--Gallery One Single-->
+                    @foreach($videos as $video)
                     <div class="gallery_one_single">
                         <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/COu9TbLKjGc/mqdefault.jpg">
+                            <img src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
                             <div class="gallery_one_hover_box">
                                 <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=COu9TbLKjGc" class="popup-video"><span
+                                    <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
                                             class="fa fa-play"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/FuGam-woMxw/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=FuGam-woMxw" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/3qBeh-r3jz8/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=3qBeh-r3jz8" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/fPslyTU7wnU/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=fPslyTU7wnU" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/LMKu9-J3U2A/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=LMKu9-J3U2A" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/IGbxgn7HAxw/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=IGbxgn7HAxw" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single-->
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/ptEoBYQGDbg/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v=ptEoBYQGDbg" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

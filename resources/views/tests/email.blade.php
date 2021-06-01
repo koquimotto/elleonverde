@@ -10,7 +10,7 @@
     <h1 style="color: green">Bienvenido al Boletín de El León Verde</h1><br>
     <img src="https://elleonverde.com/assets/images/resources/elleonverde-subscriptor.png" alt="">
     <p>{{ $details['body'] }}</p>
-    <p>Siempre siéntete en la libertad de apretar el botón "responder" y contarme lo que quieras. Si necesitas una respuesta entonces te recomiendo que la consulta me la hagas en alguno de los artículos o por <a href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA" style="color:red"><b>YOUTUBE</b></a>   de tal forma que te contesto lo antes posible. </p>
+    <p>Mediante este boletín te mantendremos al tanto de los nuevos videos, artículos y promociones que tenemos para ti. Asimismo, estaremos felices de recibir todas tus consultas y sugerencias. Si necesitas una respuesta entonces te recomiendo que la consulta me la hagas en alguno de los artículos o por <a href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA" style="color:red"><b>YOUTUBE</b></a>   de tal forma que te contesto lo antes posible. </p>
 
     <a href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA"><img style="width: 351px" src="https://elleonverde.com/assets/images/resources/btn-subscribete-el-leon-verde.png" alt="" srcset=""></a>
         

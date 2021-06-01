@@ -43,7 +43,7 @@ Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
-Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('youtube.index');
+Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
 
 Auth::routes();
 
@@ -79,6 +79,8 @@ Route::get('/comments', [CommentController::class, 'list']);
 
 // Subscritions
 Route::post('/subscribe/store',[SubscriptionController::class, 'store']);
+
+Route::get('/test/postTest',[TestController::class,'postTest']);
 
 
 // Enviar mensaje

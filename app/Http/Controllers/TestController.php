@@ -10,6 +10,10 @@ class TestController extends Controller
         return view('tests.uno');
     }
 
+    public function postTest(){
+        return view('tests.postTest');
+    }
+
     // public function createComment(){
 
     // }
