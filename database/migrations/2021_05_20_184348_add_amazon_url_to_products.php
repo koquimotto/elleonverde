@@ -14,7 +14,7 @@ class AddAmazonUrlToProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->text('amazon_url',255)->nullable()->after('image');
+            $table->text('amazon_url')->nullable()->after('image');
         });
     }
 

@@ -16,7 +16,7 @@
     <section class="service_detail" style="padding:20px 0 30px">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8">
+                    <div class="col-xl-9 col-lg-9">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2 class="title-style"><b>Todos mis artículos</b></h2>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4">
+                    <div class="col-xl-3 col-lg-3">
                         
                         @include('partials.side_menu_auth')
 

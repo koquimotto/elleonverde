@@ -12,30 +12,9 @@ use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\YoutubeController;
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// Route::get('/test', function () {
-//     $img = Image::make('https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia-770x413.jpg')->resize(10, 10);
-
-//     return $img->response('jpg');
-// });
-
 // Main menus
 Route::get('/', [LandingController::class, 'home'])->name('home');
-Route::get('/tienda-virtual', [LandingController::class, 'store'])->name('store');
-Route::get('/blog-verde', [LandingController::class, 'blog'])->name('blog');
+Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');
 Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('vegetable.patch');
 Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('herbal');
@@ -44,6 +23,10 @@ Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets'
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
 Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
+
+// Store
+Route::get('/tienda/{continent}', [LandingController::class, 'store'])->name('store');
+Route::get('/tienda/{continent}/{category}', [LandingController::class, 'categoryStore'])->name('category.store');
 
 Auth::routes();
 

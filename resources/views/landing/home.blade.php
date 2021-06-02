@@ -166,9 +166,6 @@
                                         <a href="{{ route('blog.show',$post->slug) }}">
                                             <img src="{{ asset('uploads/images/medium/'.$post->image) }}">
                                         </a>
-                                        <div class="blog_one_date_box">
-                                            <p>{{ $post->created_at->format('M d, Y') }}</p>
-                                        </div>
                                     </div>
                                     <div class="blog_content">
                                         <h5 class="blog_title"><a href="{{ route('blog.show',$post->slug) }}">{{ $post->title }}</a></h5>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddAmazonFrameToProducts extends Migration
+class AddStoreToProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddAmazonFrameToProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->text('amazon_frame')->nullable()->after('image');
+            $table->enum('store', ['America', 'Europe', 'Africa', 'Oceania', 'Asia'])->after('state');
         });
     }
 
@@ -26,7 +26,7 @@ class AddAmazonFrameToProducts extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn('amazon_frame');
+            $table->dropColumn('store');
         });
     }
 }

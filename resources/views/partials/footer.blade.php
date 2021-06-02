@@ -20,7 +20,7 @@
                                 <h3 class="title-style">Links de Interes</h3>
                             </div>
                             <ul class="footer-widget__links-list list-unstyled">
-                                <li><a href="{{ route('store') }}">Tienda</a></li>
+                                {{-- <li><a href="{{ route('store') }}">Tienda</a></li> --}}
                                 <li><a href="/">El Huerto</a></li>
                                 <li><a href="{{ route('blog') }}">Blog Verde</a></li>
                                 <li><a href="{{ route('videos') }}">Videos Sugeridos</a></li>

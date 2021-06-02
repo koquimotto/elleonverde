@@ -6,7 +6,7 @@
     <meta name="author" content="GLOOBAL TIC INGENIEROS">
 @endsection
 
-@section('title', 'Tienda en '.$store->name.' - El León Verde' )
+@section('title', 'Tienda - El León Verde' )
 
 @section('styles')
 @endsection
@@ -20,66 +20,75 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="news_detail_left">
-                                <div class="block-title" style="margin-bottom:7px">
-                                    <p>Tienda en {{ $store->name }}</p>
-                                    <h2 style="color:#404a3d; font-weight:600">Venta de semillas, abonos orgánicos, sustratos y accesorios para huerto y jardín</h2>
+                            <div class="block-title" style="margin-bottom:7px">
+                                    <p>Tienda en {{$store}}</p>
+                                    <h2 style="color:#404a3d; font-weight:600">{{ $categoryDetail->category }}</h2>
                                     <div class="leaf">
                                         <img src="/assets/images/resources/leaf.png" alt="">
                                     </div>
-                                </div>
-                                <div class="news_detail_image_box">
-                                    <img src="{{ $store->image }}" alt="">
-                                </div>
-                                <br>
-                                <div class="news_detail_content">
-                                    <p>
-                                        Tienda online especializada en la compra-venta de productos para el huerto y el jardín, aquí encontraras los mejores productos para tener un súper huerto o jardín. Las mejoras marcas de accesorios, abonos orgánicos, semillas, medicamentos orgánicos, sustratos, libros, accesorios y todo lo que necesitaras para tener éxito en tu huerto o jardín al mejor precio.
-                                    </p>
-                                    <p>Compra con seguridad y confianza en todo <b>{{ $store->name }}</b>. </p>
-                                    <p>
-                                        En el lado derecho, encontrarás los productos distribuidos por categorías.
-                                    </p>
-                                    <p>¡Te deseo el mejor de lo éxitos!</p>
-                                </div>
+                            </div>
+                            <div class="news_detail_content">
+                                <p>
+                                    {{ $categoryDetail->description }}
+                                </p>
                             </div>
 
-                            <br>
                             
-                            <div>
-                                <div class="block-title" style="margin-bottom:7px">
-                                    <br>
-                                    <p>Productos Top en {{ $store->name }}</p>
-                                    <h2 style="color:#404a3d; font-weight:600">Los más vendidos de nuestra tienda</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="product-items">
+                    {{-- <div class="row">
+                        <div class="col-xl-12">
+                            <div class="showing-result-shorting">
+                                <div class="left">
+                                    <div class="showing">
+                                        <p>Showing 1-9 of 20 Results</p>
+                                    </div>
                                 </div>
-                                <div class="news_detail_content">
-                                    <p>
-                                        Selección de los productos más vendidos en nuestra tienda online para huertos y jardines:
-                                    </p>
+                                <div class="right">
+                                    <div class="shorting">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option selected="selected">Default Sorting</option>
+                                            <option>Default Sorting 1</option>
+                                            <option>Default Sorting 2</option>
+                                            <option>Default Sorting 3</option>
+                                            <option>Default Sorting 4</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-
-
-                            @foreach( $categories as $category)
-                                <div>
-                                    <div class="block-title" style="margin-bottom:7px">
-                                        <br>
-                                        <p>Tienda en {{ $store->name }}</p>
-                                        <h2 style="color:#404a3d; font-weight:600"><a style="color:#404a3d" href="{{ route('category.store',[$store->slug,$category->slug]) }}">{{ $category->category }}</a></h2>
-                                    </div>
-                                    <div class="news_detail_content">
-                                        <p>
-                                            {{ $category->description }}
-                                        </p>
-                                        <div style="text-align: right">
-                                            <a href="#" class="thm-btn comment-one__btn">Ver más</a>
+                        </div>
+                    </div> --}}
+                    <div class="all_products">
+                        <div class="row">
+                            @foreach($products as $product)
+                            <div class="col-md-2 col-6">
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$product->amazon_frame}}" ></iframe> 
+                            </div>
+                                
+                            {{-- <div class="col-xl-3 col-lg-3 col-md-6">
+                                <div class="all_products_single text-center">
+                                    <div class="all_product_item_image">
+                                        <img src="{{ asset('uploads/images/store/'.$product->image) }}" alt="">
+                                        <div class="all_product_hover">
+                                            <div class="all_product_icon">
+                                                <a href="{{ $product->slug }}"><span class="icon-shopping-cart"></span></a>
+                                            </div>
                                         </div>
                                     </div>
+                                    <h4 style="font-family:Amatic SC, cursive"><a href="{{ $product->slug }}">{{ $product->title }}</a></h4>
+                                    <p>$9.00</p>
                                 </div>
+                            </div> --}}
                             @endforeach
-
-
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -118,11 +127,11 @@
                         data-wow-duration="1200ms">
                         <div class="categories-box">
                             <div class="title">
-                                <h3 style="font-family:Amatic SC, cursive;font-size:26px; font-weight:900; color: #343a40">Categorías todo {{ $store->name }}</h3>
+                                <h3 style="font-family:Amatic SC, cursive;font-size:26px; font-weight:900; color: #343a40">Categorías</h3>
                             </div>
                             <ul class="categories clearfix">
                                 @foreach($categories as $category)
-                                <li style="line-height:35px"><a href="{{ route('category.store',[$store->slug,$category->slug]) }}">{{ $category->category }}</a></li>
+                                <li style="line-height:35px"><a href="{{ route('category.store',[$store,$category->slug]) }}">{{ $category->category }}</a></li>
                                 @endforeach
                             </ul>
                         </div>

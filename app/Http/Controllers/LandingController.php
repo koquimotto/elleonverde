@@ -24,12 +24,56 @@ class LandingController extends Controller
         return view('landing.home')->with('posts', $posts)->with('videos',$videos);
     }
 
-    public function store()
+    public function store($continent)
     {
-        $products = Product::orderBy('id', 'desc')->get();
-        $categories = Category::where('section','product')
-                                ->orderBy('category')->get();
-        return view('store.index')->with('products',$products)->with('categories',$categories);
+        switch ($continent) {
+            case 'america':
+                $store = (object)[
+                    'name' => 'América',
+                    'image' => '/assets/images/store/store-america-el-leon-verde.jpg',
+                    'slug' => 'america'
+                    
+                ];
+
+                $products = Product::orderBy('id', 'desc')->get();
+                $categories = Category::where('section', 'product')
+                ->orderBy('created_at')->get();
+                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store);
+
+
+                break;
+
+                case 'europa':
+                $store = (object)[
+                    'name' => 'Europa',
+                    'image' => '/assets/images/store/store-europa-el-leon-verde.jpg',
+                    'slug' => 'europa'
+                ];
+
+                $products = Product::orderBy('id', 'desc')->get();
+                $categories = Category::where('section', 'product')
+                ->orderBy('created_at')->get();
+                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store);
+
+                break;
+            
+            default:
+                return view('404.index');
+                break;
+        }
+    }
+
+
+    public function categoryStore($continent,$category){
+        $store = $continent;
+        $categoryDetail = Category::where('slug',$category)->first();
+        $products = Product::where('store',$continent)
+                            ->where('category_id',$categoryDetail->id)
+                            ->get();
+        $categories = Category::where('section', 'product')
+                        ->orderBy('created_at')->get();
+
+        return view('store.category')->with('categories', $categories)->with('products', $products)->with('categoryDetail',$categoryDetail)->with('store',$store);
     }
 
     public function blog()

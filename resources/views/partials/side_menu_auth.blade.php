@@ -2,11 +2,11 @@
                             <ul class="list-unstyled service_all_list">
                                 <li class="{{ Request::is('colaborador/arti*') ? 'active' : '' }}"><a href="{{ route('auth.index') }}">Mis artículos</a></li>
                                 <li class="{{ Request::is('colaborador/publ*') ? 'active' : '' }}"><a href="{{ route('auth.publish') }}">Nuevo artículo</a></li>
-                                {{-- <li><a href="#">Comentarios</a></li>
-                                <li><a href="#">Mi perfil</a></li> --}}
-                                {{-- <li><a href="#">Agriculture Products</a></li>
-                                <li><a href="#">Organic Products</a></li>
-                                <li><a href="#">Dairy Products</a></li> --}}
+                                <li><a href="#">Comentarios</a></li>
+                                <li><a href="#">Mis productos</a></li>
+                                <li><a href="#">Mis videos</a></li>
+                                <!--<li><a href="#">Organic Products</a></li>
+                                <li><a href="#">Dairy Products</a></li>-->
                             </ul>
                             {{-- <div class="need_help_box">
                                 <h2>Need Help?</h2>

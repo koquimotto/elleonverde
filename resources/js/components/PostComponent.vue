@@ -4,9 +4,6 @@
         <!-- Imagen del post -->
         <div class="news_detail_image_box">
             <img v-bind:src="'/uploads/images/'+image" alt="">
-            <div class="news_detail_date_box">
-                <p>{{ date }}</p>
-            </div>
         </div>
 
         <!-- Cabecera del post -->

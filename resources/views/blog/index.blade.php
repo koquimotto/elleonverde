@@ -49,9 +49,6 @@
                                                 <a href="{{ route('blog.show',$post->slug) }}">
                                                     <img src="{{ asset('uploads/images/medium/'.$post->image) }}" alt="El León Verde">
                                                 </a>
-                                                <div class="blog_one_date_box">
-                                                    <p>{{ $post->created_at->format('M d, Y') }}</p>
-                                                </div>
                                             </div>
                                             <div class="blog-one__content" style="padding:0px 2px 5px;">
                                                 <ul class="list-unstyled blog-one__meta">
