@@ -12,7 +12,7 @@
                         <div class="main-nav__main-navigation">
                             <ul class=" main-nav__navigation-box">
                                 <li class="{{ Request::is('/*') ? 'current' : '' }}">
-                                    <a href="/">Principal</a>
+                                    <a href="/">Inicio</a>
                                 </li>
                                 {{-- <li class="{{ Request::is('tienda*') ? 'current' : '' }}">
                                     <a href="{{ route('store') }}">Tienda</a>

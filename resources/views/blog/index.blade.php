@@ -13,81 +13,216 @@
 @section('title','Blog verde - El León Verde')
 
 @section('styles')
+    <style>
+        .blog_list .blog_post {
+            display: -ms-flexbox;
+            display: flex;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog_list .blog_img {
+            -ms-flex: 0 0 41%;
+            flex: 0 0 41%;
+            max-width: 41%;
+            width: 100%;
+        }
+        .blog_list .blog_content {
+            padding: 0px 0 0 25px;
+            background-color: #fff;
+        }
+        .blog_list .blog_content p {
+            overflow: hidden;
+            height: 78px;
+        }
+
+        .blog_post {
+        margin-bottom: 30px;
+        overflow: hidden;
+        }
+        .blog_post .blog_img a {
+            display: block;
+            overflow: hidden;
+        }
+
+        .blog_img img {
+            transition: all 0.5s ease-in-out;
+            width: 100%;
+        }
+        .blog_link {
+            font-size: 16px;
+            color: #404a3d;
+
+        }
+        .blog_link i {
+            vertical-align: middle;
+            margin-left: 3px;
+        }
+        .blog_post:hover .blog_img img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .blog_img {
+            position: relative;
+            overflow: hidden;
+        }
+        .blog_img img {
+            width: 100%;
+        }
+        .blog_img img {
+            transition: all 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .blog_img img {
+            transition: all 0.5s ease-in-out;
+            width: 100%;
+        }
+        .blog_content {
+            padding: 15px;
+            background-color: #f7f7f7;
+        }
+        .blog_content p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .blog_title {
+            margin-bottom: 10px;
+            font-family: 'Barlow', sans-serif;
+            
+        }
+
+        .blog_title a {
+            font-size: 24px;
+            color: var(--thm-black);
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            font-weight: 600;
+        }
+        .blog_title a:hover {
+            color: #66945d;
+        }
+
+        .list_none li {
+            list-style:none;
+        }
+        .text_default {
+            color: #07d765 !important;
+        }
+        @media only screen and (max-width: 767px) {
+
+            .blog_list .blog_content {
+                padding: 15px 0 0 0px;
+            }
+            .blog_list .blog_img {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .blog_list .blog_post {
+                display: block;
+                padding-bottom: 15px;
+            }
+            .content_box,
+            .blog_post {
+                margin-bottom: 15px;
+            }
+            .blog_content p {
+                margin-bottom: 5px;
+            }
+            .blog_title {
+                margin-bottom: 10px;
+            }
+    }
+    </style>
 @endsection
 
 @section('content')
 <div class="blog_two" style="padding: 40px 0 120px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8">
-                        <div class="block-title">
-                            <p>El León Verde</p>
-                            <h3>Blog Verde</h3>
-                            <div class="leaf">
-                                <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
-                            </div>
-                        </div>
+                    <div class="col-xl-12">
+    
                     </div>
-                    <div class="col-xl-4" style="text-align: right;">
-                            <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
-                                <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 95%; margin-bottom: 20px">
-                            </a>
-                        </div>
-                </div>
+                </div>               
                 <div class="row">
-                    <div class="col-xl-8">
-                        <div class="row">
-                            
+                    <div class="col-xl-9">
+                        <div class="blog_list">
+                            <div class="row">
                                 @foreach ($posts as $post)
-                                <?php
-                                    $count = App\Models\Comment::where('post_id', $post->id)->count(); 
-                                ?>
-                                <div class="col-lg-6">
-                                    <div class="blog_one_single mb-30">
-                                        <div class="blog_one_image">
-                                            <div class="blog_image">
-                                                <a href="{{ route('blog.show',$post->slug) }}">
-                                                    <img src="{{ asset('uploads/images/medium/'.$post->image) }}" alt="El León Verde">
-                                                </a>
-                                            </div>
-                                            <div class="blog-one__content" style="padding:0px 2px 5px;">
-                                                <ul class="list-unstyled blog-one__meta">
-                                                    <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-user-circle"></i> {{ $post->user->name }}</a></li>
-                                                    <li><a href="{{ route('blog.show',$post->slug) }}">
-                                                        <i class="far fa-comments"></i> 
-                                                        <?php
-                                                            if ($count==0){
-                                                                echo 'Sin Comentarios';
-                                                            } elseif ($count==1) {
-                                                                echo '01 Comentario';
-                                                            }elseif($count > 9){
-                                                                    echo $count.' Comentarios';
-                                                            }else{
-                                                                echo '0'.$count.' Comentarios';
-                                                            }
-                                                        ?>
-                                                    </a>
-                                                    </li>
-                                                </ul>
-                                                <h3><a href="{{ route('blog.show',$post->slug) }}">{{ $post->title }}</a></h3>
-                                                
-                                                <div class="read_more_btn">
-                                                    <a href="{{ route('blog.show',$post->slug) }}"><i class="fa fa-angle-right"></i>Ver más</a>
-                                                </div>
-                                            </div>
+                                    <?php
+                                        $count = App\Models\Comment::where('post_id', $post->id)->count();
+                                    ?>
+                                <div class="col-md-12">
+                                    <div class="blog_post">
+                                        <div class="blog_img">
+                                            <a href="{{ route('blog.show',$post->slug) }}">
+                                                <img src="{{ asset('uploads/images/medium/'.$post->image) }}">
+                                            </a>
                                         </div>
-                                    </div>                                    
+                                        <div class="blog_content">
+                                            <h5 class="blog_title"><a href="{{ route('blog.show',$post->slug) }}">{{ $post->title }}</a></h5>
+                                            <ul class="list-unstyled blog-one__meta" style="justify-content:left">
+                                                <li><a href="{{ route('blog.show',$post->slug) }}"><i class="far fa-user"></i>{{ $post->user->name }} </a></li>
+                                                {{-- <li><a href="#" class="blog_date"><i class="far fa-calendar"></i>February 15, 2014</a></li> --}}
+                                                <li>
+                                                    <a href="{{ route('blog.show',$post->slug) }}">
+                                                        <i class="far fa-comments"></i>
+                                                        <?php
+                                                                    if ($count==0){
+                                                                        echo 'Sin Comentarios';
+                                                                    } elseif ($count==1) {
+                                                                        echo '01 Comentario';
+                                                                    }elseif($count > 9){
+                                                                            echo $count.' Comentarios';
+                                                                    }else{
+                                                                        echo '0'.$count.' Comentarios';
+                                                                    }
+                                                                ?>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <p>{{ $post->description }}</p>
+                                            <a href="{{ route('blog.show',$post->slug) }}" class="thm-btn comment-one__btn">Ver más <i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                @endforeach
-                        </div>                        
+                                @endforeach 
+    
+                            </div>
+                        </div>                       
                     </div>
                     
 
-                    {{-- Google Adsense --}}
-                    @include('partials.left_gadsense')
-                    {{-- End Google Adsense --}}
+                     <!-- Google Adsense -->
+                     <div class="col-xl-3">
+                        <div class="sidebar">
+                            <div class="sidebar__single sidebar__search">
+                                <form action="#" class="sidebar__search-form">
+                                    <input type="search" placeholder="Buscar">
+                                    <button type="submit"><i class="icon-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- <div class="blog_two_right wow fadeInRight" data-wow-delay="300ms">
+                            <div class="blog_three_single">
+                                <ul class="list-unstyled blog-three_meta">
+                                    <li><a href="news_detail.html"><i class="far fa-user-circle"></i> Admin</a></li>
+                                    <li><a href="news_detail.html"><i class="far fa-comments"></i> 2 Comments</a></li>
+                                </ul>
+                                <h3><a href="news_detail.html" class="blog_three_title">Amount of Freak Bread or Other
+                                        Fruits</a></h3>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- Google Adsense -->
 
 
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+    
+                    </div>
                 </div>
             </div>
         </div>

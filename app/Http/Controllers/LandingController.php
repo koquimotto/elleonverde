@@ -16,7 +16,7 @@ class LandingController extends Controller
 {
     public function home()
     {
-        $posts = Post::orderBy('id', 'desc')->take(6)->get();
+        $posts = Post::orderBy('id', 'desc')->take(3)->get();
         $videos = Attached_file::orderBy('id', 'desc')
                                 ->where('type','youtube')                            
                                 ->take(7)
@@ -65,10 +65,15 @@ class LandingController extends Controller
 
 
     public function categoryStore($continent,$category){
+        
         $store = $continent;
         $categoryDetail = Category::where('slug',$category)->first();
+        if(!$categoryDetail){
+            return view('404.index');
+        }
         $products = Product::where('store',$continent)
                             ->where('category_id',$categoryDetail->id)
+                            ->orderBy('id','desc')
                             ->get();
         $categories = Category::where('section', 'product')
                         ->orderBy('created_at')->get();
