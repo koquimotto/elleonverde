@@ -28,23 +28,31 @@
                                         <img src="/assets/images/resources/leaf.png" alt="">
                                     </div>
                                 </div>
-                                <div class="news_detail_image_box">
-                                    <img src="{{ $store->image }}" alt="">
+                                
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="news_detail_image_box">
+                                            <img src="{{ $store->image }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                            <p>
+                                            Tienda online especializada en la compra-venta de productos para el huerto y el jardín, aquí encontraras los mejores productos para tener un súper huerto o jardín. </p>
+                                            <p>Las mejoras marcas de accesorios, abonos orgánicos, semillas, medicamentos orgánicos, sustratos, libros, accesorios y todo lo que necesitaras para tener éxito en tu huerto o jardín al mejor precio.
+                                        </p>
+                                    </div>
+                                    <div class="col-xl-12">
+                                            
+                                        <p>Compra con seguridad y confianza en todo <b>{{ $store->name }}</b>. </p>
+                                            <p>
+                                                En el lado derecho, encontrarás los productos distribuidos por categorías.
+                                            </p>
+                                            <p>¡Te deseo el mejor de lo éxitos!</p>
+                                    </div>
                                 </div>
-                                <br>
-                                <div class="news_detail_content">
-                                    <p>
-                                        Tienda online especializada en la compra-venta de productos para el huerto y el jardín, aquí encontraras los mejores productos para tener un súper huerto o jardín. Las mejoras marcas de accesorios, abonos orgánicos, semillas, medicamentos orgánicos, sustratos, libros, accesorios y todo lo que necesitaras para tener éxito en tu huerto o jardín al mejor precio.
-                                    </p>
-                                    <p>Compra con seguridad y confianza en todo <b>{{ $store->name }}</b>. </p>
-                                    <p>
-                                        En el lado derecho, encontrarás los productos distribuidos por categorías.
-                                    </p>
-                                    <p>¡Te deseo el mejor de lo éxitos!</p>
-                                </div>
+                                <hr>
+                                
                             </div>
-
-                            <br>
                             
                             <div>
                                 <div class="block-title" style="margin-bottom:7px">
@@ -56,6 +64,13 @@
                                     <p>
                                         Selección de los productos más vendidos en nuestra tienda online para huertos y jardines:
                                     </p>
+                                    <div class="row">
+                                        @foreach($tops as $top)
+                                            <div class="col-md-2 col-6">
+                                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
+                                            </div>
+                                        @endforeach
+                                </div>
                                 </div>
                             </div>
 
@@ -71,8 +86,21 @@
                                         <p>
                                             {{ $category->description }}
                                         </p>
+
+                                        <?php
+                                            $product_categories = App\Models\Product::where('category_id',$category->id)->where('store',$store->name)->OrderBy('id', 'desc')->take(6)->get();
+                                        ?>
+                                        <div class="row">
+                                             @foreach($product_categories as $product_category)
+                                            <div class="col-md-2 col-6">
+                                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$product_category->amazon_frame}}" ></iframe> 
+                                            </div>
+                                        @endforeach
+                                        </div>
+                                       
+                                        
                                         <div style="text-align: right">
-                                            <a href="#" class="thm-btn comment-one__btn">Ver más</a>
+                                            <a href="{{ route('category.store',[$store->slug,$category->slug]) }}" class="thm-btn comment-one__btn">Ver más</a>
                                         </div>
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ class AddStoreToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->enum('store', ['America', 'Europe', 'Africa', 'Oceania', 'Asia'])->after('state');
+            $table->enum('store', ['America', 'Europa', 'Africa', 'Oceania', 'Asia'])->after('state');
         });
     }
 

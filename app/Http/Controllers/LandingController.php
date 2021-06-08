@@ -34,11 +34,15 @@ class LandingController extends Controller
                     'slug' => 'america'
                     
                 ];
-
+                $tops = Product::where('top',1)
+                            ->where('store', 'America')
+                            ->where('state',1)
+                            ->orderBy('id', 'desc')
+                            ->take(6);
                 $products = Product::orderBy('id', 'desc')->get();
                 $categories = Category::where('section', 'product')
                 ->orderBy('created_at')->get();
-                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store);
+                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store)->with('tops',$tops);
 
 
                 break;
@@ -49,11 +53,16 @@ class LandingController extends Controller
                     'image' => '/assets/images/store/store-europa-el-leon-verde.jpg',
                     'slug' => 'europa'
                 ];
-
+                $tops = Product::where('top', 1)
+                                ->where('store', 'Europa')
+                                ->where('state', 1)
+                                ->orderBy('id', 'desc')
+                                ->take(6)
+                                ->get();
                 $products = Product::orderBy('id', 'desc')->get();
                 $categories = Category::where('section', 'product')
                 ->orderBy('created_at')->get();
-                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store);
+                return view('store.index')->with('products', $products)->with('categories', $categories)->with('store', $store)->with('tops', $tops);
 
                 break;
             

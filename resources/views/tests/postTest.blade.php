@@ -282,171 +282,74 @@
 
 
 
-								<h1><span style="color:#f1c40f">De los Andes al Mundo Entero, la papa</span></h1>
+								<p><strong>EL RABANITO LA HORTALIZA DE FARAONES</strong></p>
 
-<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365209-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
+<p><strong>C&Oacute;MO SEMBRARLO, siembra, cuidados y cosecha del rabanito</strong></p>
 
-<p>La papa (Solanum tuberosum) es una planta originaria de Sudam&eacute;rica y cultivada por todo el mundo por sus tub&eacute;rculos comestibles. Perteneciente a la familia de las solan&aacute;ceas fue domesticada en el altiplano andino peruano por sus habitantes hace unos 7000 a&ntilde;os, y m&aacute;s tarde fue llevada a Europa por los conquistadores. Su consumo fue creciendo y su cultivo se expandi&oacute; a todo el mundo hasta convertirse hoy d&iacute;a en uno de los principales alimentos para el ser humano.</p>
+<p>Hace 2.000 a&ntilde;os A.C., en las pir&aacute;mides egipcias, se encontr&oacute; inscripciones que los egipcios usaban el rabanito en su cocina, aunque su origen est&eacute; probablemente en Jap&oacute;n o China. Es muy probable que el imperio de Tutankhamon, tambi&eacute;n haya usado el aceite de rabanito para cocinar, pero se le da mayor atribuci&oacute;n a la preparaci&oacute;n de medicinas.</p>
 
-<p>En Per&uacute; se encuentran alrededor de 3000 de las 5000 mil especies. La papa uno de los aportes de este pa&iacute;s al mundo. Ha sido cultivada desde hace 8000 a&ntilde;os en Am&eacute;rica del Sur y era alimento importante de los Incas quienes desarrollaron t&eacute;cnicas avanzadas para almacenarlas. Es hoy en d&iacute;a un producto que por su versatilidad se encuentra en las recetas de las m&aacute;s variadas cocinas a nivel mundial.</p>
-
-<p>El origen de las papas cultivadas se remonta a las variedades nativas desarrolladas por los agricultores precolombinos a partir de especies que crec&iacute;an en estado silvestre. La evidencia arqueol&oacute;gica sit&uacute;a los primeros indicios del cultivo alrededor del lago Titicaca hace unos 7000 a&ntilde;os, centrado en un grupo de aproximadamente 20 especies.</p>
-
-<p>&nbsp;</p>
-
-<h1><span style="color:#f1c40f">La siembra de la papa</span></h1>
-
-<p>Si quieres empezar un huerto en casa, las papas son una excelente opci&oacute;n, es muy f&aacute;cil de aprender como sembrar papa en casa. Solo debes estudiar las necesidades de este tub&eacute;rculo, que por lo general son muy b&aacute;sicas, y proporcionarle todo lo necesario para su crecimiento. En este caso, lo m&aacute;s com&uacute;n es aprender a plantar papa en poco espacio, es la mejor alternativa para los huertos urbanos.</p>
-
-<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365255-el-leon-verde.png" style="height:209px; width:400px" /></p>
-
-<p>&nbsp;</p>
+<p><strong>Propiedades del Rabanito:</strong></p>
 
 <ul>
-	<li><strong>Selecciona una variedad de papa</strong>. Lo primero que debes tener en cuenta es que hay muchas variedades de papas, si eres principiante en huertos en casa, lo mejor ser&aacute; iniciar con productos locales. Las necesidades de estos tipos de papa se adaptan muy bien a las condiciones clim&aacute;ticas de tu localidad.</li>
-	<li><strong>Prepara las papas para sembrarlas</strong>. Lo primero es cortar la papa en cuatros partes iguales. Debes asegurarte que en cada uno de ellos se encuentren peque&ntilde;os agujeros donde comienza a germinarse la papa. Cada uno de los trozos debes dejarlos al sol, durante uno o dos d&iacute;as. Es importante no agregar agua, puesto que la papa contiene la humedad necesaria para comenzar a germinar.</li>
-	<li><strong>El momento de La siembra.</strong> La papa comenzar&aacute; a tener sus primeros brotes, lo cual es indicativo de que ya se puede sembrar en el huerto. Lo m&aacute;s indicado es que dichos brotes ya alcancen al menos un cent&iacute;metro. Debes dejar s&oacute;lo dos o tres y retirar el resto. Si vas a sembrar papas en macetas o en una parcela de tierra, en ambos casos debes plantarla a 10 cent&iacute;metros de profundidad.</li>
+	<li>El rabanito posee potasio, lo que ayuda a la musculatura.</li>
+	<li>El 95 % de rabanito es agua, esto quiere decir que tiene pocas calor&iacute;as.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+	<li>El rabanito contiene vitamina C, antioxidantes que evitan la aparici&oacute;n de dolencias.</li>
+	<li>El r&aacute;bano ayuda a la formaci&oacute;n de col&aacute;geno en huesos y dientes.</li>
+	<li>El r&aacute;bano produce gl&oacute;bulos blancos y rojos.</li>
+	<li>El rabanito es un depurador de sangre, eliminando sustancias da&ntilde;inas como el &aacute;cido &uacute;rico y colesterol.</li>
+	<li>El r&aacute;bano regula las funciones del colon.</li>
+	<li>El rabanito alivia el estre&ntilde;imiento.</li>
+	<li>El rabanito es diur&eacute;tico, lo que favorece la tensi&oacute;n arterial.</li>
+	<li>El rabanito tiene propiedades relajantes, mejora el sue&ntilde;o.</li>
+	<li>El rabanito favorece la expectoraci&oacute;n, eliminando problemas respiratorios.</li>
+	<li>El rabanito reduce los problemas de anemia.</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<h1><span style="color:#f1c40f">Tips durante el crecimiento de la papa</span></h1>
+<p><strong>PASOS PARA SEMBRAR RABANITO</strong></p>
+
+<p><strong>1.-Clima: </strong>La temperatura ideal para que se cultive rabanitos es de 18 &ndash; 22 &deg;C, si es superior los rabanitos amargaran.</p>
+
+<p><strong>2.- Preparaci&oacute;n del Terreno para sembrar rabanitos -</strong>Es fundamental que antes de sembrar rabanitos, se deba de alistar el terreno a usar, por lo que eliminaremos las malas hierbas y cultivos anteriores extrayendo de la ra&iacute;z para evitar posible nueva brotaci&oacute;n. Acto seguido humedeceremos el &aacute;rea a sembrar.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119315-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>3.-Preparaci&oacute;n del suelo para sembrar rabanitos: &nbsp;</strong>Debemos hacer una capa de 1 cm de compostaje esparcido en el &aacute;rea a sembrar, la composta sirve para regular la temperatura. Opcionalmente podemos aplicar humus de lombriz.</p>
 
 <p>&nbsp;</p>
 
-<ol>
-	<li><strong>Debes regar solo para mantener el sustrato h&uacute;medo</strong>. Mucha o poca agua pondr&aacute; en riesgo tus plantas. Comprueba la humedad del suelo regularmente metiendo la mano y escarbando unos cent&iacute;metros.</li>
-	<li><strong>La papa es una planta que necesita bastante luz</strong>. Aseg&uacute;rate que reciba muchas horas de sol al d&iacute;a, eso garantizar&aacute; una buena cosecha.</li>
-</ol>
+<p><strong>4.-Sembrado en huerto: </strong>&nbsp;Ahora debemos hacer surcos de 2 cm de profundidad, la distancia de cada surco debe ser de 60 cm entre cada uno, posteriormente plantaremos 2 a 3 semillas a una profundidad de 1 cm y las cubriremos.</p>
+
+<p><strong>5.-Sembrado en maceta: </strong>&nbsp;Debemos seleccionar macetas que tengan como m&iacute;nimo 15 cm de profundidad y volumen m&iacute;nimo de un litro, el sustrato que se usa debe de tener nutrientes y es importante que tenga un buen drenaje, posteriormente se siembran las semillas en peque&ntilde;os surcos de 1- 1.5 cm de profundidad con una distancia de 8- 12 cm entre ellos.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119572-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>6.-Cuidado de la planta de rabanito: </strong>Es importante que la tierra est&eacute; h&uacute;meda, por lo que debemos regar con frecuencia, pero eso s&iacute;, debemos evitar los charcos. La cosecha suele ser despu&eacute;s de un mes aproximadamente desde la siembra, por lo estaremos atentos al tiempo, si es que se nos pasa los d&iacute;as, los rabanitos suelen amargar.</p>
+
+<p><strong>7.-Cosecha de rabanitos: </strong>Entre 4 y 6 semanas el rabanito tendr&aacute;<strong> </strong>las ra&iacute;ces de 3 cm de di&aacute;metro. Podremos ya cosecharlos, haciendo uso de las manos levantaremos la planta de la tierra, luego lavaremos con abundante agua para que la tierra se desprenda totalmente, finalmente podemos almacenarlo por un m&aacute;ximo de 2 semanas.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119465-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>QU&Eacute; SEMBRAR CON EL RABANITO.</strong></p>
+
+<p>Lo recomendado es sembrarlo con lechugas, espinacas, zanahorias, acelgas, apios, berenjenas, guisantes, jud&iacute;as, patatas, pepinos, pimientos, y tomates. No debemos sembrar rabanitos con las hortalizas de su misma familia, tales como repollos, coliflores y br&oacute;coli.</p>
+
+<p><strong>PLAGAS DE RABANITO</strong></p>
+
+<p><strong>Los pulgones</strong>: Atacan principalmente a los brotes m&aacute;s j&oacute;venes de los cultivos, estas larvas causan da&ntilde;os haciendo agujeros en las hojas de las plantas. Esta plaga se controla, eliminando malas hierbas, buena preparaci&oacute;n del sustrato, trampas crom&aacute;ticas. La naturaleza tambi&eacute;n hace su trabajo eliminando los pulgones con las mariquitas, crisopas y tijeretas.</p>
+
+<p><strong>Las moscas blancas:</strong> Las localizamos en el env&eacute;s de las hojas, tienen gran grado por la humedad y las temperaturas altas, por lo que es una plaga frecuente en primavera y verano. Existen diversos m&eacute;todos de control de la mosca blanca como las trampas crom&aacute;ticas, depredadores naturales, infusi&oacute;n de ajenjo, ajo, etc.</p>
 
 <p>&nbsp;</p>
 
+<p><strong>ENFERMEDADES DEL RABANITO</strong></p>
 
-
-<!-- anuncio amazon -->
-<div class="aawp">
-    <div class="aawp-grid">
-        <div class="aawp-grid__item">
-            
-            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" data-aawp-geotargeting="true">
-
-                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
-                <div class="aawp-product__thumb">
-                    <a class="aawp-product__image-link" href="https://amzn.to/2QSB2XQ" title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" rel="nofollow" target="_blank">
-                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/91bLUDVeuNL._SY445_.jpg" alt="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" data-jpibfi-indexer="2" >
-                    </a>
-                </div>
-
-                <div class="aawp-product__content">
-                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/2QSB2XQ" title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" rel="nofollow" target="_blank">
-                        Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)</a>
-                    <div class="aawp-product__description">
-                        <ul class="ul-description-amazon">
-                            <li>Bolsa con tejido de plástico. </li>
-                            <li>Pdeal para el cultivo de patatas.</li>
-							<li>Diseño único para acceder fácilmente a las patatas.</li>
-							<li>Fondo perforado para mejor drenaje.</li>
-							<li>Asas laterales.</li>
-                        </ul>        
-                    </div>
-                </div>
-
-                <div class="aawp-product__footer">
-                    <div class="aawp-product__pricing">
-                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
-                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
-                        <span class="aawp-product__price aawp-product__price--current">9,39 €</span>
-                        <a class="aawp-check-prime" href="https://amzn.to/2QSB2XQ" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
-                    </div>
-                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/2QSB2XQ" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- fin anuncio amazon -->
-
-
-
-<h1><span style="color:#f1c40f">El aporque de la papa</span></h1>
-
-<p><strong>Es una t&eacute;cnica agr&iacute;cola</strong> que consiste en acumular tierra en la base del tronco o tallo de una planta con el objetivo de que queden protegidos; incluso ayuda a facilitar el riego e impide el exceso de agua.</p>
-
-<p>Para llevar a cabo esta pr&aacute;ctica, <strong>el cultivo debe tener cierta altura</strong>. Por ejemplo, en el caso de la papa, el aporcado se realiza antes que la planta supere los 15 cent&iacute;metros de altura. De esta manera se incrementar&aacute; el n&uacute;mero de ra&iacute;ces por planta. En las ra&iacute;ces se encuentra el tub&eacute;rculo, a m&aacute;s ra&iacute;ces mejor cosecha.</p>
-<div class="embed-responsive embed-responsive-16by9">
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HR_niWBuiTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
+<p><strong>Mildiu</strong>. Es un tipo de hongo que afecta a los rabanitos, produce manchas en las hojas de aspecto grasiento en diferentes tonalidades, que luego se vuelven marrones y finalmente se marchitan.</p>
 
 <p>&nbsp;</p>
 
-<p>&nbsp;</p>
-
-<h1><span style="color:#f1c40f">La cosecha de la papa</span></h1>
-
-<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620366022-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
-
-<p>Una forma de reconocer que la planta est&aacute; lista para la cosecha <strong>es cuando comienza a morir.</strong> Es probable que esto suceda luego entre 7 y 16 semanas luego de la siembra y depender&aacute; del tipo de papa, el lugar de la siembra, el riego y hasta el clima de tu localidad.</p>
-
-<p>Hay una t&eacute;cnica que es utilizada en varias partes del mundo que consiste en cortar el follaje de la papa unos 10 d&iacute;as antes de su cosecha. Se afirma que ayuda a la maduraci&oacute;n del tub&eacute;rculo.</p>
-
-<p>Para cosechar simplemente se debe <strong>despegar los tub&eacute;rculos de las ra&iacute;ces </strong>con las manos o con la ayuda de un rastrillo o un pico y obtendr&aacute;s papas ya maduras.</p>
-
-
-<!-- anuncio amazon -->
-<div class="aawp">
-    <div class="aawp-grid">
-        <div class="aawp-grid__item">
-            
-            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" data-aawp-geotargeting="true">
-
-                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
-                <div class="aawp-product__thumb">
-                    <a class="aawp-product__image-link" href="https://amzn.to/3voXsih" title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" rel="nofollow" target="_blank">
-                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/71hOlCjc8NL._AC_SX355_.jpg" alt="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" data-jpibfi-indexer="2" >
-                    </a>
-                </div>
-
-                <div class="aawp-product__content">
-                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/3voXsih" title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" rel="nofollow" target="_blank">
-                        Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm</a>
-                    <div class="aawp-product__description">
-                        <ul class="ul-description-amazon">
-                            <li>Forjada en una sola pieza. </li>
-                            <li>Temple integral para evitar deformaciones.</li>
-							<li>Tratamiento térmico diferenciado en el ojo para evitar roturas.</li>
-							<li>Pulida y afilada.</li>
-                        </ul>        
-                    </div>
-                </div>
-
-                <div class="aawp-product__footer">
-                    <div class="aawp-product__pricing">
-                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
-                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
-                        <span class="aawp-product__price aawp-product__price--current">19,99 €</span>
-                        <a class="aawp-check-prime" href="https://amzn.to/3voXsih" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
-                    </div>
-                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/3voXsih" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- fin anuncio amazon -->
-
-
-
-
-<p>Aqu&iacute; un video de la cosecha de papas del Le&oacute;n Verde.</p>
-
-<p>&nbsp;</p>
-<div class="embed-responsive embed-responsive-16by9">
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XWsc9tRXXzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
+<p>Ahora mismo debemos sembrar rabanitos, que son muy f&aacute;ciles de cultivar y sobre todo crecen en huertos, macetas y mesas de cultivo, es decir lo puedes sembrar en todo lugar, solo faltas t&uacute;. Empieza a sembrarlos ahora mismo y a disfrutar de este regalo delicioso.&nbsp;</p>
 
 
 
