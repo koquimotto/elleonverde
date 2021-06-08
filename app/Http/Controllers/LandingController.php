@@ -83,7 +83,7 @@ class LandingController extends Controller
 
     public function blog()
     {
-        $posts = Post::orderBy('id', 'desc')->get();
+        $posts = Post::orderBy('id', 'desc')->paginate(8);
         return view('blog.index')->with('posts', $posts);
     }
 

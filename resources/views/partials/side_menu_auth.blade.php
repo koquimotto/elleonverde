@@ -3,7 +3,7 @@
                                 <li class="{{ Request::is('colaborador/arti*') ? 'active' : '' }}"><a href="{{ route('auth.index') }}">Mis artículos</a></li>
                                 <li class="{{ Request::is('colaborador/publ*') ? 'active' : '' }}"><a href="{{ route('auth.publish') }}">Nuevo artículo</a></li>
                                 <li><a href="#">Comentarios</a></li>
-                                <li><a href="#">Mis productos</a></li>
+                                <li class="{{ Request::is('colaborador/produc*') ? 'active' : '' }}" ><a href="{{ route('auth.ProductIndex') }}">Mis productos</a></li>
                                 <li><a href="#">Mis videos</a></li>
                                 <!--<li><a href="#">Organic Products</a></li>
                                 <li><a href="#">Dairy Products</a></li>-->

@@ -282,170 +282,56 @@
 
 
 
-								<h1><span style="color:#f1c40f">De los Andes al Mundo Entero, la papa</span></h1>
+								
 
-<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365209-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
 
-<p>La papa (Solanum tuberosum) es una planta originaria de Sudam&eacute;rica y cultivada por todo el mundo por sus tub&eacute;rculos comestibles. Perteneciente a la familia de las solan&aacute;ceas fue domesticada en el altiplano andino peruano por sus habitantes hace unos 7000 a&ntilde;os, y m&aacute;s tarde fue llevada a Europa por los conquistadores. Su consumo fue creciendo y su cultivo se expandi&oacute; a todo el mundo hasta convertirse hoy d&iacute;a en uno de los principales alimentos para el ser humano.</p>
+								<p>Quiz&aacute;s creas que una colmena de abejas solo puede estar en el campo, pero cada vez son m&aacute;s las familias que apuestan por la apicultura urbana. &iquest;Te gustar&iacute;a generar tu propia miel y ayudar al medio ambiente criando polinizadores?</p>
 
-<p>En Per&uacute; se encuentran alrededor de 3000 de las 5000 mil especies. La papa uno de los aportes de este pa&iacute;s al mundo. Ha sido cultivada desde hace 8000 a&ntilde;os en Am&eacute;rica del Sur y era alimento importante de los Incas quienes desarrollaron t&eacute;cnicas avanzadas para almacenarlas. Es hoy en d&iacute;a un producto que por su versatilidad se encuentra en las recetas de las m&aacute;s variadas cocinas a nivel mundial.</p>
-
-<p>El origen de las papas cultivadas se remonta a las variedades nativas desarrolladas por los agricultores precolombinos a partir de especies que crec&iacute;an en estado silvestre. La evidencia arqueol&oacute;gica sit&uacute;a los primeros indicios del cultivo alrededor del lago Titicaca hace unos 7000 a&ntilde;os, centrado en un grupo de aproximadamente 20 especies.</p>
+<p><span style="background-color:white"><span style="color:#414141">Para tener una colmena de abejas bajo t&uacute; mismo techo, primero deber&aacute;s consultar si la legislaci&oacute;n de tu pa&iacute;s o ciudad te lo permite; despu&eacute;s tendr&aacute;s que colocarla en a ubicaci&oacute;n adecuada y tener en cuenta varios consejos para evitar posibles problemas.</span></span></p>
 
 <p>&nbsp;</p>
 
-<h1><span style="color:#f1c40f">La siembra de la papa</span></h1>
+<h1><span style="color:#2ecc71">La importancia de una colmena de abejas</span></h1>
 
-<p>Si quieres empezar un huerto en casa, las papas son una excelente opci&oacute;n, es muy f&aacute;cil de aprender como sembrar papa en casa. Solo debes estudiar las necesidades de este tub&eacute;rculo, que por lo general son muy b&aacute;sicas, y proporcionarle todo lo necesario para su crecimiento. En este caso, lo m&aacute;s com&uacute;n es aprender a plantar papa en poco espacio, es la mejor alternativa para los huertos urbanos.</p>
+<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106608-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
-<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620365255-el-leon-verde.png" style="height:209px; width:400px" /></p>
+<p>Antes de nada, ser&iacute;a bueno saber por qu&eacute; motivos muchas personas deciden dedicarse a la apicultura, ya sea urbana o rural. Las abejas son insectos muy importantes para el ecosistema, ya que su principal tarea es polinizar las flores que visitan.</p>
+
+<p>Sin las abejas, las personas no tendr&iacute;amos alimentos&hellip; Solo el 10 % de las plantas a nivel mundial se polinizan sin la ayuda de estos y otros insectos. Adem&aacute;s, producen miel, que se puede usar para la cocina y para curar enfermedades.</p>
+
+<p>La apicultura urbana est&aacute; sumando cada vez m&aacute;s adeptos en todo el mundo, sobre todo en las grandes ciudades. Tener una colmena de abejas en la azotea es mucho m&aacute;s com&uacute;n de lo que crees, sobre todo despu&eacute;s de que esta pr&aacute;ctica haya sido legalizada en varios pa&iacute;ses.</p>
 
 <p>&nbsp;</p>
+
+<h1><span style="color:#2ecc71">A tener en cuenta para una colmena de abejas en casa.</span></h1>
+
+<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106653-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
 <ul>
-	<li><strong>Selecciona una variedad de papa</strong>. Lo primero que debes tener en cuenta es que hay muchas variedades de papas, si eres principiante en huertos en casa, lo mejor ser&aacute; iniciar con productos locales. Las necesidades de estos tipos de papa se adaptan muy bien a las condiciones clim&aacute;ticas de tu localidad.</li>
-	<li><strong>Prepara las papas para sembrarlas</strong>. Lo primero es cortar la papa en cuatros partes iguales. Debes asegurarte que en cada uno de ellos se encuentren peque&ntilde;os agujeros donde comienza a germinarse la papa. Cada uno de los trozos debes dejarlos al sol, durante uno o dos d&iacute;as. Es importante no agregar agua, puesto que la papa contiene la humedad necesaria para comenzar a germinar.</li>
-	<li><strong>El momento de La siembra.</strong> La papa comenzar&aacute; a tener sus primeros brotes, lo cual es indicativo de que ya se puede sembrar en el huerto. Lo m&aacute;s indicado es que dichos brotes ya alcancen al menos un cent&iacute;metro. Debes dejar s&oacute;lo dos o tres y retirar el resto. Si vas a sembrar papas en macetas o en una parcela de tierra, en ambos casos debes plantarla a 10 cent&iacute;metros de profundidad.</li>
+	<li>La miel urbana suele ser de excelente calidad, a diferencia de lo que se cree. Adem&aacute;s, las abejas ayudan a polinizar los jardines cercanos y no son peligrosas para las personas: solo pican cuando sienten un peligro muy fuerte.</li>
+	<li>Es bueno saber que una abeja cuando pica muere, debido a que se desprende el aguij&oacute;n y, con &eacute;l, parte de su cuerpo. Por eso, a diferencia de las avispas, que pueden picar varias veces, deben tener una gran necesidad de atacar para hacerlo.</li>
+	<li>Criar abejas no es una actividad muy costosa, ya que casi podr&iacute;a decirse que se cuidan solas. La colmena es un sistema completamente eficiente, donde cada ejemplar sabe qu&eacute; debe hacer.</li>
+	<li>La instalaci&oacute;n de colmenas en la ciudad debe realizarse s&iacute; o s&iacute; en un espacio abierto, como una terraza, un parque o un balc&oacute;n grande tras asegurarse de que en nuestra ciudad est&aacute; permitida la pr&aacute;ctica de apicultura urbana.</li>
+	<li>Antes de colocar la colmena de abejas aseg&uacute;rate de tener todo el equipo necesario. Existe un protector de pies a cabeza que evita las posibles picaduras que se producen cuando abrimos el panal o extraemos la miel. Si no quieres comprar todo el traje, puedes usar el sombrero con velo, un par de guantes gruesos, una chaqueta cerrada, pantalones vaqueros y zapatos cerrados.</li>
+	<li>Puedes comprar un enjambre o n&uacute;cleo a un productor especializado &ndash;mayormente en el campo&ndash; o atrapar un enjambre silvestre. Esto &uacute;ltimo es un poco m&aacute;s dif&iacute;cil, pero suelen ser los m&aacute;s trabajadores. Aseg&uacute;rate de que la reina est&aacute; presente: es la &uacute;nica diferente a las dem&aacute;s. El traslado, en cualquier caso, deber&aacute; hacerse por la noche, cuando todas habr&aacute;n regresado a la colmena.</li>
 </ul>
 
-<p>&nbsp;</p>
-
-<h1><span style="color:#f1c40f">Tips durante el crecimiento de la papa</span></h1>
-
-<p>&nbsp;</p>
-
-<ol>
-	<li><strong>Debes regar solo para mantener el sustrato h&uacute;medo</strong>. Mucha o poca agua pondr&aacute; en riesgo tus plantas. Comprueba la humedad del suelo regularmente metiendo la mano y escarbando unos cent&iacute;metros.</li>
-	<li><strong>La papa es una planta que necesita bastante luz</strong>. Aseg&uacute;rate que reciba muchas horas de sol al d&iacute;a, eso garantizar&aacute; una buena cosecha.</li>
-</ol>
-
-<p>&nbsp;</p>
-
-
-
-<!-- anuncio amazon -->
-<div class="aawp">
-    <div class="aawp-grid">
-        <div class="aawp-grid__item">
-            
-            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" data-aawp-geotargeting="true">
-
-                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
-                <div class="aawp-product__thumb">
-                    <a class="aawp-product__image-link" href="https://amzn.to/2QSB2XQ" title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" rel="nofollow" target="_blank">
-                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/91bLUDVeuNL._SY445_.jpg" alt="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" data-jpibfi-indexer="2" >
-                    </a>
-                </div>
-
-                <div class="aawp-product__content">
-                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/2QSB2XQ" title="Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)" rel="nofollow" target="_blank">
-                        Silverline 261137 - Bolsa para cultivo de patatas (360 x 510 mm)</a>
-                    <div class="aawp-product__description">
-                        <ul class="ul-description-amazon">
-                            <li>Bolsa con tejido de plástico. </li>
-                            <li>Pdeal para el cultivo de patatas.</li>
-							<li>Diseño único para acceder fácilmente a las patatas.</li>
-							<li>Fondo perforado para mejor drenaje.</li>
-							<li>Asas laterales.</li>
-                        </ul>        
-                    </div>
-                </div>
-
-                <div class="aawp-product__footer">
-                    <div class="aawp-product__pricing">
-                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
-                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
-                        <span class="aawp-product__price aawp-product__price--current">9,39 €</span>
-                        <a class="aawp-check-prime" href="https://amzn.to/2QSB2XQ" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
-                    </div>
-                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/2QSB2XQ" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- fin anuncio amazon -->
-
-
-
-<h1><span style="color:#f1c40f">El aporque de la papa</span></h1>
-
-<p><strong>Es una t&eacute;cnica agr&iacute;cola</strong> que consiste en acumular tierra en la base del tronco o tallo de una planta con el objetivo de que queden protegidos; incluso ayuda a facilitar el riego e impide el exceso de agua.</p>
-
-<p>Para llevar a cabo esta pr&aacute;ctica, <strong>el cultivo debe tener cierta altura</strong>. Por ejemplo, en el caso de la papa, el aporcado se realiza antes que la planta supere los 15 cent&iacute;metros de altura. De esta manera se incrementar&aacute; el n&uacute;mero de ra&iacute;ces por planta. En las ra&iacute;ces se encuentra el tub&eacute;rculo, a m&aacute;s ra&iacute;ces mejor cosecha.</p>
 <div class="embed-responsive embed-responsive-16by9">
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HR_niWBuiTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D-n1MdPlyOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
 
 <p>&nbsp;</p>
 
-<p>&nbsp;</p>
+<h1><span style="color:#2ecc71">Nota Importante</span></h1>
 
-<h1><span style="color:#f1c40f">La cosecha de la papa</span></h1>
+<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106723-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
-<p><span style="color:#f1c40f"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1620366022-el-leon-verde.png" style="height:209px; width:400px" /></span></p>
+<p>Es importante que tengas en cuenta que las abejas son animales muy sensibles y en casos muy particulares peligrosas, as&iacute; que te recomendamos que te asesores con un experto para comenzar tu colmena o para cualquier cambio que hagas con tus abejas.</p>
 
-<p>Una forma de reconocer que la planta est&aacute; lista para la cosecha <strong>es cuando comienza a morir.</strong> Es probable que esto suceda luego entre 7 y 16 semanas luego de la siembra y depender&aacute; del tipo de papa, el lugar de la siembra, el riego y hasta el clima de tu localidad.</p>
-
-<p>Hay una t&eacute;cnica que es utilizada en varias partes del mundo que consiste en cortar el follaje de la papa unos 10 d&iacute;as antes de su cosecha. Se afirma que ayuda a la maduraci&oacute;n del tub&eacute;rculo.</p>
-
-<p>Para cosechar simplemente se debe <strong>despegar los tub&eacute;rculos de las ra&iacute;ces </strong>con las manos o con la ayuda de un rastrillo o un pico y obtendr&aacute;s papas ya maduras.</p>
-
-
-<!-- anuncio amazon -->
-<div class="aawp">
-    <div class="aawp-grid">
-        <div class="aawp-grid__item">
-            
-            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" data-aawp-geotargeting="true">
-
-                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
-                <div class="aawp-product__thumb">
-                    <a class="aawp-product__image-link" href="https://amzn.to/3voXsih" title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" rel="nofollow" target="_blank">
-                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/71hOlCjc8NL._AC_SX355_.jpg" alt="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" data-jpibfi-indexer="2" >
-                    </a>
-                </div>
-
-                <div class="aawp-product__content">
-                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/3voXsih" title="Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm" rel="nofollow" target="_blank">
-                        Bellota 325800 Azada con mango para agricultura y jardinería, Gris/Marrón, 14 cm</a>
-                    <div class="aawp-product__description">
-                        <ul class="ul-description-amazon">
-                            <li>Forjada en una sola pieza. </li>
-                            <li>Temple integral para evitar deformaciones.</li>
-							<li>Tratamiento térmico diferenciado en el ojo para evitar roturas.</li>
-							<li>Pulida y afilada.</li>
-                        </ul>        
-                    </div>
-                </div>
-
-                <div class="aawp-product__footer">
-                    <div class="aawp-product__pricing">
-                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
-                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
-                        <span class="aawp-product__price aawp-product__price--current">19,99 €</span>
-                        <a class="aawp-check-prime" href="https://amzn.to/3voXsih" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
-                    </div>
-                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/3voXsih" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- fin anuncio amazon -->
+<p>Una vez que las abejas se encuentren en su nuevo hogar, solo tendr&aacute;s que monitorearlas una vez por semana como m&aacute;ximo. F&iacute;jate en cu&aacute;nta miel han producido, si hay huevos y qu&eacute; cambios se notan en los cuadros (rect&aacute;ngulos donde trabajan las abejas).</p>
 
 
 
-
-<p>Aqu&iacute; un video de la cosecha de papas del Le&oacute;n Verde.</p>
-
-<p>&nbsp;</p>
-<div class="embed-responsive embed-responsive-16by9">
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XWsc9tRXXzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 
 

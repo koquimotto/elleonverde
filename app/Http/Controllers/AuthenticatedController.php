@@ -21,7 +21,7 @@ class AuthenticatedController extends Controller
     }
 
     public function index(){
-        return view('authenticated.index');
+        return view('authPosts.index');
     }
 
     public function list($id)
@@ -45,7 +45,7 @@ class AuthenticatedController extends Controller
     public function publish()
     {
         $categories = Category::all();
-        return view('authenticated.publish')->with('categories', $categories);
+        return view('authPosts.publish')->with('categories', $categories);
     }
 
     // Guardar artículo
@@ -102,7 +102,7 @@ class AuthenticatedController extends Controller
                         ->where('user_id', Auth::user()->id)
                         ->first();
         $categories = Category::all();
-        return view('authenticated.publish_edit')->with('post', $post)->with('categories', $categories);
+        return view('authPosts.publish_edit')->with('post', $post)->with('categories', $categories);
     }
 
     public function update_publish(Request $request)
@@ -143,7 +143,7 @@ class AuthenticatedController extends Controller
         $posts = Post::where('user_id', Auth::user()->id)
                     ->where('state',1)
                     ->orderBy('id', 'desc')->get();
-        return view('authenticated.publish_list')->with('posts', $posts);
+        return view('authPosts.publish_list')->with('posts', $posts);
     }
 
     // public function upload_image($image_txt, $slug_txt, $post_id)
@@ -205,4 +205,9 @@ class AuthenticatedController extends Controller
         @header('Content-type: text/html; charset=utf-8');    
         echo $res;
     }
+
+    public function authProductIndex(){
+        return view('authProducts.index');
+    }
+
 }

@@ -1,0 +1,39 @@
+@extends('layouts.app')
+
+@section('title', 'Todos mis Productos - El León Verde' )
+
+@section('meta')
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+@endsection
+
+@section('styles')
+@endsection
+
+@section('content')
+
+    <section class="service_detail" style="padding:20px 0 30px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="title-style"><b>Todos mis productos</b></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        
+                        @include('partials.side_menu_auth')
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+@endsection
+
+
+@section('scripts')
+@endsection

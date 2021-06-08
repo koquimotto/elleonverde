@@ -190,6 +190,11 @@
                                 @endforeach 
     
                             </div>
+                            <div class="row" style="text-align:right">
+                                <nav aria-label="...">
+                                {{ $posts->links('partials.pagination') }}
+                                </nav>
+                            </div>
                         </div>                       
                     </div>
                     

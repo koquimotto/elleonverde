@@ -31,6 +31,9 @@ Route::get('/tienda/{continent}/{category}', [LandingController::class, 'categor
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('auth.home');
+
+
+
 //Authenticated
 Route::get('/colaborador/articulos', [AuthenticatedController::class, 'index'])->name('auth.index');
 Route::get('/auth/list/{id}',[AuthenticatedController::class, 'list'])->name('auth.list');
@@ -44,6 +47,9 @@ Route::post('/colaborador/update-meta/{idPost}', [AuthenticatedController::class
 
 //upload image in ckeditor
 Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_upload'])->name('ckeditor.upload');
+
+//Products
+Route::get('/colaborador/productos', [AuthenticatedController::class, 'authProductIndex'])->name('auth.ProductIndex');
 
 
 // Tests
