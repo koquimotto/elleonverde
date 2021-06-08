@@ -167,7 +167,7 @@
                         <div class="col-xl-6">
                             <!-- Detail about home --> 
                                 <p>
-                                    <b>Elleonverde.com</b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza.
+                                    <b><a href="https://elleonverde.com/">Elleonverde.com</a></b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza.
                                 </p>
                                 <br>
                             <!--End detail about home --> 
@@ -273,14 +273,6 @@
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <p>
-                                            Yo te haría dos preguntas: 
-                                        </p>
-                                        <p>
-                                            <b> ¿Te gustaría comer productos sanos y cuidar el medio ambiente?</b>
-                                            <br>
-                                            <b> ¿Te gustarías que tus hijas, aprendan a respetar y proteger el medio ambiente? </b>
-                                        </p>
-                                        <p>
                                             El tener un huerto en casa es una de las mejores oportunidades para aprender a sembrar lo que te gusta, desde hortalizas hasta frutas, puedes sembrarlo directamente en la tierra de tu jardín, así como en masetas o cajones, dentro de tu casa o en el techo de ella. Y lo mejor de todo es que sabrás que es 100% orgánico y bueno para tu salud. 
                                         </p>
                                         <p>
@@ -330,7 +322,7 @@
                                 </div>
                                 <br>
                                 <h4>
-                                    <b>Yo soy Arturo El León Verde y quiero invitarte que juntos iniciamos esta aventura.</b>
+                                    <b>Yo soy Arturo, El León Verde y quiero invitarte que juntos iniciamos esta aventura.</b>
                                 </h4>
                                 <div class="row" style="text-align:center">
                                     <div class="col-xl-4"></div>

@@ -15,7 +15,7 @@
 
         <!-- Contenido del post -->
         <div class="news_detail_content">
-            <h2>{{ title }}</h2>
+            <h1>{{ title }}</h1>
             <div v-html="detail"></div>                     
         </div>
 

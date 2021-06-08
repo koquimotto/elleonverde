@@ -293,7 +293,7 @@
 
 <h1><span style="color:#2ecc71">La importancia de una colmena de abejas</span></h1>
 
-<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106608-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
+<p><span style="color:#2ecc71"><img  alt="" src="https://elleonverde.com/uploads/images/content/1623106608-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
 <p>Antes de nada, ser&iacute;a bueno saber por qu&eacute; motivos muchas personas deciden dedicarse a la apicultura, ya sea urbana o rural. Las abejas son insectos muy importantes para el ecosistema, ya que su principal tarea es polinizar las flores que visitan.</p>
 
@@ -305,7 +305,7 @@
 
 <h1><span style="color:#2ecc71">A tener en cuenta para una colmena de abejas en casa.</span></h1>
 
-<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106653-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
+<p><span style="color:#2ecc71"><img alt="" src="https://elleonverde.com/uploads/images/content/1623106653-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
 <ul>
 	<li>La miel urbana suele ser de excelente calidad, a diferencia de lo que se cree. Adem&aacute;s, las abejas ayudan a polinizar los jardines cercanos y no son peligrosas para las personas: solo pican cuando sienten un peligro muy fuerte.</li>
@@ -316,15 +316,13 @@
 	<li>Puedes comprar un enjambre o n&uacute;cleo a un productor especializado &ndash;mayormente en el campo&ndash; o atrapar un enjambre silvestre. Esto &uacute;ltimo es un poco m&aacute;s dif&iacute;cil, pero suelen ser los m&aacute;s trabajadores. Aseg&uacute;rate de que la reina est&aacute; presente: es la &uacute;nica diferente a las dem&aacute;s. El traslado, en cualquier caso, deber&aacute; hacerse por la noche, cuando todas habr&aacute;n regresado a la colmena.</li>
 </ul>
 
-<div class="embed-responsive embed-responsive-16by9">
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D-n1MdPlyOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<p>Video</p>
 
 <p>&nbsp;</p>
 
 <h1><span style="color:#2ecc71">Nota Importante</span></h1>
 
-<p><span style="color:#2ecc71"><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623106723-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
+<p><span style="color:#2ecc71"><img alt="" src="https://elleonverde.com/uploads/images/content/1623106723-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
 
 <p>Es importante que tengas en cuenta que las abejas son animales muy sensibles y en casos muy particulares peligrosas, as&iacute; que te recomendamos que te asesores con un experto para comenzar tu colmena o para cualquier cambio que hagas con tus abejas.</p>
 

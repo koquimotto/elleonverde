@@ -12,5 +12,9 @@ class Product extends Model
         return $this->belongsToMany(Post::class);
         // return $this->belongsToMany('App\Models\Post');
     }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
     use HasFactory;
 }
