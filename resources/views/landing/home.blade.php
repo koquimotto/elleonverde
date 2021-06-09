@@ -309,12 +309,48 @@
                                         <b>También hemos preparado dos tiendas dependiendo en que parte de nuestro hermoso planeta te encuentres:</b>
                                     </p>
 
-                                    <p>
-                                        <ul>
-                                            <li> <a href="{{ route('store','america') }}">Tienda de América </a> </li>
-                                            <li> <a href="{{ route('store','europa') }}">Tienda de Europa </a> </li>
-                                        </ul>
-                                    </p>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h3>
+                                                <a href="{{ route('store','america') }}">Tienda de América </a>
+                                            </h3>
+                                            <div class="row">
+                                                @php
+                                                    $tops = App\Models\Product::where('top', 1)
+                                                            ->where('store', 'America')
+                                                            ->where('state', 1)
+                                                            ->orderBy('id', 'desc')
+                                                            ->take(6)
+                                                            ->get();
+                                                @endphp
+                                                @foreach($tops as $top)
+                                                    <div class="col-md-4 col-6">
+                                                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <h3>
+                                                <a href="{{ route('store','europa') }}">Tienda de Europa </a>
+                                            </h3>
+                                            <div class="row">
+                                                @php
+                                                    $tops = App\Models\Product::where('top', 1)
+                                                            ->where('store', 'Europa')
+                                                            ->where('state', 1)
+                                                            ->orderBy('id', 'desc')
+                                                            ->take(6)
+                                                            ->get();
+                                                @endphp
+                                                @foreach($tops as $top)
+                                                    <div class="col-md-4 col-6">
+                                                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <p>
                                         <b>Donde encontrarás las mejores sugerencias de todo lo que necesitaras para tu huerto o jardín. </b>

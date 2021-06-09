@@ -65,6 +65,14 @@
                                         Selección de los productos más vendidos en nuestra tienda online para huertos y jardines:
                                     </p>
                                     <div class="row">
+                                        @php
+                                            $tops = App\Models\Product::where('top', 1)
+                                                    ->where('store', $store->top)
+                                                    ->where('state', 1)
+                                                    ->orderBy('id', 'desc')
+                                                    ->take(6)
+                                                    ->get();
+                                        @endphp
                                         @foreach($tops as $top)
                                             <div class="col-md-2 col-6">
                                                 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
