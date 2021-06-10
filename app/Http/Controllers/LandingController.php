@@ -129,4 +129,12 @@ class LandingController extends Controller
     public function test(){
         return view('comments.editModal');
     }
+
+
+    public function foro(){
+        return view('foro.index');
+    }
+
 }
+
+

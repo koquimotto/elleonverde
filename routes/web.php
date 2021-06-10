@@ -10,6 +10,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\YoutubeController;
+use App\Http\Controllers\ForoController;
 
 
 // Main menus
@@ -17,12 +18,16 @@ Route::get('/', [LandingController::class, 'home'])->name('home');
 Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');
 Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('vegetable.patch');
+Route::get('/foro',[LandingController::class, 'foro'])->name('foro');
 Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('herbal');
 Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name('insectary');
 Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets');
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
 Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
+
+
+// Foro
 
 // Store
 Route::get('/tienda/{continent}', [LandingController::class, 'store'])->name('store');

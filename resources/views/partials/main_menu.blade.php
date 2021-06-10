@@ -25,7 +25,9 @@
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="{{ Request::is('blog*') ? 'current' : '' }}">
-                                    <a href="{{ route('blog') }}">Blog Verde</a>
+                                    <a href="{{ route('blog') }}">Blog</a>
+                                </li><li class="{{ Request::is('Foro*') ? 'current' : '' }}">
+                                    <a href="{{ route('foro') }}">Foro</a>
                                 </li>
                                 <li class="{{ Request::is('video*') ? 'current' : '' }}">
                                     <a href="{{ route('videos') }}">Videos Sugeridos</a>

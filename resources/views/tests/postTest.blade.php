@@ -282,56 +282,212 @@
 
 
 
-								
+{{-- Inicio de Post --}}
 
 
-								<p>Quiz&aacute;s creas que una colmena de abejas solo puede estar en el campo, pero cada vez son m&aacute;s las familias que apuestan por la apicultura urbana. &iquest;Te gustar&iacute;a generar tu propia miel y ayudar al medio ambiente criando polinizadores?</p>
 
-<p><span style="background-color:white"><span style="color:#414141">Para tener una colmena de abejas bajo t&uacute; mismo techo, primero deber&aacute;s consultar si la legislaci&oacute;n de tu pa&iacute;s o ciudad te lo permite; despu&eacute;s tendr&aacute;s que colocarla en a ubicaci&oacute;n adecuada y tener en cuenta varios consejos para evitar posibles problemas.</span></span></p>
+<p><strong>EL RABANITO LA HORTALIZA DE FARAONES</strong></p>
 
-<p>&nbsp;</p>
+<p><strong>C&Oacute;MO SEMBRARLO, siembra, cuidados y cosecha del rabanito</strong></p>
 
-<h1><span style="color:#2ecc71">La importancia de una colmena de abejas</span></h1>
+<p>Hace 2.000 a&ntilde;os A.C., en las pir&aacute;mides egipcias, se encontr&oacute; inscripciones que los egipcios usaban el rabanito en su cocina, aunque su origen est&eacute; probablemente en Jap&oacute;n o China. Es muy probable que el imperio de Tutankhamon, tambi&eacute;n haya usado el aceite de rabanito para cocinar, pero se le da mayor atribuci&oacute;n a la preparaci&oacute;n de medicinas.</p>
 
-<p><span style="color:#2ecc71"><img  alt="" src="https://elleonverde.com/uploads/images/content/1623106608-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
-
-<p>Antes de nada, ser&iacute;a bueno saber por qu&eacute; motivos muchas personas deciden dedicarse a la apicultura, ya sea urbana o rural. Las abejas son insectos muy importantes para el ecosistema, ya que su principal tarea es polinizar las flores que visitan.</p>
-
-<p>Sin las abejas, las personas no tendr&iacute;amos alimentos&hellip; Solo el 10 % de las plantas a nivel mundial se polinizan sin la ayuda de estos y otros insectos. Adem&aacute;s, producen miel, que se puede usar para la cocina y para curar enfermedades.</p>
-
-<p>La apicultura urbana est&aacute; sumando cada vez m&aacute;s adeptos en todo el mundo, sobre todo en las grandes ciudades. Tener una colmena de abejas en la azotea es mucho m&aacute;s com&uacute;n de lo que crees, sobre todo despu&eacute;s de que esta pr&aacute;ctica haya sido legalizada en varios pa&iacute;ses.</p>
-
-<p>&nbsp;</p>
-
-<h1><span style="color:#2ecc71">A tener en cuenta para una colmena de abejas en casa.</span></h1>
-
-<p><span style="color:#2ecc71"><img alt="" src="https://elleonverde.com/uploads/images/content/1623106653-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
+<p><strong>Propiedades del Rabanito:</strong></p>
 
 <ul>
-	<li>La miel urbana suele ser de excelente calidad, a diferencia de lo que se cree. Adem&aacute;s, las abejas ayudan a polinizar los jardines cercanos y no son peligrosas para las personas: solo pican cuando sienten un peligro muy fuerte.</li>
-	<li>Es bueno saber que una abeja cuando pica muere, debido a que se desprende el aguij&oacute;n y, con &eacute;l, parte de su cuerpo. Por eso, a diferencia de las avispas, que pueden picar varias veces, deben tener una gran necesidad de atacar para hacerlo.</li>
-	<li>Criar abejas no es una actividad muy costosa, ya que casi podr&iacute;a decirse que se cuidan solas. La colmena es un sistema completamente eficiente, donde cada ejemplar sabe qu&eacute; debe hacer.</li>
-	<li>La instalaci&oacute;n de colmenas en la ciudad debe realizarse s&iacute; o s&iacute; en un espacio abierto, como una terraza, un parque o un balc&oacute;n grande tras asegurarse de que en nuestra ciudad est&aacute; permitida la pr&aacute;ctica de apicultura urbana.</li>
-	<li>Antes de colocar la colmena de abejas aseg&uacute;rate de tener todo el equipo necesario. Existe un protector de pies a cabeza que evita las posibles picaduras que se producen cuando abrimos el panal o extraemos la miel. Si no quieres comprar todo el traje, puedes usar el sombrero con velo, un par de guantes gruesos, una chaqueta cerrada, pantalones vaqueros y zapatos cerrados.</li>
-	<li>Puedes comprar un enjambre o n&uacute;cleo a un productor especializado &ndash;mayormente en el campo&ndash; o atrapar un enjambre silvestre. Esto &uacute;ltimo es un poco m&aacute;s dif&iacute;cil, pero suelen ser los m&aacute;s trabajadores. Aseg&uacute;rate de que la reina est&aacute; presente: es la &uacute;nica diferente a las dem&aacute;s. El traslado, en cualquier caso, deber&aacute; hacerse por la noche, cuando todas habr&aacute;n regresado a la colmena.</li>
+	<li>El rabanito posee potasio, lo que ayuda a la musculatura.</li>
+	<li>El 95 % de rabanito es agua, esto quiere decir que tiene pocas calor&iacute;as.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+	<li>El rabanito contiene vitamina C, antioxidantes que evitan la aparici&oacute;n de dolencias.</li>
+	<li>El r&aacute;bano ayuda a la formaci&oacute;n de col&aacute;geno en huesos y dientes.</li>
+	<li>El r&aacute;bano produce gl&oacute;bulos blancos y rojos.</li>
+	<li>El rabanito es un depurador de sangre, eliminando sustancias da&ntilde;inas como el &aacute;cido &uacute;rico y colesterol.</li>
+	<li>El r&aacute;bano regula las funciones del colon.</li>
+	<li>El rabanito alivia el estre&ntilde;imiento.</li>
+	<li>El rabanito es diur&eacute;tico, lo que favorece la tensi&oacute;n arterial.</li>
+	<li>El rabanito tiene propiedades relajantes, mejora el sue&ntilde;o.</li>
+	<li>El rabanito favorece la expectoraci&oacute;n, eliminando problemas respiratorios.</li>
+	<li>El rabanito reduce los problemas de anemia.</li>
 </ul>
-
-<p>Video</p>
 
 <p>&nbsp;</p>
 
-<h1><span style="color:#2ecc71">Nota Importante</span></h1>
+<p><strong>PASOS PARA SEMBRAR RABANITO</strong></p>
 
-<p><span style="color:#2ecc71"><img alt="" src="https://elleonverde.com/uploads/images/content/1623106723-el-leon-verde.png" style="height:157px; width:300px" /></span></p>
+<p><strong>1.-Clima: </strong>La temperatura ideal para que se cultive rabanitos es de 18 &ndash; 22 &deg;C, si es superior los rabanitos amargaran.</p>
 
-<p>Es importante que tengas en cuenta que las abejas son animales muy sensibles y en casos muy particulares peligrosas, as&iacute; que te recomendamos que te asesores con un experto para comenzar tu colmena o para cualquier cambio que hagas con tus abejas.</p>
+<p><strong>2.- Preparaci&oacute;n del Terreno para sembrar rabanitos -</strong>Es fundamental que antes de sembrar rabanitos, se deba de alistar el terreno a usar, por lo que eliminaremos las malas hierbas y cultivos anteriores extrayendo de la ra&iacute;z para evitar posible nueva brotaci&oacute;n. Acto seguido humedeceremos el &aacute;rea a sembrar.</p>
 
-<p>Una vez que las abejas se encuentren en su nuevo hogar, solo tendr&aacute;s que monitorearlas una vez por semana como m&aacute;ximo. F&iacute;jate en cu&aacute;nta miel han producido, si hay huevos y qu&eacute; cambios se notan en los cuadros (rect&aacute;ngulos donde trabajan las abejas).</p>
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119315-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>3.-Preparaci&oacute;n del suelo para sembrar rabanitos: &nbsp;</strong>Debemos hacer una capa de 1 cm de compostaje esparcido en el &aacute;rea a sembrar, la composta sirve para regular la temperatura. Opcionalmente podemos aplicar humus de lombriz.</p>
+
+
+<!-- anuncio amazon -->
+<div class="aawp">
+    <div class="aawp-grid">
+        <div class="aawp-grid__item">
+            
+            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="AeroGarden Black Harvest - Jardín hidropónico para interiores" data-aawp-geotargeting="true">
+
+                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
+                <div class="aawp-product__thumb">
+                    <a class="aawp-product__image-link" href="https://amzn.to/3wdHZSH" title="AeroGarden Black Harvest - Jardín hidropónico para interiores" rel="nofollow" target="_blank">
+                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/81DPs6WZXjL._AC_SX522_.jpg" alt="AeroGarden Black Harvest - Jardín hidropónico para interiores" data-jpibfi-indexer="2" >
+                    </a>
+                </div>
+
+                <div class="aawp-product__content">
+                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/3wdHZSH" title="AeroGarden Black Harvest - Jardín hidropónico para interiores" rel="nofollow" target="_blank">
+                        AeroGarden Black Harvest - Jardín hidropónico para interiores</a>
+                    <div class="aawp-product__description">
+                        <ul class="ul-description-amazon">
+                            <li>Incluye kit de semillas de hierbas gourmet (6 cápsulas) – albahaca Genovesa, perejil rizado, eneldo, tomillo, albahaca tailandesa y menta y una botella de 3 onzas de nuestros nutrientes vegetales naturales patentados (suficiente para una temporada completa de crecimiento).</li>
+                        </ul>        
+                    </div>
+                </div>
+
+                <div class="aawp-product__footer">
+                    <div class="aawp-product__pricing">
+                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
+                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
+                        <span class="aawp-product__price aawp-product__price--current">US$ 144.99</span>
+                        <a class="aawp-check-prime" href="https://amzn.to/3wdHZSH" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
+                    </div>
+                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/3wdHZSH" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin anuncio amazon -->
+
+
+
+<p><strong>4.-Sembrado en huerto: </strong>&nbsp;Ahora debemos hacer surcos de 2 cm de profundidad, la distancia de cada surco debe ser de 60 cm entre cada uno, posteriormente plantaremos 2 a 3 semillas a una profundidad de 1 cm y las cubriremos.</p>
+
+<p><strong>5.-Sembrado en maceta: </strong>&nbsp;Debemos seleccionar macetas que tengan como m&iacute;nimo 15 cm de profundidad y volumen m&iacute;nimo de un litro, el sustrato que se usa debe de tener nutrientes y es importante que tenga un buen drenaje, posteriormente se siembran las semillas en peque&ntilde;os surcos de 1- 1.5 cm de profundidad con una distancia de 8- 12 cm entre ellos.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119572-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>6.-Cuidado de la planta de rabanito: </strong>Es importante que la tierra est&eacute; h&uacute;meda, por lo que debemos regar con frecuencia, pero eso s&iacute;, debemos evitar los charcos. La cosecha suele ser despu&eacute;s de un mes aproximadamente desde la siembra, por lo estaremos atentos al tiempo, si es que se nos pasa los d&iacute;as, los rabanitos suelen amargar.</p>
+
+
+<!-- anuncio amazon -->
+<div class="aawp">
+    <div class="aawp-grid">
+        <div class="aawp-grid__item">
+            
+            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Miracle-Gro | Fertilizante" data-aawp-geotargeting="true">
+
+                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
+                <div class="aawp-product__thumb">
+                    <a class="aawp-product__image-link" href="https://amzn.to/3pDEMJC" title="Miracle-Gro | Fertilizante" rel="nofollow" target="_blank">
+                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/711gpIqZSRL._AC_SX522_.jpg" alt="Miracle-Gro | Fertilizante" data-jpibfi-indexer="2" >
+                    </a>
+                </div>
+
+                <div class="aawp-product__content">
+                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/3pDEMJC" title="Miracle-Gro | Fertilizante" rel="nofollow" target="_blank">
+                        Miracle-Gro | Fertilizante</a>
+                    <div class="aawp-product__description">
+                        <ul class="ul-description-amazon">
+                            <li>Miracle-Gro Alimento soluble en agua para plantas, verduras y hierbas, incluye ingredientes naturales. </li>
+                            <li>Alimenta al instante para promover grandes y hermosos resultados (vs sin alimentar).</li>
+                        </ul>        
+                    </div>
+                </div>
+
+                <div class="aawp-product__footer">
+                    <div class="aawp-product__pricing">
+                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
+                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
+                        <span class="aawp-product__price aawp-product__price--current">US$ 9.18</span>
+                        <a class="aawp-check-prime" href="https://amzn.to/3pDEMJC" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
+                    </div>
+                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/3pDEMJC" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin anuncio amazon -->
+
+
+<p><strong>7.-Cosecha de rabanitos: </strong>Entre 4 y 6 semanas el rabanito tendr&aacute;<strong> </strong>las ra&iacute;ces de 3 cm de di&aacute;metro. Podremos ya cosecharlos, haciendo uso de las manos levantaremos la planta de la tierra, luego lavaremos con abundante agua para que la tierra se desprenda totalmente, finalmente podemos almacenarlo por un m&aacute;ximo de 2 semanas.</p>
+
+<p><img class="img-fluid" alt="" src="https://elleonverde.com/uploads/images/content/1623119465-el-leon-verde.png" style="height:209px; width:400px" /></p>
+
+<p><strong>QU&Eacute; SEMBRAR CON EL RABANITO.</strong></p>
+
+<p>Lo recomendado es sembrarlo con lechugas, espinacas, zanahorias, acelgas, apios, berenjenas, guisantes, jud&iacute;as, patatas, pepinos, pimientos, y tomates. No debemos sembrar rabanitos con las hortalizas de su misma familia, tales como repollos, coliflores y br&oacute;coli.</p>
+
+<p><strong>PLAGAS DE RABANITO</strong></p>
+
+<p><strong>Los pulgones</strong>: Atacan principalmente a los brotes m&aacute;s j&oacute;venes de los cultivos, estas larvas causan da&ntilde;os haciendo agujeros en las hojas de las plantas. Esta plaga se controla, eliminando malas hierbas, buena preparaci&oacute;n del sustrato, trampas crom&aacute;ticas. La naturaleza tambi&eacute;n hace su trabajo eliminando los pulgones con las mariquitas, crisopas y tijeretas.</p>
+
+<p><strong>Las moscas blancas:</strong> Las localizamos en el env&eacute;s de las hojas, tienen gran grado por la humedad y las temperaturas altas, por lo que es una plaga frecuente en primavera y verano. Existen diversos m&eacute;todos de control de la mosca blanca como las trampas crom&aacute;ticas, depredadores naturales, infusi&oacute;n de ajenjo, ajo, etc.</p>
+
+<p>&nbsp;</p>
+
+<!-- anuncio amazon -->
+<div class="aawp">
+    <div class="aawp-grid">
+        <div class="aawp-grid__item">
+            
+            <div class="aawp-product aawp-product--horizontal aawp-product--ribbon aawp-product--sale" data-aawp-product-id="8493828955" data-aawp-product-title="Ortho Tree & Arbustos en aerosol para árboles frutales, 16 onzas" data-aawp-geotargeting="true">
+
+                <span class="aawp-product__ribbon aawp-product__ribbon--sale" >Oferta</span>
+                <div class="aawp-product__thumb">
+                    <a class="aawp-product__image-link" href="https://amzn.to/2REZfBg" title="Ortho Tree & Arbustos en aerosol para árboles frutales, 16 onzas" rel="nofollow" target="_blank">
+                        <img class="aawp-product__image" src="https://images-na.ssl-images-amazon.com/images/I/71xxN6KK0eL._AC_SY879_.jpg" alt="Ortho Tree & Arbustos en aerosol para árboles frutales, 16 onzas" data-jpibfi-indexer="2" >
+                    </a>
+                </div>
+
+                <div class="aawp-product__content">
+                    <a style="color: rgb(231, 76, 60);" class="aawp-product__title a-title-adAmazon" href="https://amzn.to/2REZfBg" title="Ortho Tree & Arbustos en aerosol para árboles frutales, 16 onzas" rel="nofollow" target="_blank">
+                        Ortho Tree & Arbustos en aerosol para árboles frutales, 16 onzas</a>
+                    <div class="aawp-product__description">
+                        <ul class="ul-description-amazon">
+                            <li>Controla insectos, enfermedades y ácaros. </li>
+                            <li>Mata las etapas de insectos, incluyendo huevos, larvas y adultos. Controla pulgones, chinches, ácaros, escamas, moscas blancas, escarabajos y otros insectos listados.</li>
+                        </ul>        
+                    </div>
+                </div>
+
+                <div class="aawp-product__footer">
+                    <div class="aawp-product__pricing">
+                        <!--<span class="aawp-product__price aawp-product__price--old">45,00 €</span>
+                        <span  class="aawp-product__price aawp-product__price--saved">−5%</span>-->
+                        <span class="aawp-product__price aawp-product__price--current">US$ 32.18</span>
+                        <a class="aawp-check-prime" href="https://amzn.to/2REZfBg" title="Amazon Prime" rel="nofollow" target="_blank"></a>        
+                    </div>
+                        <a class="aawp-button aawp-button--buy aawp-button aawp-button--amazon rounded shadow aawp-button--icon aawp-button--icon-black" href="https://amzn.to/2REZfBg" title="Ver en Amazon" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i>  Ver en Amazon</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin anuncio amazon -->
+
+
+<p><strong>ENFERMEDADES DEL RABANITO</strong></p>
+
+<p><strong>Mildiu</strong>. Es un tipo de hongo que afecta a los rabanitos, produce manchas en las hojas de aspecto grasiento en diferentes tonalidades, que luego se vuelven marrones y finalmente se marchitan.</p>
+
+<p>&nbsp;</p>
+
+<p>Ahora mismo debemos sembrar rabanitos, que son muy f&aacute;ciles de cultivar y sobre todo crecen en huertos, macetas y mesas de cultivo, es decir lo puedes sembrar en todo lugar, solo faltas t&uacute;. Empieza a sembrarlos ahora mismo y a disfrutar de este regalo delicioso.&nbsp;</p>
 
 
 
 
 
+
+{{-- Fin de Post --}}
+								
 
 
 
