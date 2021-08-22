@@ -141,20 +141,20 @@
     <div class="" style="padding: 40px 0 20px;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <!-- Title about home -->
-                    <div class="block-title" style="margin-bottom:30px">
-                        <p>Bienvenidos al blog de "El León Verde"</p>
-                        <h2 style="color:#404a3d; font-weight:600">Todo lo que necesitas saber de huertos y jardines</h2>
-                        <div class="leaf">
-                            <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
+                <div class="col-xl-9">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Title about home -->
+                            <div class="block-title" style="margin-bottom:30px">
+                                <p>Bienvenidos al blog de "El León Verde"</p>
+                                <h2 style="color:#404a3d; font-weight:600">Todo lo que necesitas saber de huertos, jardines, plantas, remedios caseros y más</h2>
+                                <div class="leaf">
+                                    <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
+                                </div>
+                            </div>
+                            <!-- End title about home -->
                         </div>
                     </div>
-                    <!-- End title about home -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-9">
                     <div class="row">
                         <!-- Column about -->
                         <div class="col-xl-6">
@@ -167,7 +167,7 @@
                         <div class="col-xl-6">
                             <!-- Detail about home --> 
                                 <p>
-                                    <b><a href="https://elleonverde.com/">Elleonverde.com</a></b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza.
+                                    <b><a href="https://elleonverde.com/">Elleonverde.com</a></b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza, asimismo los beneficios de las plantas y remedios caseros.
                                 </p>
                                 <br>
                             <!--End detail about home --> 
@@ -390,6 +390,38 @@
                                 <input type="search" placeholder="Buscar">
                                 <button type="submit"><i class="icon-magnifying-glass"></i></button>
                             </form>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Últimos Videos</h3>
+                                <div class="leaf">
+                                    <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <div class="col-md-12">
+                                <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
+                                    <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            @foreach($videos as $video)
+                            <div class="col-md-12" style="padding-bottom: 20px">
+                                <div class="gallery_one_image">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
+                                    <div class="gallery_one_hover_box">
+                                        <div class="gallery_one_icon">
+                                            <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
+                                                    class="fa fa-play"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
