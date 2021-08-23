@@ -368,7 +368,7 @@
                                 </div>
                             @endif
                             <div class="sidebar__single sidebar__post">
-                                <h3 class="sidebar__title title-style">Lo más reciente</h3>
+                                <h3 class="sidebar__title title-style" style="font-size: 35px">Últimos Artículos</h3>
                                 <ul class="sidebar__post-list list-unstyled">
                                     @foreach ($last_posts as $last_post)
                                     <?php
@@ -391,6 +391,38 @@
                                     @endforeach
                                 </ul>
                             </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="sidebar__title title-style" style="font-size: 35px;margin-bottom:0px">Últimos Videos</h3>
+                                    <div class="leaf">
+                                        <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: center;">
+                            <div class="col-md-12">
+                                <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
+                                    <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row" style="text-align: center;">
+                            @foreach($videos as $video)
+                            <div class="col-md-12" style="padding-bottom: 20px">
+                                <div class="gallery_one_image">
+                                    <img style="max-width:100%" src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
+                                    <div class="gallery_one_hover_box">
+                                        <div class="gallery_one_icon">
+                                            <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
+                                                    class="fa fa-play"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
                             {{-- <div class="sidebar__single sidebar__category">
                                 <h3 class="sidebar__title">All Categories</h3>
                                 <ul class="sidebar__category-list list-unstyled">

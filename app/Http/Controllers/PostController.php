@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Attached_file;
 
 class PostController extends Controller
 {
@@ -49,9 +50,13 @@ class PostController extends Controller
     {
         $post = Post::where('slug', $post)->first();
         $last_posts = Post::orderBy('id', 'desc')->take(4)->get();
+        $videos = Attached_file::orderBy('id', 'desc')
+        ->where('type', 'youtube')
+            ->take(5)
+            ->get();
         // $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
         // $comment_number = Comment::where('post_id', $post->id)->count();
-        return view('posts.index')->with('last_posts', $last_posts)->with('post', $post);
+        return view('posts.index')->with('last_posts', $last_posts)->with('post', $post)->with('videos', $videos);
     }
 
     /**
