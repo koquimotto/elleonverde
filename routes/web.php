@@ -25,6 +25,8 @@ Route::get('/tu-mascota-ideal', [LandingController::class, 'pets'])->name('pets'
 Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subscribe');
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
 Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
+Route::get('/el-huerto',[LandingController::class, 'garden'])->name('garden');
+
 
 
 // Foro

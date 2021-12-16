@@ -141,64 +141,16 @@
     <div class="" style="padding: 40px 0 20px;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-9">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <!-- Title about home -->
-                            <div class="block-title" style="margin-bottom:30px">
-                                <p>Bienvenidos al blog de "El León Verde"</p>
-                                <h2 style="color:#404a3d; font-weight:600">Todo lo que necesitas saber de huertos, jardines, plantas, remedios caseros y más</h2>
-                                <div class="leaf">
-                                    <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
-                                </div>
-                            </div>
-                            <!-- End title about home -->
+                <div class="col-xl-12">
+                    <div style="text-align:center">
+                        <h2 style="color:#404a3d; font-weight:600; ">
+                            Todo lo que necesitas saber de huertos, jardines, plantas y más
+                        </h2>
+                        <div class="block-title" style="margin-bottom:30px">
+                            <p>Artículos Recomendados</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Column about -->
-                        <div class="col-xl-6">
-                                <!-- Image home -->
-                                <div class="news_detail_image_box" style="margin-bottom:10px">
-                                    <img src="{{ asset('assets/images/about/about-el-leon-verde.jpg') }}" alt="">
-                                </div>
-                                <!-- End image home --> 
-                        </div>
-                        <div class="col-xl-6">
-                            <!-- Detail about home --> 
-                                <p>
-                                    <b><a href="https://elleonverde.com/">Elleonverde.com</a></b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza, asimismo los beneficios de las plantas y remedios caseros.
-                                </p>
-                                <br>
-                            <!--End detail about home --> 
-                        </div>
-                        <!-- End column about -->
-                    </div>
-                    <hr>
-
-                    <!-- Title posts -->
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="row">
-                                <div class="col-xl-9">
-                                    <div class="block-title" style="margin-bottom:15px;margin-top:20px">
-                                        <p>Blog Verde</p>
-                                        <h2> <a style="color:#404a3d" href="{{ route('blog') }}">Últimos Artículos</a> </h2>
-                                        <div class="leaf">
-                                            <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3">
-                                    <div class="all_posts_btn">
-                                        <a class="thm-btn" href="{{ route('blog') }}">Ver todos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                    <!-- End title posts -->
-
+                        
                     <!-- Posts -->
                     <div class="blog_two" style="padding:0px 0 70px">
                         <div class="container">
@@ -208,7 +160,7 @@
                                 <?php
                                     $count = App\Models\Comment::where('post_id', $post->id)->count();
                                 ?>
-                                <div class="col-xl-4 col-lg-6">
+                                <div class="col-xl-3 col-lg-6">
                                     <div class="blog_two_single fadeInLeft">
                                         <div class="blog_two_image">
                                             <a href="{{ route('blog.show',$post->slug) }}">
@@ -235,16 +187,16 @@
                                                 </li>
                                             </ul> --}}
                                             <h3 style="line-height:30px">
-                                                <a href="{{ route('blog.show',$post->slug) }}" class="blog_two_title">
-                                                    <?php echo substr($post->title,0,37).'...'; ?>
+                                                <a style="font-family: 'Kalam', cursive;" href="{{ route('blog.show',$post->slug) }}" class="blog_two_title">
+                                                    <?php echo substr($post->title,0,35).'...'; ?>
                                                 </a>
                                             </h3>
                                             {{-- <div class="blog_two_text">
                                                 <p>There are lorem ipsum is simply free text available in the market to use it many
                                                     variations of ipsum the majority suffered.</p>
                                             </div> --}}
-                                            <div class="blog_two_read_more_btn" style="margin-top:20px">
-                                                <a href="{{ route('blog.show',$post->slug) }}"><i class="fa fa-angle-right"></i>Leer Más</a>
+                                            <div class="blog_two_read_more_btn" style="margin-top:0px;margin-bottom: 20px; text-align:right">
+                                                <a style="background:#eddd5e;border-color:#eddd5e;" class="btn btn-primary" href="{{ route('blog.show',$post->slug) }}">Leer más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -254,176 +206,91 @@
                         </div>
                     </div> 
                     <!-- End posts -->
-                    <hr>
-                    <br>
+
+
                     <div class="row">
-                        <!-- Column about -->
                         <div class="col-xl-12">
-                            <div class="news_detail_left">
-
-                                <!-- Title about home -->
-                                <div class="block-title" style="margin-bottom:20px">
-                                    <p>El León Verde</p>
-                                    <h2>¿Por qué tener un huerto en casa?</h2>
-                                    <div class="leaf">
-                                        <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- End title about home -->
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <p>
-                                            El tener un huerto en casa es una de las mejores oportunidades para aprender a sembrar lo que te gusta, desde hortalizas hasta frutas, puedes sembrarlo directamente en la tierra de tu jardín, así como en masetas o cajones, dentro de tu casa o en el techo de ella. Y lo mejor de todo es que sabrás que es 100% orgánico y bueno para tu salud. 
-                                        </p>
-                                        <p>
-                                            Cuando tu siembra tus propios alimentos cuidas el medio ambiente y a todas las criaturas que viven dentro y fuera del huerto. Todo es un gran ecosistema que se inicia con tu huerto, si, con TU HUERTO.
-                                        </p>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <p>
-                                            Estos tiempos tan difíciles nos han enseñado a valorar la riqueza que tenemos y estoy seguro que para ti como para mí, nuestra mayor riqueza es la familia. Iniciar, aprender, cuidar y cosechar en un huerto, así como tener un muy lindo jardín o macetas con hermosas flores en casa, es la oportunidad perfecta para pasar tiempo en familia, estar más unido, conocerse verdaderamente entre todo y cultivar recuerdos que valdrán oro para toda nuestra vida. Es una oportunidad de inculcar a los niños el amor a la naturaleza. 
-                                        </p>
-
-                                        
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <!-- Image home -->
-                                        <div class="news_detail_image_box" style="margin-bottom:10px;">
-                                            <img src="{{ asset('assets/images/about/about-2-el-leon-verde.jpg') }}" alt="">
-                                        </div>
-                                        <!-- End image home --> 
-                                    </div>
-                                </div>
-
-                                
-                                <div class="news_detail_content">
-                                    <p>
-                                        <b>Así que no esperemos más y juntos hagamos de este espacio un lugar para compartir y aprender. </b>
-                                    </p>
-
-                                    <p>
-                                        <b>En nuestro <a href="{{ route('blog') }}">BLOG VERDE</a>  encontraras artículos que te serán de mucha ayuda y en nuestro canal de <a href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA" target="_blank">YouTube</a> videos que disfrutaras y querrás compartir. </b>
-                                    </p>
-                                    
-                                    <p>
-                                        <b>También hemos preparado dos tiendas dependiendo en que parte de nuestro hermoso planeta te encuentres:</b>
-                                    </p>
-
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <h3>
-                                                <a href="{{ route('store','america') }}">Tienda de América </a>
-                                            </h3>
-                                            <div class="row">
-                                                @php
-                                                    $tops = App\Models\Product::where('top', 1)
-                                                            ->where('store', 'America')
-                                                            ->where('state', 1)
-                                                            ->orderBy('id')
-                                                            ->take(6)
-                                                            ->get();
-                                                @endphp
-                                                @foreach($tops as $top)
-                                                    <div class="col-md-4 col-6">
-                                                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <h3>
-                                                <a href="{{ route('store','europa') }}">Tienda de Europa </a>
-                                            </h3>
-                                            <div class="row">
-                                                @php
-                                                    $tops = App\Models\Product::where('top', 1)
-                                                            ->where('store', 'Europa')
-                                                            ->where('state', 1)
-                                                            ->orderBy('id')
-                                                            ->take(6)
-                                                            ->get();
-                                                @endphp
-                                                @foreach($tops as $top)
-                                                    <div class="col-md-4 col-6">
-                                                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="{{$top->amazon_frame}}" ></iframe> 
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <p>
-                                        <b>Donde encontrarás las mejores sugerencias de todo lo que necesitaras para tu huerto o jardín. </b>
-                                    </p>
-                                </div>
-                                <br>
-                                <h4>
-                                    <b>Yo soy Arturo, El León Verde y quiero invitarte que juntos iniciamos esta aventura.</b>
-                                </h4>
-                                <div class="row" style="text-align:center">
-                                    <div class="col-xl-4"></div>
-                                    <div class="col-xl-4">
-                                        <img src="{{ asset('assets/images/resources/elleonverde-subscriptor.png') }}" alt="">
-                                    </div>
-                                    <div class="col-xl-4"></div>
-                                </div>
-                                <h4>
-                                    <b>Y no olvides... </b>
-                                </h4>
-                                <h4>
-                                    <b>¡SIEMPRE HACER LAS COSAS CON EL CORAZÓN Y CON MUCHA PASIÓN!!!  </b>
-                                    <br>
-                                    <b><a href="https://elleonverde.com/">www.elleonverde.com</a></b>
-                                </h4>
-                                
-                            </div>
-                        </div>
-                        <!-- End column about -->
-                    </div>
-
-                     
-                </div>
-                <div class="col-xl-3">
-                    <div class="sidebar">
-                        <div class="sidebar__single sidebar__search">
-                            <form action="#" class="sidebar__search-form">
-                                <input type="search" placeholder="Buscar">
-                                <button type="submit"><i class="icon-magnifying-glass"></i></button>
-                            </form>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Últimos Videos</h3>
+                            <!-- Title about home -->
+                            <div class="block-title" style="margin-bottom:30px; text-align:center;">
+                                <h2 >Yo soy Arturo, El León Verde y quiero invitarte que juntos iniciamos esta aventura</h2>
+                                <p>Bienvenidos al blog de "El León Verde"</p>
                                 <div class="leaf">
                                     <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
                                 </div>
                             </div>
+                            <!-- End title about home -->
                         </div>
-                        <div class="row" style="text-align: center;">
-                            <div class="col-md-12">
-                                <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
-                                    <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 100%;">
-                                </a>
-                            </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Column about -->
+                        <div class="col-xl-6">
+                                <!-- Image home -->
+                                <div class="news_detail_image_box" style="margin-bottom:10px">
+                                    <img src="{{ asset('assets/images/about/about-el-leon-verde.jpg') }}" alt="">
+                                </div>
+                                <!-- End image home --> 
                         </div>
-                        <br>
-                        <div class="row">
-                            @foreach($videos as $video)
-                            <div class="col-md-12" style="padding-bottom: 20px">
-                                <div class="gallery_one_image">
-                                    <img style="max-width:100%" src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
-                                    <div class="gallery_one_hover_box">
-                                        <div class="gallery_one_icon">
-                                            <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
-                                                    class="fa fa-play"></span></a>
+                        <div class="col-xl-6" style="text-align: justify">
+                            <!-- Detail about home --> 
+                                <p>
+                                    <b><a href="https://elleonverde.com/">Elleonverde.com</a></b>  nace para difundir información veraz y de calidad sobre la siembra y cuidados de tu huerto o jardín y todo el ecosistema que se forma alrededor de ello. También compartiremos muchos temas curiosos para estar más cerca de la naturaleza, asimismo los beneficios de las plantas y remedios caseros.
+                                </p>
+                                <p>En nuestro BLOG VERDE encontraras artículos que te serán de mucha ayuda y en nuestro canal de YouTube videos que disfrutaras y querrás compartir.</p>    
+                                <p>Y no olvides...
+                                    <b> ¡Siempre hacer las cosas con el corazón y con mucha pasión!...</p></b>
+                                <br>
+                            <!--End detail about home --> 
+                        </div>
+                        <!-- End column about -->
+                    </div>
+                    <hr>
+                    <!-- Title posts -->
+                    <div class="row">
+                        <div class="col-xl-12" style="padding-bottom: 20px">
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="block-title" style="margin-bottom:15px;margin-top:20px">
+                                        <p>Canal de Youtube</p>
+                                        <h2> <a style="color:#404a3d" href="{{ route('blog') }}">Últimos Videos</a> </h2>
+                                        <div class="leaf">
+                                            <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-xl-4">
+                                    <div class="all_posts_btn">
+                                        <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
+                                            <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 100%;">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            @endforeach
                         </div>
-                    </div>
+                        <div class="col-xl-12">
+                            <div class="row">
+                                @foreach($videos as $video)
+                                <div class="col-md-3" style="padding-bottom: 20px">
+                                    <div class="gallery_one_image">
+                                        <img style="max-width:100%" src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
+                                        <div class="gallery_one_hover_box">
+                                            <div class="gallery_one_icon">
+                                                <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
+                                                        class="fa fa-play"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>                   
+                    <!-- End title posts -->
+
+                    
+
+
+
                 </div>
             </div>
             <div class="row">
@@ -434,44 +301,12 @@
         </div>
     </div>
     
-        <!-- Youtube -->
+        <!-- Subscriptor -->
         <section class="service_one" style="padding: 55px 0 70px;">
             <div class="container">
-                <div class="block-title text-left">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <p>El León Verde</p>
-                            <h3>Últimos Videos</h3>
-                            <div class="leaf">
-                                <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4" style="text-align: right;">
-                            <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
-                                <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 90%;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery_one_carousel owl-carousel">
-                    <!--Gallery One Single-->
-                    @foreach($videos as $video)
-                    <div class="gallery_one_single">
-                        <div class="gallery_one_image">
-                            <img src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
-                            <div class="gallery_one_hover_box">
-                                <div class="gallery_one_icon">
-                                    <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
-                                            class="fa fa-play"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
             </div>
         </section>
-        <!-- End Youtube -->
+        <!-- End Subscriptor -->
 
 @endsection
 

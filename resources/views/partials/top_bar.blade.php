@@ -5,7 +5,7 @@
 
                         @if (!Auth::check())
                         {{-- <a href="#" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-user"></i> Registrate</a> --}}
-                        <a href="{{ route('login') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Inicia sesión</a>
+                        {{-- <a href="{{ route('login') }}" class="btn btn-primary" style="color:#fff; background:#aacf38;border-color:#aacf38"><i class="fa fa-user"></i> Inicia sesión</a> --}}
 
                         @else
                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-info" style="color:#fff; background:#ff8000;border-color:#ff8000"><i class="fa fa-power-off"></i> Salir</a>

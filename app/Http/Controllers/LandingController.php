@@ -16,10 +16,10 @@ class LandingController extends Controller
 {
     public function home()
     {
-        $posts = Post::orderBy('id', 'desc')->take(3)->get();
+        $posts = Post::orderBy('id', 'desc')->take(8)->get();
         $videos = Attached_file::orderBy('id', 'desc')
                                 ->where('type','youtube')                            
-                                ->take(7)
+                                ->take(12)
                                 ->get();
         return view('landing.home')->with('posts', $posts)->with('videos',$videos);
     }
@@ -114,6 +114,17 @@ class LandingController extends Controller
     public function pets()
     {
         return view('landing.pets');
+    }
+
+    public function garden(){
+
+        $videos = Attached_file::orderBy('id', 'desc')
+                            ->where('type','youtube')                            
+                            ->take(12)
+                            ->get();
+
+        return view('landing.garden')->with('videos', $videos);
+
     }
 
     //Suscríbete 
