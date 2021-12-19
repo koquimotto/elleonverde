@@ -4,9 +4,8 @@
                                 <li class="{{ Request::is('colaborador/publ*') ? 'active' : '' }}"><a href="{{ route('auth.publish') }}">Nuevo artículo</a></li>
                                 <li><a href="#">Comentarios</a></li>
                                 <li class="{{ Request::is('colaborador/produc*') ? 'active' : '' }}" ><a href="{{ route('auth.ProductIndex') }}">Mis productos</a></li>
-                                <li><a href="#">Mis videos</a></li>
-                                <!--<li><a href="#">Organic Products</a></li>
-                                <li><a href="#">Dairy Products</a></li>-->
+                                <li><a href="{{ Request::is('colaborador/youtu*') ? 'active' : '' }}" ><a href="{{ route('auth.youtubeIndex') }}">Mis videos</a></li>
+                                <li><a href="{{ Request::is('colaborador/suscriptor*') ? 'active' : '' }}" ><a href="{{ route('auth.subscribersIndex') }}">Mis suscriptores web</a></li>
                             </ul>
                             {{-- <div class="need_help_box">
                                 <h2>Need Help?</h2>

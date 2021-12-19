@@ -98,7 +98,7 @@
                 </div>
                 <div class="site-footer_bottom_menu">
                     <ul class="list-unstyled">
-                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="{{ route('privacyPolicies') }}">Politica de privacidad</a></li>
                         <li><a href="#">Términos de uso</a></li>
                     </ul>
                 </div>

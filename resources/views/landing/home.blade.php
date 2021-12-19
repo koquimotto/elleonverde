@@ -304,9 +304,46 @@
         <!-- Subscriptor -->
         <section class="service_one" style="padding: 55px 0 70px;">
             <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="block-title" style="margin-bottom:15px;margin-top:20px">
+                            <p>Suscríbete</p>
+                            <h2>¡Suscríbete a nuestro boletín!</h2>
+                        </div>
+                        <p>Te enviaremos las novedades del blog directo a tu correo.</p>
+                        <form action="{{ route('subscription') }}" method="post">
+                            @csrf
+                            @error('email')
+                                <strong style="color: red">* {{ $message }}</strong><br>
+                            @enderror
+                            <div class="input-group mb-3">
+                                <input type="email" name="email" required class="form-control" placeholder="Ingresa tu correo electrónico" aria-label="Recipient's username" aria-describedby="button-addon2" value="{{ old('email') }}">
+                                <button style="background: #eddd5e; border-color: #eddd5e; color:#404a3d;" class="btn btn-primary" type="submit" id="button-addon2"><b>Suscribir</b></button>
+                              </div>
+                              <input type="checkbox" name="accept_privacy_policies" required > Leí y estoy de acuerdo con las <a data-toggle="modal" data-target="#exampleModal" href="#">políticas de privacidad</a> 
+                        </form>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="all_posts_btn">
+                            <h2>El León Verde</h2>
+                            <div class="topbar-one__social">
+                                <a target="_blank" href="https://www.facebook.com/hogarlcarturo"><img src="{{ asset('assets/images/social-icon/facebook-el-leon-verde.png') }}" alt="" srcset=""></a>
+                                <a target="_blank" href="https://www.instagram.com/el.leonverde/"><img src="{{ asset('assets/images/social-icon/instagram-el-leon-verde.png') }}" alt="" srcset=""></i></a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA"><img src="{{ asset('assets/images/social-icon/youtube-el-leon-verde.png') }}" alt="" srcset=""></a>
+                                {{-- <a href="#"><i class="fab fa-dribbble"></i></a> --}}
+                            </div>
+                            <br>
+                            <p>Acerca de nuestro blog</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End Subscriptor -->
+  
+        <!-- Modal -->
+        @include('partials.modal_privacy_policies')    
+        <!-- End modal -->
 
 @endsection
 

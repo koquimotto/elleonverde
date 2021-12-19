@@ -5,10 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Category;
+use App\Models\Subscription;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use App\Models\Attached_file;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\PostMail;
+use App\Mail\YoutubeMail;
 use Auth;
 
 class AuthenticatedController extends Controller
@@ -79,6 +83,13 @@ class AuthenticatedController extends Controller
         
         $post->image = $image_name;
         $post->save();
+
+        $subscriptions = Subscription::where('state','1')->get();
+
+        foreach($subscriptions as $subscriptor){
+            Mail::to($subscriptor->email)->send(new PostMail($post));
+        }
+        // Mail::to('lparedes.caipo@gmail.com')->send(new PostMail($post));
         
         // $this->upload_image($request->image, $post->slug, $post->id);
 
@@ -208,6 +219,37 @@ class AuthenticatedController extends Controller
 
     public function authProductIndex(){
         return view('authProducts.index');
+    }
+
+    public function authYoutubeIndex(){
+        $videos = Attached_file::orderBy('id', 'desc')
+                ->where('type','youtube')
+                ->get();
+        
+        return view('authYoutube.index')->with('videos', $videos);
+    }
+
+    public function doVideoYoutube(Request $request){
+        $video = new Attached_file;
+        $video->file_name = $request->embedYoutube;
+        $video->type = 'youtube';
+
+        $video->save();
+        
+        $subscriptions = Subscription::where('state','1')->get();
+
+        foreach($subscriptions as $subscriptor){
+            Mail::to($subscriptor->email)->send(new YoutubeMail($video));
+        }
+
+        return redirect()->back();
+    }
+
+    public function authSubscribersIndex(){
+        $subscribers = Subscription::orderBy('id', 'desc')
+                ->get();
+        
+        return view('authSubscribers.index')->with('subscribers', $subscribers);
     }
 
 }

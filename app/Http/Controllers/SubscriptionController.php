@@ -48,6 +48,23 @@ class SubscriptionController extends Controller
         return $subscription;
     }
 
+    public function subscription(Request $request){
+
+        $request->validate([
+            'email' => 'required|unique:subscriptions,email',
+        ]);
+
+        $subscriptor = new subscription;
+        $subscriptor->email = $request->email;
+        $subscriptor->state = 1;
+        $subscriptor->save();
+
+        $this->sendEmail($subscriptor->email);
+
+        return redirect()->back();
+
+    }
+
     /**
      * Display the specified resource.
      *

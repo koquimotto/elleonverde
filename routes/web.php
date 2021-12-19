@@ -17,7 +17,7 @@ use App\Http\Controllers\ForoController;
 Route::get('/', [LandingController::class, 'home'])->name('home');
 Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');
-Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('vegetable.patch');
+// Route::get('/el-huerto', [LandingController::class, 'vegetable_patch'])->name('vegetable.patch');
 Route::get('/foro',[LandingController::class, 'foro'])->name('foro');
 Route::get('/herbario-virtual', [LandingController::class, 'herbal'])->name('herbal');
 Route::get('/insectario-virtual', [LandingController::class, 'insectary'])->name('insectary');
@@ -26,6 +26,7 @@ Route::post('/subsribete', [LandingController::class, 'subscribe'])->name('subsc
 Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->name('comment');
 Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
 Route::get('/el-huerto',[LandingController::class, 'garden'])->name('garden');
+Route::get('/politicas-de-privacidad',[LandingController::class, 'privacyPolicies'])->name('privacyPolicies');
 
 
 
@@ -58,6 +59,12 @@ Route::post('/ckeditor/upload', [AuthenticatedController::class, 'ckeditor_uploa
 //Products
 Route::get('/colaborador/productos', [AuthenticatedController::class, 'authProductIndex'])->name('auth.ProductIndex');
 
+// Videos
+Route::get('/colaborador/youtube', [AuthenticatedController::class, 'authYoutubeIndex'])->name('auth.youtubeIndex');
+Route::post('/colaborador/youtube/store', [AuthenticatedController::class, 'doVideoYoutube'])->name('auth.doVideoYoutube');
+
+// Subscribers
+Route::get('/colaborador/suscriptores', [AuthenticatedController::class, 'authSubscribersIndex'])->name('auth.subscribersIndex');
 
 // Tests
 Route::get('/test/uno', [TestController::class, 'uno'])->name('test.uno');
@@ -77,6 +84,8 @@ Route::get('/comments', [CommentController::class, 'list']);
 Route::post('/subscribe/store',[SubscriptionController::class, 'store']);
 
 Route::get('/test/postTest',[TestController::class,'postTest']);
+
+Route::post('/suscriptor',[SubscriptionController::class, 'subscription'])->name('subscription');
 
 
 // Enviar mensaje

@@ -127,6 +127,15 @@ class LandingController extends Controller
 
     }
 
+    public function privacyPolicies(){
+        $videos = Attached_file::orderBy('id', 'desc')
+                            ->where('type','youtube')                            
+                            ->take(12)
+                            ->get();
+
+        return view('landing.privacy_policies')->with('videos', $videos);
+    }
+
     //Suscríbete 
     public function subscribe(Request $request)
     {
