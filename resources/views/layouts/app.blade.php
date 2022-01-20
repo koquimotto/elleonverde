@@ -61,7 +61,7 @@
 <body>
 
     <div class="preloader">
-        <img src="{{ asset('assets/images/loader.png') }}" class="preloader__image" alt="">
+        <img src="{{ asset('assets/images/resources/logo-el-leon-verde.png') }}" class="preloader__image" alt="">
     </div><!-- /.preloader -->
 
     <div id="app" class="page-wrapper">
@@ -138,6 +138,8 @@
     <!-- template scripts -->
     <script src="{{ asset('assets/js/theme.js') }}"></script>
     <script src="{{ asset('assets/js/el-leon-verde.js') }}"></script>
+
+    @include('sweetalert::alert')
 
 
     

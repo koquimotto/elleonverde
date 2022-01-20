@@ -21,6 +21,9 @@ class LandingController extends Controller
                                 ->where('type','youtube')                            
                                 ->take(12)
                                 ->get();
+        
+        // alert()->success('SuccessAlert','Lorem ipsum dolor sit amet.');
+
         return view('landing.home')->with('posts', $posts)->with('videos',$videos);
     }
 
@@ -90,6 +93,10 @@ class LandingController extends Controller
     public function show_blog($post)
     {
         $post = Post::where('slug', $post)->first();
+        // dd($post);
+        // if(! $post){
+        //     return redirect('/');
+        // }
         $last_posts = Post::orderBy('id', 'desc')->take(3)->get();
         $comments = Comment::where('post_id',$post->id)->orderBy('id', 'desc')->get();
         $comment_number = Comment::where('post_id', $post->id)->count();

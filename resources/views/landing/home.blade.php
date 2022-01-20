@@ -306,6 +306,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8">
+                        @if (session('success_message'))
+                            <div  class="alert alert-success">
+                                {{ session('success_message') }}
+                            </div>
+                        @endif
                         <div class="block-title" style="margin-bottom:15px;margin-top:20px">
                             <p>Suscríbete</p>
                             <h2>¡Suscríbete a nuestro boletín!</h2>

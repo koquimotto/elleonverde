@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Subscription;
 use App\Mail\SubscriptionMail;
+use App\Mail\ChristmasMail;
 
 class SubscriptionController extends Controller
 {
@@ -61,7 +62,7 @@ class SubscriptionController extends Controller
 
         $this->sendEmail($subscriptor->email);
 
-        return redirect()->back();
+        return redirect()->back()->with('success_message','Gracias por suscribirte a nuestro boletín, te enviaremos un mensaje al correo ingresado');
 
     }
 
@@ -122,4 +123,22 @@ class SubscriptionController extends Controller
         return 'Correo enviado';
 
     }
+
+public function sendEmailChristmas(){
+
+        $subscriptions = Subscription::where('state','1')->get();
+
+        // $details=[
+        //     'title' => 'Que los reencuentros sean dulces, las risas abundantes y el amor entre nosotros inmenso, en esta Navidad',
+        //     'body' => 'Por este medio quiero mantenerte al tanto del nuevo contenido que vaya generando. 
+        //     Nuevos Artículos, Historias y Especialmente los videos que subimos a YouTube para que no te pierdas ninguno.'
+        // ];
+
+        foreach($subscriptions as $subscriptor){
+            Mail::to($subscriptor->email)->send(new ChristmasMail());
+        }
+    return 'Correo enviado';
+
+}
+
 }

@@ -87,6 +87,8 @@ Route::get('/test/postTest',[TestController::class,'postTest']);
 
 Route::post('/suscriptor',[SubscriptionController::class, 'subscription'])->name('subscription');
 
+Route::get('/feliz-navidad',[SubscriptionController::class, 'sendEmailChristmas'])->name('sendEmailChristmas');
+
 
 // Enviar mensaje
 // Route::get('/send-mail/{email}', [SubscriptionController::class, 'sendEmail']);
