@@ -141,6 +141,19 @@
     <div class="" style="padding: 40px 0 20px;">
         <div class="container">
             <div class="row">
+                <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                    <a href="https://elleonverde.com/abonos">
+                        <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="" style="max-width:380px">
+                    </a>
+                </div>
+                <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                    <div style="padding:10px"></div>
+                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-xl-12">
                     <div style="text-align:center">
                         <h2 style="color:#404a3d; font-weight:600; ">
@@ -244,6 +257,20 @@
                         </div>
                         <!-- End column about -->
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                            <a href="https://elleonverde.com/abonos">
+                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-2.jpg" alt="" style="max-width:380px">
+                            </a>
+                        </div>
+                        <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                            <div style="padding:10px"></div>
+                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                        </div>
+                    </div>
+                    <br>
                     <hr>
                     <!-- Title posts -->
                     <div class="row">
@@ -286,9 +313,20 @@
                         </div>
                     </div>                   
                     <!-- End title posts -->
-
+                    <br><br>
                     
-
+                    <div class="row">
+                        <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                            <a href="https://elleonverde.com/abonos">
+                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-3.jpg" alt="" style="max-width:380px">
+                            </a>
+                        </div>
+                        <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                            <div style="padding:10px"></div>
+                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                        </div>
+                    </div>
 
 
                 </div>

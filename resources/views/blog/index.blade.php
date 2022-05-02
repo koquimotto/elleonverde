@@ -138,13 +138,21 @@
 @endsection
 
 @section('content')
-<div class="blog_two" style="padding: 40px 0 120px;">
+<div class="blog_two" style="padding: 40px 0 10px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
-    
+                    <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                        <a href="https://elleonverde.com/abonos">
+                            <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-2.jpg" alt="" style="max-width:380px">
+                        </a>
                     </div>
-                </div>               
+                    <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                        <div style="padding:10px"></div>
+                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                    </div>
+                </div>
+                <br><br>              
                 <div class="row">
                     <div class="col-xl-9">
                         <div class="blog_list">
@@ -208,6 +216,12 @@
                                     <button type="submit"><i class="icon-magnifying-glass"></i></button>
                                 </form>
                             </div>
+                            <br>
+                            <div style="text-align: center; border: 1px solid rgba(0,0,0,0.15)">
+                                <a href="https://elleonverde.com/abonos">
+                                    <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-1.jpg" alt="" style="max-width:260px">
+                                </a>
+                            </div>
                         </div>
                         <!-- <div class="blog_two_right wow fadeInRight" data-wow-delay="300ms">
                             <div class="blog_three_single">
@@ -224,9 +238,18 @@
 
 
                 </div>
+
+                <br><br>
                 <div class="row">
-                    <div class="col-xl-12">
-    
+                    <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                        <a href="https://elleonverde.com/abonos">
+                            <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="" style="max-width:380px">
+                        </a>
+                    </div>
+                    <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                        <div style="padding:10px"></div>
+                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
                     </div>
                 </div>
             </div>

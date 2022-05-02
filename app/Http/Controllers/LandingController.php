@@ -162,6 +162,22 @@ class LandingController extends Controller
         return view('foro.index');
     }
 
+    public function courses(){
+        $videos = Attached_file::orderBy('id', 'desc')
+                            ->where('type','youtube')                            
+                            ->take(12)
+                            ->get();
+        return view('courses.index')->with('videos', $videos);
+    }
+
+    public function showCourse($course){
+        return $course;
+    }
+
+    public function abonos(){
+        return redirect('https://elleonverde.funnels.mastertools.com/');
+    }
+
 }
 
 

@@ -35,6 +35,9 @@
                                 <li class="{{ Request::is('video*') ? 'current' : '' }}">
                                     <a href="{{ route('videos') }}">Videos Sugeridos</a>
                                 </li>
+                                <li class="{{ Request::is('curso*') ? 'current' : '' }}">
+                                    <a href="{{ route('courses') }}">Cursos Sugeridos</a>
+                                </li>
                                 {{-- <li class="{{ Request::is('herbario*') ? 'current' : '' }}">
                                     <a href="{{ route('herbal') }}">Herbario Virtual</a>
                                 </li> --}}

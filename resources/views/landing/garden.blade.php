@@ -141,6 +141,18 @@
     <div class="" style="padding: 40px 0 20px;">
         <div class="container">
             <div class="row">
+                <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                    <a href="https://elleonverde.com/abonos">
+                        <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="" style="max-width:380px">
+                    </a>
+                </div>
+                <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                    <div style="padding:10px"></div>
+                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                </div>
+            </div><br><br>
+            <div class="row">
                 <!-- Column about -->
                 <div class="col-xl-12">
                     <div class="news_detail_left">
@@ -193,6 +205,20 @@
                                 <b>Donde encontrarás las mejores sugerencias de todo lo que necesitaras para tu huerto o jardín. </b>
                             </p>
                         </div>
+
+                        <div class="row">
+                            <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
+                                <a href="https://elleonverde.com/abonos">
+                                    <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-2.jpg" alt="" style="max-width:380px">
+                                </a>
+                            </div>
+                            <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
+                                <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                                <div style="padding:10px"></div>
+                                <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                            </div>
+                        </div>
+                        <br>
                         <br>
                         <h4>
                             <b>Yo soy Arturo, El León Verde y quiero invitarte que juntos iniciamos esta aventura.</b>

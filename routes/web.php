@@ -27,8 +27,9 @@ Route::post('/comentario/{post}/guardar', [CommentController::class, 'store'])->
 Route::get('/videos-sugeridos',[YoutubeController::class, 'index'])->name('videos');
 Route::get('/el-huerto',[LandingController::class, 'garden'])->name('garden');
 Route::get('/politicas-de-privacidad',[LandingController::class, 'privacyPolicies'])->name('privacyPolicies');
-
-
+Route::get('/abonos',[landingController::class, 'abonos'])->name('abonos');
+Route::get('/cursos',[landingController::class, 'courses'])->name('courses');
+Route::get('/curso/{curso}',[LandingController::class, 'showCourse'])->name('showCourse');
 
 // Foro
 

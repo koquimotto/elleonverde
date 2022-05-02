@@ -8,32 +8,19 @@
     <meta name="keywords" content="Huerto, huerto urbano, huerto casero, huerta, macetohuerto, huerta orgánica, agricultura, huerto ecológico, como iniciar un huerto, como sembrar fresas, como sembrar patatas, como sembrar papas, cuando cosechar patatas, cuando cosechar papas, estiércol como abono, estiércol como abono para plantas, plagas en las plantas, como obtener semillas de lechuga, curso de huerta, curso de jardinería, libro de manejo de huerta, libro de jardinería, herramientas para el huerto, herramientas de jardín, que abonos orgánicos usar en la huerta, plagas en las plantas, como combatir los hongos en las plantas, como combatir el pulgón, como eliminar la mosca blanca, como trasplantar los tomates, como germinar tomates, como germinar almendras, usos de la cascara de huevo, como hacer compost, lombricompostera, humus de lombriz, como hacer humus de lombriz, lombrices californianas, como crías gallinas en casa, como crías aves, como criar ninfas, como criar agapornis, como criar cacatúas, como criar canarios, como criar caballos, tipo de razas de caballos, tipo de razas de perros, como criar a un perro, peces ornamentales, acuarios, como limpiar un acuario, acuario en casa, tipo de peses para acuario, como crías peses ornamentales, accesorios para acuarios, venta de plantas, venta de aves, venta de accesorios para aves, venta de accesorios para perros, venta de accesorios para caballos, venta de accesorios para el jardín, equipos de jardinería, insectario virtual, insectario, tipo de insectos, los insectos más extraños, los incestos más peligrosos, los incestos más increíbles, herbario virtual, herbario, tolo de plantas, tipo de clases de plantas carnívoras, como se clasifican los insectos, como se clasifican las plantas, asociación de cultivos, que cultivar en enero, que cultivar en febrero, que cultivar en marzo, que cultivar en abril, que cultivar en mayo, que cultivar en junio, que cultivar en julio, que cultivar en agosto, que cultivar en septiembre, que cultivar octubre, que cultivar noviembre, que cultivar en diciembre, que cultivar en verano, que cultivar en primavera, que cultivar en otoño, que cultivar en invierno, como hacer un insecticida orgánico, como hacer un fungicida orgánico, como hacer un repelente de mosquitos orgánico, como iniciar un hurto de cero, como hacer una mesa de cultivo, como iniciar una mesa de cultivo, beneficios de una mesa de cultivo, que sembrar en una mesa de cultivo, tipo de abonos orgánicos, como hacer un injerto, como injertar un aguacate, como injertar una palta, el mejor sustrato para macetas, el mejor sustrato para la huerta, el mejor sustrato para las plantas, como estabilizar el suelo para la huerta, estiércol de vaca, estiércol de vaca como abono, tipo de abonos a base de estiércol, donde comprar humus de lombriz, como polinizan las abejas, porque son importantes las abejas, como criar abejas en casa, abejas en el huerto, enfermedades de las abejas, razas de perros, como clasificar los insectos, como se hace la fotosíntesis de las plantas, abejas, como cosechar la miel de abeja, como reproducir reinas en una colmena, como germinar pimientos, cuando cosechar pimientos, tipo de flores, diseño de jardines, tipo de árboles, plantas de interior, plantas de sombra, cultivos rápidos, los cultivos más rápidos, como cuidar los rosales, como hacer un estanque en casa, que tipo de peces puedo poner en un estanque, tipo de abonos, tipo de fertilizantes, el león verde, comida para perros, crianza de gallinas ponedoras, como germinar semillas, como germinar alfalfa, como germinar frijol, como germinar maíz, como diseñar un huerto, como abonar un árbol frutal, como iniciar un vivero, tipo de fresas, cultivo de arándanos, cuidado del arándano, súper abono casero, plantas medicinales, beneficios de la caléndula, cultivo de patatas en bolsa, como cultivar patatas en bolsa, cultivo de papas en bolsa, como cultivar papas en bolsa, calendario de siembra, porque el aguacate no da frutos, porque mi palta no da frutos, porque mi aguacate no da frutos, como hacer rápido compost, cultivo de ajos en casa, como cultivar ajos en casa, como sembrar papaya, que plantar en enero, que plantar en febrero, que plantar en marzo, que plantar abril, que plantar en mayo, que plantar en junio, que plantar en julio, que plantar en agosto, que plantar en septiembre, que plantar en octubre, que plantar en noviembre, que plantar en diciembre, que plantar en verano, que plantar en otoño, que plantar en primavera, que plantar en invierno, como en tutorar los tomates, tamaños de masetas para cultivos, cual es el tamaño de macetas para tipos de cultivos, tipo de cultivos, tipo de macetas, asociación de cultivos para tomates, remedios caseros, riego por goteo, riego por aspersión, como controlar los caracoles, como eliminar las hormigas, como hacer un enraizado aéreo, como reproducir el romero, como hacer esquejes de lavanda, como hacer esquejes de romero, esquejes de romero, reproducción por esquejes, como hacer un acodo aéreo, vinagre como hervidita, como usar el vinagre en el huerto, como reproducir romero en agua">
     <meta name="author" content="GLOOBAL TIC INGENIEROS">
 @endsection
-@section('title','Videos Sugeridos - El León Verde')
+@section('title','Cursos Sugeridos - El León Verde')
 
 @section('styles')
 @endsection
 
 @section('content')
-<div class="blog_two" style="padding: 40px 0 10px;">
+<div class="blog_two" style="padding: 40px 0 120px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
-                        <a href="https://elleonverde.com/abonos">
-                            <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="" style="max-width:380px">
-                        </a>
-                    </div>
-                    <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
-                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
-                        <div style="padding:10px"></div>
-                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
-                    </div>
-                </div>
-                <br><br>
                 <div class="row">
                     <div class="col-xl-8">
                         <div class="block-title">
                             <p>El León Verde</p>
-                            <h3>Últimos Videos</h3>
+                            <h3>Cursos Sugeridos</h3>
                             <div class="leaf">
                                 <img src="{{ asset('assets/images/resources/leaf.png') }}" alt="">
                             </div>
@@ -46,44 +33,26 @@
                         </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-12">
                         <div class="row">
-                            @foreach($videos as $video)
-                            <div class="col-md-4" style="padding-bottom: 20px">
-                                <div class="gallery_one_image">
-                                    <img style="max-width:100%" src="http://img.youtube.com/vi/{{$video->file_name}}/mqdefault.jpg">
-                                    <div class="gallery_one_hover_box">
-                                        <div class="gallery_one_icon">
-                                            <a href="https://www.youtube.com/watch?v={{$video->file_name}}" class="popup-video"><span
-                                                    class="fa fa-play"></span></a>
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="blog_one_single mb-30">
+                                    <div class="blog_one_image">
+                                        <div class="blog_image">
+                                            <a href="https://elleonverde.com/abonos">
+                                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="Abonos Orgánicos">
+                                            </a>
+                                            {{-- <div class="blog_one_date_box">
+                                                <p>30 Oct, 2019</p>
+                                            </div> --}}
+                                        </div>
+                                        <div class="blog-one__content" style="padding:0px 5px 0px; margin-left: 0px; margin-right: 0px; border-radius: 0px">
+                                            <p><a href="https://elleonverde.com/abonos">Abonos Orgánicos</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
                         </div>                      
-                    </div>
-                    
-
-                    {{-- Google Adsense --}}
-                    @include('partials.left_gadsense')
-                    {{-- End Google Adsense --}}
-                    
-
-
-
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
-                        <a href="https://elleonverde.com/abonos">
-                            <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-2.jpg" alt="" style="max-width:380px">
-                        </a>
-                    </div>
-                    <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
-                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
-                        <div style="padding:10px"></div>
-                        <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
                     </div>
                 </div>
             </div>

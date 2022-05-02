@@ -7,6 +7,12 @@
                                     <button type="submit"><i class="icon-magnifying-glass"></i></button>
                                 </form>
                             </div>
+                            <br>
+                            <div style="text-align: center; border: 1px solid rgba(0,0,0,0.15)">
+                                <a href="https://elleonverde.com/abonos">
+                                    <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-1.jpg" alt="" style="max-width:260px">
+                                </a>
+                            </div>
                         </div>
                         <!-- <div class="blog_two_right wow fadeInRight" data-wow-delay="300ms">
                             <div class="blog_three_single">
