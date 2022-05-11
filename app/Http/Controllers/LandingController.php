@@ -11,6 +11,7 @@ use App\Models\Subscription;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\Attached_file;
+use App\Models\Curso;
 
 class LandingController extends Controller
 {
@@ -163,20 +164,31 @@ class LandingController extends Controller
     }
 
     public function courses(){
+        $cursos = Curso::orderBy('id','Desc')->get();
         $videos = Attached_file::orderBy('id', 'desc')
                             ->where('type','youtube')                            
                             ->take(12)
                             ->get();
-        return view('courses.index')->with('videos', $videos);
+        return view('courses.index')->with('videos', $videos)->with('cursos',$cursos);
     }
 
     public function showCourse($course){
-        return $course;
+        
+        $course = Curso::where('slug', $course)->first();
+        if(!$course){
+            abort(404);
+        }
+
+        return redirect($course['url']);
     }
 
     public function abonos(){
         return redirect('https://elleonverde.funnels.mastertools.com/');
     }
+
+    // public function lechesJugos(){
+    //     return redirect('https://elleonverde.funnels.mastertools.com/leches-jugos/');
+    // }
 
 }
 

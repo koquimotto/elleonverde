@@ -140,16 +140,21 @@
 @section('content')
     <div class="" style="padding: 40px 0 20px;">
         <div class="container">
+            @php
+                $hImage = rand(3,4);
+                $vImage = rand(1,2);
+                $adsTop = \App\Models\Curso::inRandomOrder()->first();
+            @endphp
             <div class="row">
                 <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
-                    <a href="https://elleonverde.com/abonos">
-                        <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="" style="max-width:380px">
+                    <a href="{{ $adsTop->url }}">
+                        <img src="{{ asset('uploads/courses/'.$adsTop->slug.'-'.$hImage.'.jpg') }}" alt="{{ $adsTop->curso }}" style="max-width:380px">
                     </a>
                 </div>
                 <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
-                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                    <a href="{{ $adsTop->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">{{ $adsTop->curso }}</a>
                     <div style="padding:10px"></div>
-                    <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                    <a href="{{ $adsTop->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">{{ $adsTop->descripcion }}</a>
                 </div>
             </div>
             <br>
@@ -258,16 +263,19 @@
                         <!-- End column about -->
                     </div>
                     
+                    @php
+                        $adsM = \App\Models\Curso::inRandomOrder()->first();
+                    @endphp
                     <div class="row">
                         <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
-                            <a href="https://elleonverde.com/abonos">
-                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-2.jpg" alt="" style="max-width:380px">
+                            <a href="{{ $adsM->url }}">
+                                <img src="{{ asset('uploads/courses/'.$adsM->slug.'-'.$hImage.'.jpg') }}" alt="{{ $adsM->curso }}" style="max-width:380px">
                             </a>
                         </div>
                         <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
-                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                            <a href="{{ $adsM->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">{{ $adsM->curso }}</a>
                             <div style="padding:10px"></div>
-                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                            <a href="{{ $adsM->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">{{ $adsM->descripcion }}</a>
                         </div>
                     </div>
                     <br>
@@ -315,16 +323,19 @@
                     <!-- End title posts -->
                     <br><br>
                     
+                    @php
+                        $adsFooter = \App\Models\Curso::inRandomOrder()->first();
+                    @endphp
                     <div class="row">
                         <div class="col-xl-4" style="border: 1px solid rgba(0,0,0,0.15)">
-                            <a href="https://elleonverde.com/abonos">
-                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-3.jpg" alt="" style="max-width:380px">
+                            <a href="{{ $adsFooter->url }}">
+                                <img src="{{ asset('uploads/courses/'.$adsFooter->slug.'-'.$hImage.'.jpg') }}" alt="{{ $adsFooter->curso }}" style="max-width:380px">
                             </a>
                         </div>
                         <div class="col-xl-8" style="border: 1px solid rgba(0,0,0,0.15); padding: 55px 25px">
-                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">Abonos orgánicos y bioinsumos</a>
+                            <a href="{{ $adsFooter->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:30px; color:rgba(0,0,0,0.85); font-weight: 600;">{{ $adsFooter->curso }}</a>
                             <div style="padding:10px"></div>
-                            <a href="https://elleonverde.com/abonos" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">Dale a tus plantas el mejor alimento para un correcto crecimiento y mantenimiento</a>
+                            <a href="{{ $adsFooter->url }}" style="font-family: Google Sans, Roboto,Google Sans,Roboto,Arial,sans-serif; font-size:18px; color:rgba(0,0,0,0.5); font-weight: 400;">{{ $adsFooter->descripcion }}</a>
                         </div>
                     </div>
 
@@ -373,7 +384,7 @@
                                 <a target="_blank" href="https://www.facebook.com/hogarlcarturo"><img src="{{ asset('assets/images/social-icon/facebook-el-leon-verde.png') }}" alt="" srcset=""></a>
                                 <a target="_blank" href="https://www.instagram.com/el.leonverde/"><img src="{{ asset('assets/images/social-icon/instagram-el-leon-verde.png') }}" alt="" srcset=""></i></a>
                                 <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA"><img src="{{ asset('assets/images/social-icon/youtube-el-leon-verde.png') }}" alt="" srcset=""></a>
-                                {{-- <a href="#"><i class="fab fa-dribbble"></i></a> --}}
+                                <a target="_blank" href="https://www.tiktok.com/@el.leonverde"><img src="{{ asset('assets/images/social-icon/tik-tok-el-leon-verde.png') }}" alt="" srcset=""></a>
                             </div>
                             <br>
                             <p>Acerca de nuestro blog</p>

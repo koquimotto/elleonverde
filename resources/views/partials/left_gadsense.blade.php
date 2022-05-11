@@ -8,9 +8,13 @@
                                 </form>
                             </div>
                             <br>
+                            @php
+                                $adsM = \App\Models\Curso::inRandomOrder()->first();
+                                $vImage = rand(1,2);
+                            @endphp
                             <div style="text-align: center; border: 1px solid rgba(0,0,0,0.15)">
-                                <a href="https://elleonverde.com/abonos">
-                                    <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos-1.jpg" alt="" style="max-width:260px">
+                                <a href="{{ $adsM->url }}">
+                                    <img src="{{ asset('uploads/courses/'.$adsM->slug.'-'.$vImage.'.jpg') }}" alt="{{ $adsM->curso }}" style="max-width:360px">
                                 </a>
                             </div>
                         </div>

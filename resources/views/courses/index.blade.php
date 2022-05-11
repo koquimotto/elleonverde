@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-<div class="blog_two" style="padding: 40px 0 120px;">
+        <section class="news_detail" style="padding: 40px 0 120px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8">
@@ -27,36 +27,34 @@
                         </div>
                     </div>
                     <div class="col-xl-4" style="text-align: right;">
-                            <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
-                                <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 95%; margin-bottom: 20px">
-                            </a>
-                        </div>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA">
+                            <img src="{{ asset('assets/images/resources/btn-subscribete-el-leon-verde.png') }}" alt="" style="width: 95%; margin-bottom: 20px">
+                        </a>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-3">
-                                <div class="blog_one_single mb-30">
-                                    <div class="blog_one_image">
-                                        <div class="blog_image">
-                                            <a href="https://elleonverde.com/abonos">
-                                                <img src="https://elleonverde.com/uploads/courses/curso-abonos-organicos.jpg" alt="Abonos Orgánicos">
-                                            </a>
-                                            {{-- <div class="blog_one_date_box">
-                                                <p>30 Oct, 2019</p>
-                                            </div> --}}
-                                        </div>
-                                        <div class="blog-one__content" style="padding:0px 5px 0px; margin-left: 0px; margin-right: 0px; border-radius: 0px">
-                                            <p><a href="https://elleonverde.com/abonos">Abonos Orgánicos</p>
-                                        </div>
+                    @php
+                        $hImage = rand(3,4);
+                    @endphp
+                    @foreach ($cursos as $curso )
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="blog_one_single mb-30">
+                                <div class="blog_one_image">
+                                    <div class="blog_image">
+                                        <a href="{{ $curso->url }}">
+                                            <img src="{{ asset('uploads/courses/'.$curso->slug.'-'.$hImage.'.jpg') }}" alt="{{ $curso->curso }}s">
+                                        </a>
+                                    </div>
+                                    <div class="blog-one__content" style="padding:0px 5px 0px; margin-left: 0px; margin-right: 0px; border-radius: 0px">
+                                        <p><a href="{{ $curso->url }}">{{ $curso->curso }}</a></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>                      
-                    </div>
+                        </div>
+                    @endforeach       
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Subscriptor -->
         <section class="service_one" style="padding: 55px 0 70px;">
             <div class="container">
@@ -91,7 +89,7 @@
                                 <a target="_blank" href="https://www.facebook.com/hogarlcarturo"><img src="{{ asset('assets/images/social-icon/facebook-el-leon-verde.png') }}" alt="" srcset=""></a>
                                 <a target="_blank" href="https://www.instagram.com/el.leonverde/"><img src="{{ asset('assets/images/social-icon/instagram-el-leon-verde.png') }}" alt="" srcset=""></i></a>
                                 <a target="_blank" href="https://www.youtube.com/channel/UC1JNK9V8zQCa7pz93jU7mNA"><img src="{{ asset('assets/images/social-icon/youtube-el-leon-verde.png') }}" alt="" srcset=""></a>
-                                {{-- <a href="#"><i class="fab fa-dribbble"></i></a> --}}
+                                <a target="_blank" href="https://www.tiktok.com/@el.leonverde"><img src="{{ asset('assets/images/social-icon/tik-tok-el-leon-verde.png') }}" alt="" srcset=""></a>
                             </div>
                             <br>
                             <p>Acerca de nuestro blog</p>
